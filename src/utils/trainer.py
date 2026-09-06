@@ -1,6 +1,7 @@
 import os
 import time
 import json
+import pickle
 import torch
 from torch.amp import autocast, GradScaler
 from .metrics import FocalDiceLoss, calculate_pixel_metrics
@@ -162,6 +163,7 @@ class Trainer:
         os.makedirs(run_charts_dir, exist_ok=True)
 
         print(f"\nStarting Training: [{run_name}]", flush=True)
+        print(f" Forgery Types Covered: Splicing | Copy-Move | AI-Inpainting | Document-Tampering", flush=True)
         print(f" Reports will be saved to: {run_report_dir}", flush=True)
 
         history = {
@@ -207,9 +209,10 @@ class Trainer:
                 patience_counter = 0
 
                 best_ckpt_path = os.path.join(self.save_dir, f"best_model_{run_name}.pth")
-                torch.save({
+                checkpoint = {
                     'epoch': epoch,
                     'run_name': run_name,
+                    'forgery_types': ['splicing', 'copy_move', 'ai_inpainting', 'document_tampering'],
                     'model_state_dict': self.model.state_dict(),
                     'optimizer_state_dict': self.optimizer.state_dict(),
                     'val_iou': val_metrics['iou'],
@@ -217,7 +220,14 @@ class Trainer:
                     'val_precision': val_metrics['precision'],
                     'val_recall': val_metrics['recall'],
                     'config': self.config
-                }, best_ckpt_path)
+                }
+                # Save as .pth (PyTorch standard format)
+                torch.save(checkpoint, best_ckpt_path)
+
+                # Save as .pkl (pickle format — compatible with sklearn/general ML pipelines)
+                pkl_path = os.path.join(self.save_dir, f"best_model_{run_name}.pkl")
+                with open(pkl_path, 'wb') as pkl_file:
+                    pickle.dump(checkpoint, pkl_file, protocol=pickle.HIGHEST_PROTOCOL)
 
                 prod_script_path = os.path.join(self.save_dir, f"production_model_{run_name}.pt")
                 dummy_input = torch.randn(1, 3, *self.config['training']['image_size']).to(self.device)
@@ -238,10 +248,13 @@ class Trainer:
                         dynamic_axes={'input_document': {0: 'batch_size'},
                                       'forgery_mask_logits': {0: 'batch_size'}}
                     )
-                    print(f"  --> Checkpoint: {best_ckpt_path}", flush=True)
-                    print(f"  --> ONNX: {onnx_path}", flush=True)
+                    print(f"  --> Checkpoint (.pth): {best_ckpt_path}", flush=True)
+                    print(f"  --> Pickle    (.pkl) : {pkl_path}", flush=True)
+                    print(f"  --> ONNX      (.onnx): {onnx_path}", flush=True)
                 except Exception as e:
-                    print(f"  --> Checkpoint saved (ONNX skipped: {e})", flush=True)
+                    print(f"  --> Checkpoint (.pth): {best_ckpt_path}", flush=True)
+                    print(f"  --> Pickle    (.pkl) : {pkl_path}", flush=True)
+                    print(f"  --> ONNX skipped: {e}", flush=True)
             else:
                 patience_counter += 1
                 if patience_counter >= patience:
