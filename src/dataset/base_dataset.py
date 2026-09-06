@@ -12,37 +12,55 @@ class DocTamperLMDBDataset(Dataset):
     Official DocTamper LMDB PyTorch Dataset Reader.
     Reads 120,000+ document image-mask pairs directly from LMDB databases (`data.mdb`).
     Key format: `image-{index:09d}` and `label-{index:09d}`
+
+    IMPORTANT: LMDB Environment is opened LAZILY (not in __init__) to avoid
+    `cannot pickle 'Environment' object` error with PyTorch multiprocessing workers.
+    Each DataLoader worker opens its own independent LMDB environment on first access.
     """
     def __init__(self, lmdb_dir, img_size=(256, 256), is_train=True):
         self.lmdb_dir = lmdb_dir
         self.img_size = img_size
         self.is_train = is_train
         self.augmenter = DocumentAugmenter(img_size=img_size)
+        self._env = None  # DO NOT open here — not picklable for multiprocessing
 
-        self.env = lmdb.open(lmdb_dir, readonly=True, lock=False, readahead=False, meminit=False)
-        with self.env.begin(write=False) as txn:
+        # Count samples using a temporary env that we immediately close
+        tmp_env = lmdb.open(lmdb_dir, readonly=True, lock=False, readahead=False, meminit=False)
+        with tmp_env.begin(write=False) as txn:
             num_samples_bytes = txn.get(b'num-samples')
             if num_samples_bytes:
                 self.num_samples = int(num_samples_bytes.decode('utf-8'))
             else:
                 self.num_samples = (txn.stat()['entries'] - 1) // 2
+        tmp_env.close()
+
+    @property
+    def env(self):
+        """Lazy LMDB environment — opened once per worker process on first access."""
+        if self._env is None:
+            self._env = lmdb.open(
+                self.lmdb_dir, readonly=True,
+                lock=False, readahead=False, meminit=False
+            )
+        return self._env
 
     def __len__(self):
         return self.num_samples
 
     def __getitem__(self, idx):
-        key_img = f"image-{idx:09d}".encode('utf-8')
+        key_img   = f"image-{idx:09d}".encode('utf-8')
         key_label = f"label-{idx:09d}".encode('utf-8')
 
         with self.env.begin(write=False) as txn:
-            img_bytes = txn.get(key_img)
+            img_bytes   = txn.get(key_img)
             label_bytes = txn.get(key_label)
 
         image = Image.open(io.BytesIO(img_bytes)).convert('RGB')
-        mask = Image.open(io.BytesIO(label_bytes)).convert('L')
+        mask  = Image.open(io.BytesIO(label_bytes)).convert('L')
 
         img_tensor, mask_tensor = self.augmenter(image, mask)
         return img_tensor, mask_tensor, f"doc_{idx:09d}"
+
 
 
 class COCOGLIDEDataset(Dataset):
