@@ -10,6 +10,7 @@ paths:
   saved_models_dir: "./savedmodels"
   charts_dir: "./charts"
   log_dir: "./logs"
+  reports_dir: "./reports"        # Per-experiment reports saved here
 
 model:
   name: "ForgeryNet"
@@ -22,9 +23,10 @@ training:
   batch_size: 8
   learning_rate: 0.0001           # 1e-4: fine-tuning regime for pretrained encoder
   encoder_lr_multiplier: 0.1      # Encoder LR = 1e-5 (slower fine-tune of pretrained weights)
+  warmup_epochs: 5                # Linear warmup: LR 1%->100% over 5 epochs (protects pretrained weights)
   weight_decay: 0.0001
   use_amp: true                   # AMP fp16 for RTX 3050 6GB
-  gradient_accumulation_steps: 2    # Effective batch = 8×2 = 16 (no extra VRAM needed)
+  gradient_accumulation_steps: 2  # Effective batch = 8x2 = 16 (no extra VRAM needed)
   early_stopping_patience: 12
   image_size: [384, 384]          # Larger res benefits pretrained encoders
 

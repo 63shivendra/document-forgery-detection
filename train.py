@@ -90,8 +90,10 @@ def main():
     print(f" Model params: {total_params:.1f}M total | {trainable_params:.1f}M trainable")
 
     # Train Engine
+    from datetime import datetime
+    run_name = f"{args.dataset}_{config['model']['encoder']}_{datetime.now().strftime('%Y%m%d_%H%M')}"
     trainer = Trainer(model, train_loader, val_loader, config, device=device)
-    trainer.fit(dataset_name=args.dataset)
+    trainer.fit(dataset_name=args.dataset, run_name=run_name)
 
 
 if __name__ == '__main__':
