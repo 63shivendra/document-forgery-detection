@@ -1,0 +1,43 @@
+# Document Forgery Detection Framework Configuration
+# Architecture: ForgeryNet (EfficientNet-B2 + U-Net + SRM)
+
+project:
+  name: "Governed Document Forgery Detection"
+  version: "2.0.0"
+
+paths:
+  data_dir: "./data"
+  saved_models_dir: "./savedmodels"
+  charts_dir: "./charts"
+  log_dir: "./logs"
+
+model:
+  name: "ForgeryNet"
+  encoder: "efficientnet-b2"      # Pretrained ImageNet backbone
+  out_channels: 1
+  spatial_dropout: 0.2
+
+training:
+  epochs: 50
+  batch_size: 8
+  learning_rate: 0.0001           # 1e-4: fine-tuning regime for pretrained encoder
+  encoder_lr_multiplier: 0.1      # Encoder LR = 1e-5 (slower fine-tune of pretrained weights)
+  weight_decay: 0.0001
+  use_amp: true                   # AMP fp16 for RTX 3050 6GB
+  gradient_accumulation_steps: 2    # Effective batch = 8×2 = 16 (no extra VRAM needed)
+  early_stopping_patience: 12
+  image_size: [384, 384]          # Larger res benefits pretrained encoders
+
+loss:
+  focal_weight: 0.3
+  dice_weight: 0.7                # Dice dominates — better for segmentation tasks
+  focal_gamma: 2.0
+  pos_weight: 10.0                # 10x penalty for missing forged pixels (class imbalance)
+
+augmentation:
+  jpeg_compress_quality_min: 50
+  jpeg_compress_quality_max: 95
+  gaussian_noise_var_limit: [10.0, 50.0]
+  blur_limit: 3
+  random_brightness_contrast: true
+  affine_scale: [0.9, 1.1]

@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Large Data Files — DO NOT PUSH (too large for GitHub)
+data/
+*.mdb
+*.lmdb
+
+# Model Outputs — DO NOT PUSH (100MB+ files)
+savedmodels/
+edgeai/
+
+# Training Outputs (charts are OK to push if small)
+# charts/  ← uncomment to exclude charts too
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Temp files
+*.tmp
+*.log
+.~lock.*
