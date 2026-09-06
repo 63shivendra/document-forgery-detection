@@ -1,4 +1,5 @@
 import os
+import sys
 import time
 import json
 import pickle
@@ -84,13 +85,19 @@ class Trainer:
         os.makedirs(self.charts_dir, exist_ok=True)
         os.makedirs(self.reports_dir, exist_ok=True)
 
-        # torch.compile: fuses CUDA kernels for 10-30% GPU throughput boost (PyTorch 2.0+)
-        if hasattr(torch, 'compile'):
+        # torch.compile: fuses CUDA kernels for GPU throughput (Linux/Triton)
+        # On Windows (win32), Triton is not available by default in PyTorch, so we use standard PyTorch CUDA eager mode.
+        if hasattr(torch, 'compile') and sys.platform != 'win32':
             try:
                 self.model = torch.compile(self.model, mode='reduce-overhead')
                 print(" torch.compile() enabled — GPU kernel fusion active.", flush=True)
             except Exception as e:
                 print(f" torch.compile() skipped: {e}", flush=True)
+        else:
+            if sys.platform == 'win32':
+                print(" torch.compile() skipped on Windows (Triton compiler unavailable) — using standard PyTorch CUDA eager mode.", flush=True)
+            else:
+                print(" torch.compile() skipped.", flush=True)
 
     def train_epoch(self):
         self.model.train()
