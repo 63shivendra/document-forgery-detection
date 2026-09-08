@@ -2,9 +2,9 @@ import os
 import argparse
 import yaml
 import torch
-from src.models.dual_branch_unet import DualBranchUNet
+from src.models.forgery_net import ForgeryNet
 
-def export_to_onnx(model_path=None, dataset_name="doctamper", output_dir="edgeai", config_path="config.yaml"):
+def export_to_onnx(model_path=None, dataset_name="splicing_combined", output_dir="edgeai", config_path="config.yaml"):
     """
     Exports trained PyTorch model to ONNX format (.onnx) for Edge AI deployment.
     """
@@ -23,12 +23,10 @@ def export_to_onnx(model_path=None, dataset_name="doctamper", output_dir="edgeai
     print(f"  Output Directory  : {output_dir}")
     print(f"==================================================")
 
-    # Instantiate Model
-    model = DualBranchUNet(
-        in_channels=config['model']['in_channels'],
+    # Instantiate Model (ForgeryNet)
+    model = ForgeryNet(
         out_channels=config['model']['out_channels'],
-        base_filters=config['model']['base_filters'],
-        num_groups=config['model']['num_groups'],
+        encoder_name=config['model']['encoder'],
         dropout_prob=config['model']['spatial_dropout']
     ).to(device)
 

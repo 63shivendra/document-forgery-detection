@@ -3,14 +3,14 @@ import argparse
 import yaml
 import torch
 from torch.utils.data import DataLoader
-from src.models.dual_branch_unet import DualBranchUNet
+from src.models.forgery_net import ForgeryNet
 from src.dataset.base_dataset import ForgeryDataset
 from src.utils.metrics import calculate_pixel_metrics
 
 def evaluate():
     parser = argparse.ArgumentParser(description="Evaluation & Benchmarking for Document Forgery Framework")
     parser.add_argument('--config', type=str, default='config.yaml')
-    parser.add_argument('--dataset', type=str, default='doctamper')
+    parser.add_argument('--dataset', type=str, default='splicing_combined')
     parser.add_argument('--model-path', type=str, required=False, help='Path to .pth checkpoint')
     args = parser.parse_args()
 
@@ -29,12 +29,10 @@ def evaluate():
         print(f"[Error] Checkpoint file not found at: {model_path}")
         return
 
-    # Load Model
-    model = DualBranchUNet(
-        in_channels=config['model']['in_channels'],
+    # Load Model (ForgeryNet)
+    model = ForgeryNet(
         out_channels=config['model']['out_channels'],
-        base_filters=config['model']['base_filters'],
-        num_groups=config['model']['num_groups'],
+        encoder_name=config['model']['encoder'],
         dropout_prob=config['model']['spatial_dropout']
     ).to(device)
 
