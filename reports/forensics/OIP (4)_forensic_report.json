@@ -1,0 +1,516 @@
+{
+  "document_name": "OIP (4).jpg",
+  "dimensions": [
+    284,
+    220
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.6941,
+  "confidence": 0.6941,
+  "risk_level": "HIGH",
+  "total_tampered_regions": 19,
+  "tampered_area_percentage": 32.641,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        11,
+        28,
+        80,
+        133
+      ],
+      "normalized_bbox": [
+        0.0387,
+        0.1273,
+        0.2817,
+        0.6045
+      ],
+      "width": 69,
+      "height": 105,
+      "aspect_ratio": 0.657,
+      "area_pixels": 7245,
+      "area_percentage": 11.596,
+      "peak_confidence": 0.7525,
+      "mean_confidence": 0.4752,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        10,
+        168,
+        55,
+        192
+      ],
+      "normalized_bbox": [
+        0.0352,
+        0.7636,
+        0.1937,
+        0.8727
+      ],
+      "width": 45,
+      "height": 24,
+      "aspect_ratio": 1.875,
+      "area_pixels": 1080,
+      "area_percentage": 1.729,
+      "peak_confidence": 0.7325,
+      "mean_confidence": 0.4616,
+      "document_region": "Footer / Terms / Authority Seal",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 3,
+      "bbox": [
+        279,
+        16,
+        284,
+        26
+      ],
+      "normalized_bbox": [
+        0.9824,
+        0.0727,
+        1.0,
+        0.1182
+      ],
+      "width": 5,
+      "height": 10,
+      "aspect_ratio": 0.5,
+      "area_pixels": 50,
+      "area_percentage": 0.08,
+      "peak_confidence": 0.6757,
+      "mean_confidence": 0.4738,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 4,
+      "bbox": [
+        190,
+        65,
+        265,
+        150
+      ],
+      "normalized_bbox": [
+        0.669,
+        0.2955,
+        0.9331,
+        0.6818
+      ],
+      "width": 75,
+      "height": 85,
+      "aspect_ratio": 0.882,
+      "area_pixels": 6375,
+      "area_percentage": 10.203,
+      "peak_confidence": 0.6532,
+      "mean_confidence": 0.4734,
+      "document_region": "Photo / ID Portrait / Stamp Area",
+      "distortion_type": "Photo / Seal / Region Splicing",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 5,
+      "bbox": [
+        195,
+        28,
+        264,
+        57
+      ],
+      "normalized_bbox": [
+        0.6866,
+        0.1273,
+        0.9296,
+        0.2591
+      ],
+      "width": 69,
+      "height": 29,
+      "aspect_ratio": 2.379,
+      "area_pixels": 2001,
+      "area_percentage": 3.203,
+      "peak_confidence": 0.6427,
+      "mean_confidence": 0.4394,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 6,
+      "bbox": [
+        89,
+        91,
+        118,
+        101
+      ],
+      "normalized_bbox": [
+        0.3134,
+        0.4136,
+        0.4155,
+        0.4591
+      ],
+      "width": 29,
+      "height": 10,
+      "aspect_ratio": 2.9,
+      "area_pixels": 290,
+      "area_percentage": 0.464,
+      "peak_confidence": 0.6066,
+      "mean_confidence": 0.4579,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 7,
+      "bbox": [
+        12,
+        142,
+        76,
+        159
+      ],
+      "normalized_bbox": [
+        0.0423,
+        0.6455,
+        0.2676,
+        0.7227
+      ],
+      "width": 64,
+      "height": 17,
+      "aspect_ratio": 3.765,
+      "area_pixels": 1088,
+      "area_percentage": 1.741,
+      "peak_confidence": 0.5739,
+      "mean_confidence": 0.4405,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 8,
+      "bbox": [
+        77,
+        25,
+        118,
+        40
+      ],
+      "normalized_bbox": [
+        0.2711,
+        0.1136,
+        0.4155,
+        0.1818
+      ],
+      "width": 41,
+      "height": 15,
+      "aspect_ratio": 2.733,
+      "area_pixels": 615,
+      "area_percentage": 0.984,
+      "peak_confidence": 0.5703,
+      "mean_confidence": 0.4638,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 9,
+      "bbox": [
+        138,
+        92,
+        158,
+        101
+      ],
+      "normalized_bbox": [
+        0.4859,
+        0.4182,
+        0.5563,
+        0.4591
+      ],
+      "width": 20,
+      "height": 9,
+      "aspect_ratio": 2.222,
+      "area_pixels": 180,
+      "area_percentage": 0.288,
+      "peak_confidence": 0.5101,
+      "mean_confidence": 0.3935,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 10,
+      "bbox": [
+        280,
+        128,
+        284,
+        136
+      ],
+      "normalized_bbox": [
+        0.9859,
+        0.5818,
+        1.0,
+        0.6182
+      ],
+      "width": 4,
+      "height": 8,
+      "aspect_ratio": 0.5,
+      "area_pixels": 32,
+      "area_percentage": 0.051,
+      "peak_confidence": 0.4897,
+      "mean_confidence": 0.4123,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 11,
+      "bbox": [
+        135,
+        77,
+        168,
+        85
+      ],
+      "normalized_bbox": [
+        0.4754,
+        0.35,
+        0.5915,
+        0.3864
+      ],
+      "width": 33,
+      "height": 8,
+      "aspect_ratio": 4.125,
+      "area_pixels": 264,
+      "area_percentage": 0.423,
+      "peak_confidence": 0.4763,
+      "mean_confidence": 0.3841,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 12,
+      "bbox": [
+        73,
+        65,
+        101,
+        85
+      ],
+      "normalized_bbox": [
+        0.257,
+        0.2955,
+        0.3556,
+        0.3864
+      ],
+      "width": 28,
+      "height": 20,
+      "aspect_ratio": 1.4,
+      "area_pixels": 560,
+      "area_percentage": 0.896,
+      "peak_confidence": 0.4555,
+      "mean_confidence": 0.3895,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 13,
+      "bbox": [
+        106,
+        77,
+        129,
+        84
+      ],
+      "normalized_bbox": [
+        0.3732,
+        0.35,
+        0.4542,
+        0.3818
+      ],
+      "width": 23,
+      "height": 7,
+      "aspect_ratio": 3.286,
+      "area_pixels": 161,
+      "area_percentage": 0.258,
+      "peak_confidence": 0.4498,
+      "mean_confidence": 0.3851,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 14,
+      "bbox": [
+        107,
+        168,
+        122,
+        176
+      ],
+      "normalized_bbox": [
+        0.3768,
+        0.7636,
+        0.4296,
+        0.8
+      ],
+      "width": 15,
+      "height": 8,
+      "aspect_ratio": 1.875,
+      "area_pixels": 120,
+      "area_percentage": 0.192,
+      "peak_confidence": 0.429,
+      "mean_confidence": 0.3868,
+      "document_region": "Footer / Terms / Authority Seal",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 15,
+      "bbox": [
+        177,
+        46,
+        187,
+        56
+      ],
+      "normalized_bbox": [
+        0.6232,
+        0.2091,
+        0.6585,
+        0.2545
+      ],
+      "width": 10,
+      "height": 10,
+      "aspect_ratio": 1.0,
+      "area_pixels": 100,
+      "area_percentage": 0.16,
+      "peak_confidence": 0.4203,
+      "mean_confidence": 0.375,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 16,
+      "bbox": [
+        106,
+        65,
+        116,
+        72
+      ],
+      "normalized_bbox": [
+        0.3732,
+        0.2955,
+        0.4085,
+        0.3273
+      ],
+      "width": 10,
+      "height": 7,
+      "aspect_ratio": 1.429,
+      "area_pixels": 70,
+      "area_percentage": 0.112,
+      "peak_confidence": 0.4178,
+      "mean_confidence": 0.3741,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 17,
+      "bbox": [
+        104,
+        50,
+        118,
+        55
+      ],
+      "normalized_bbox": [
+        0.3662,
+        0.2273,
+        0.4155,
+        0.25
+      ],
+      "width": 14,
+      "height": 5,
+      "aspect_ratio": 2.8,
+      "area_pixels": 70,
+      "area_percentage": 0.112,
+      "peak_confidence": 0.4139,
+      "mean_confidence": 0.3727,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 18,
+      "bbox": [
+        83,
+        144,
+        96,
+        150
+      ],
+      "normalized_bbox": [
+        0.2923,
+        0.6545,
+        0.338,
+        0.6818
+      ],
+      "width": 13,
+      "height": 6,
+      "aspect_ratio": 2.167,
+      "area_pixels": 78,
+      "area_percentage": 0.125,
+      "peak_confidence": 0.4107,
+      "mean_confidence": 0.3734,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 19,
+      "bbox": [
+        92,
+        52,
+        97,
+        55
+      ],
+      "normalized_bbox": [
+        0.3239,
+        0.2364,
+        0.3415,
+        0.25
+      ],
+      "width": 5,
+      "height": 3,
+      "aspect_ratio": 1.667,
+      "area_pixels": 15,
+      "area_percentage": 0.024,
+      "peak_confidence": 0.3883,
+      "mean_confidence": 0.3658,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": ""
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "reports/forensics\\OIP (4)_annotated.jpg",
+    "audit_panel": "reports/forensics\\OIP (4)_audit_panel.jpg",
+    "crops": [
+      "reports/forensics\\OIP (4)_part_1.jpg",
+      "reports/forensics\\OIP (4)_part_2.jpg",
+      "reports/forensics\\OIP (4)_part_3.jpg",
+      "reports/forensics\\OIP (4)_part_4.jpg",
+      "reports/forensics\\OIP (4)_part_5.jpg",
+      "reports/forensics\\OIP (4)_part_6.jpg",
+      "reports/forensics\\OIP (4)_part_7.jpg",
+      "reports/forensics\\OIP (4)_part_8.jpg",
+      "reports/forensics\\OIP (4)_part_9.jpg",
+      "reports/forensics\\OIP (4)_part_10.jpg",
+      "reports/forensics\\OIP (4)_part_11.jpg",
+      "reports/forensics\\OIP (4)_part_12.jpg",
+      "reports/forensics\\OIP (4)_part_13.jpg",
+      "reports/forensics\\OIP (4)_part_14.jpg",
+      "reports/forensics\\OIP (4)_part_15.jpg",
+      "reports/forensics\\OIP (4)_part_16.jpg",
+      "reports/forensics\\OIP (4)_part_17.jpg",
+      "reports/forensics\\OIP (4)_part_18.jpg",
+      "reports/forensics\\OIP (4)_part_19.jpg"
+    ]
+  }
+}

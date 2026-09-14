@@ -1,0 +1,18 @@
+{
+  "test_dataset": "doctamper_scd",
+  "checkpoint": "best_model_splicing_combined_efficientnet-b2_20260908_1523.pth",
+  "num_samples_evaluated": 18000,
+  "threshold": 0.35,
+  "pixel_accuracy_percent": 98.2322,
+  "pixel_balanced_accuracy_percent": 71.0772,
+  "pixel_specificity_percent": 98.7504,
+  "pixel_recall_sensitivity_percent": 43.404,
+  "pixel_precision_percent": 26.0266,
+  "pixel_f1_score_dice_percent": 27.3931,
+  "pixel_iou_jaccard_percent": 18.6126,
+  "pixel_mae": 0.017502,
+  "document_level_classification_accuracy_percent": 99.2278,
+  "document_level_detection_precision_percent": 99.3161,
+  "document_level_detection_recall_percent": 99.9105,
+  "document_level_detection_f1_percent": 99.6124
+}

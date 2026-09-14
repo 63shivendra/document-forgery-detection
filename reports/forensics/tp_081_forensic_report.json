@@ -1,0 +1,47 @@
+{
+  "document_name": "tp_081.jpg",
+  "dimensions": [
+    1000,
+    667
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.8881,
+  "confidence": 0.8881,
+  "risk_level": "CRITICAL",
+  "total_tampered_regions": 1,
+  "tampered_area_percentage": 2.553,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        492,
+        328,
+        622,
+        459
+      ],
+      "normalized_bbox": [
+        0.492,
+        0.4918,
+        0.622,
+        0.6882
+      ],
+      "width": 130,
+      "height": 131,
+      "aspect_ratio": 0.992,
+      "area_pixels": 17030,
+      "area_percentage": 2.553,
+      "peak_confidence": 1.0,
+      "mean_confidence": 0.9256,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Photo / Seal / Region Splicing"
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "reports/forensics\\tp_081_annotated.jpg",
+    "audit_panel": "reports/forensics\\tp_081_audit_panel.jpg",
+    "crops": [
+      "reports/forensics\\tp_081_part_1.jpg"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "test_dataset": "splicing",
+  "checkpoint": "best_model_splicing_combined_efficientnet-b2_20260908_1523.pth",
+  "num_samples_evaluated": 21,
+  "threshold": 0.35,
+  "pixel_accuracy_percent": 54.6475,
+  "pixel_balanced_accuracy_percent": 72.841,
+  "pixel_specificity_percent": 54.4182,
+  "pixel_recall_sensitivity_percent": 91.2639,
+  "pixel_precision_percent": 18.3228,
+  "pixel_f1_score_dice_percent": 20.8874,
+  "pixel_iou_jaccard_percent": 16.327,
+  "pixel_mae": 0.275836,
+  "document_level_classification_accuracy_percent": 100.0,
+  "document_level_detection_precision_percent": 100.0,
+  "document_level_detection_recall_percent": 100.0,
+  "document_level_detection_f1_percent": 100.0
+}

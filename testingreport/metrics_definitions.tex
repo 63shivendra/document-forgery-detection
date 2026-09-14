@@ -1,0 +1,140 @@
+% ==============================================================================
+% Document Forgery Detection Framework - Metric Definitions & Formulations
+% File: testingreport/metrics_definitions.tex
+% ==============================================================================
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{hyperref}
+
+\title{\textbf{Mathematical Formulations and Forensic Interpretations of Evaluation Metrics for Image \& Document Forgery Detection}}
+\author{Document Forgery Research Team}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Introduction and Notation}
+In digital document and image tampering detection, model evaluation is bifurcated into two hierarchical levels:
+\begin{enumerate}
+    \item \textbf{Pixel-Level Localization:} Evaluates the exact spatial boundary identification of manipulated characters, words, stamps, or spliced objects against ground truth masks $Y \in \{0, 1\}^{H \times W}$, where $\hat{Y} \in \{0, 1\}^{H \times W}$ is the binarized prediction at decision threshold $\tau \in [0, 1]$.
+    \item \textbf{Document-Level Classification:} Evaluates the binary decision whether an entire document contains at least one fraudulent manipulation ($D \in \{0, 1\}$).
+\end{enumerate}
+
+\subsection{Basic Contingency Counts}
+For pixel-level binary classification (where $1 = \text{tampered / positive}$, $0 = \text{authentic / negative}$):
+\begin{itemize}
+    \item \textbf{True Positives ($TP$):} Number of tampered pixels correctly classified as tampered ($\hat{Y}_{ij} = 1 \land Y_{ij} = 1$).
+    \item \textbf{True Negatives ($TN$):} Number of authentic pixels correctly classified as authentic ($\hat{Y}_{ij} = 0 \land Y_{ij} = 0$).
+    \item \textbf{False Positives ($FP$):} Number of authentic pixels incorrectly flagged as tampered ($\hat{Y}_{ij} = 1 \land Y_{ij} = 0$).
+    \item \textbf{False Negatives ($FN$):} Number of tampered pixels missed by the detector ($\hat{Y}_{ij} = 0 \land Y_{ij} = 1$).
+\end{itemize}
+
+\section{Pixel-Level Localization Metrics}
+
+\subsection{Pixel Accuracy (Acc)}
+Pixel accuracy measures the overall proportion of correctly classified pixels (both background authentic and foreground tampered) out of all pixels:
+\begin{equation}
+\text{Pixel Accuracy} = \frac{TP + TN}{TP + TN + FP + FN} \times 100\%
+\end{equation}
+\textbf{Forensic Context:} In document verification, tampered text often accounts for $< 1\%$ of the total canvas area ($TN \gg TP$). Consequently, a naive model that predicts all zeros achieves $>99\%$ raw pixel accuracy. Thus, raw accuracy alone cannot be used to certify forgery detection performance.
+
+\subsection{Pixel Specificity / True Negative Rate (TNR)}
+Pixel specificity quantifies the model's ability to identify genuine, untampered background pixels:
+\begin{equation}
+\text{Specificity} = \frac{TN}{TN + FP} \times 100\%
+\end{equation}
+\textbf{Forensic Context:} High specificity prevents false alarms across authentic text and backgrounds. A drop in specificity signifies ``halo'' or over-dilation artifacts around text or noise patterns.
+
+\subsection{Pixel Sensitivity / Recall / True Positive Rate (TPR)}
+Pixel recall quantifies the percentage of actual manipulated pixels correctly captured by the predicted mask:
+\begin{equation}
+\text{Recall (Sensitivity)} = \frac{TP}{TP + FN} \times 100\%
+\end{equation}
+\textbf{Forensic Context:} Critical in financial and KYC/KYB fraud detection. A low recall means forged letters, modified amounts, or falsified dates pass through undetected.
+
+\subsection{Pixel Balanced Accuracy (B-Acc)}
+Balanced accuracy is the unweighted arithmetic mean of Sensitivity and Specificity, overcoming severe class imbalance between tiny text edits and large document backgrounds:
+\begin{equation}
+\text{Balanced Accuracy} = \frac{\text{Sensitivity} + \text{Specificity}}{2} = \frac{1}{2} \left( \frac{TP}{TP + FN} + \frac{TN}{TN + FP} \right) \times 100\%
+\end{equation}
+\textbf{Forensic Context:} Unlike raw accuracy, balanced accuracy remains unbiased even when $99.5\%$ of the image consists of authentic background.
+
+\subsection{Pixel Precision / Positive Predictive Value (PPV)}
+Precision measures how many of the pixels flagged as suspicious are genuinely fraudulent:
+\begin{equation}
+\text{Precision} = \frac{TP}{TP + FP} \times 100\%
+\end{equation}
+\textbf{Forensic Context:} Low precision indicates that the model is predicting overly thick or noisy masks that spill over into genuine surrounding text.
+
+\subsection{Pixel F1-Score / Dice Similarity Coefficient (DSC)}
+The harmonic mean of Precision and Recall, measuring the spatial overlap quality between the predicted and ground truth tampering regions:
+\begin{equation}
+\text{F1-Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}} = \frac{2 \cdot TP}{2 \cdot TP + FP + FN} \times 100\%
+\end{equation}
+\textbf{Forensic Context:} The F1-score treats false alarms ($FP$) and missed forgeries ($FN$) symmetrically, serving as a reliable benchmark for character-level manipulation.
+
+\subsection{Pixel Intersection over Union (IoU / Jaccard Index)}
+The ratio of the intersection area to the union area between the predicted tampering mask and the ground truth mask:
+\begin{equation}
+\text{IoU} = \frac{| \hat{Y} \cap Y |}{| \hat{Y} \cup Y |} = \frac{TP}{TP + FP + FN} \times 100\%
+\end{equation}
+\textbf{Forensic Context:} IoU is the gold-standard metric in semantic segmentation. Because the denominator ($TP + FP + FN$) penalizes any deviation twice as strictly as Dice, an IoU above $25\%$ on micro-text replacement tasks represents state-of-the-art spatial alignment.
+
+\subsection{Mean Absolute Error (MAE)}
+The average absolute difference between the continuous probability map $P_{ij} \in [0, 1]$ output by the sigmoid layer and the binary ground truth $Y_{ij} \in \{0, 1\}$:
+\begin{equation}
+\text{MAE} = \frac{1}{H \times W} \sum_{i=1}^{H} \sum_{j=1}^{W} \left| P_{ij} - Y_{ij} \right|
+\end{equation}
+\textbf{Forensic Context:} Lower values indicate better calibration and higher model confidence.
+
+\section{Document-Level Classification Metrics}
+At the document level, a document is classified as fraudulent ($\hat{D} = 1$) if the total number of predicted tampered pixels exceeds a decision budget $K$ (e.g., $K \ge 10$ pixels):
+\begin{equation}
+\hat{D} = \mathbb{I}\left( \sum_{i,j} \hat{Y}_{ij} \ge K \right), \quad D = \mathbb{I}\left( \sum_{i,j} Y_{ij} \ge 1 \right)
+\end{equation}
+
+\subsection{Document Classification Accuracy}
+\begin{equation}
+\text{Doc Acc} = \frac{TP_{\text{doc}} + TN_{\text{doc}}}{TP_{\text{doc}} + TN_{\text{doc}} + FP_{\text{doc}} + FN_{\text{doc}}} \times 100\%
+\end{equation}
+
+\subsection{Document Detection Recall}
+\begin{equation}
+\text{Doc Recall} = \frac{TP_{\text{doc}}}{TP_{\text{doc}} + FN_{\text{doc}}} \times 100\%
+\end{equation}
+\textbf{Forensic Context:} Represents the system-level capture rate. A document recall of $99.93\%$ indicates that out of $10,000$ forged KYC/KYB documents, $9,993$ will be successfully flagged for audit.
+
+\subsection{Document Detection Precision \& F1-Score}
+\begin{equation}
+\text{Doc Prec} = \frac{TP_{\text{doc}}}{TP_{\text{doc}} + FP_{\text{doc}}} \times 100\%, \quad \text{Doc F1} = \frac{2 \cdot TP_{\text{doc}}}{2 \cdot TP_{\text{doc}} + FP_{\text{doc}} + FN_{\text{doc}}} \times 100\%
+\end{equation}
+
+\section{Summary Table of Formulations}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Mathematical Definitions of Forensic Forgery Metrics}
+\label{tab:metric_defs}
+\begin{tabular}{lll}
+\toprule
+\textbf{Metric} & \textbf{Formula} & \textbf{Primary Purpose in Forgery Detection} \\
+\midrule
+\textbf{Pixel Acc} & $\frac{TP + TN}{TP + TN + FP + FN}$ & Overall canvas correctness (skewed by background) \\
+\textbf{Pixel B-Acc} & $\frac{1}{2}\left(\frac{TP}{TP+FN} + \frac{TN}{TN+FP}\right)$ & Unbiased accuracy for heavily imbalanced masks \\
+\textbf{Pixel Recall} & $\frac{TP}{TP + FN}$ & Forgery capture rate (penalizes missed edits) \\
+\textbf{Pixel Specificity} & $\frac{TN}{TN + FP}$ & Authentic text preservation (penalizes false alarms) \\
+\textbf{Pixel Prec} & $\frac{TP}{TP + FP}$ & Purity of detected forged masks \\
+\textbf{Pixel F1} & $\frac{2 \cdot TP}{2 \cdot TP + FP + FN}$ & Harmonic balance between localization and noise \\
+\textbf{Pixel IoU} & $\frac{TP}{TP + FP + FN}$ & Strict spatial intersection-over-union benchmark \\
+\textbf{MAE} & $\frac{1}{HW}\sum |P_{ij} - Y_{ij}|$ & Continuous probability calibration error \\
+\textbf{Doc Recall} & $\frac{TP_{\text{doc}}}{TP_{\text{doc}} + FN_{\text{doc}}}$ & Ability to flag manipulated files at audit level \\
+\textbf{Doc F1} & $\frac{2 \cdot TP_{\text{doc}}}{2 \cdot TP_{\text{doc}} + FP_{\text{doc}} + FN_{\text{doc}}}$ & Overall document-level fraud screening capability \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

@@ -15,15 +15,19 @@ env/
 
 # Large Data Files — DO NOT PUSH (too large for GitHub)
 data/
+test_datasets/
 *.mdb
 *.lmdb
 
-# Model Outputs — DO NOT PUSH (100MB+ files)
+# Model Outputs & Large Checkpoints — DO NOT PUSH (>100MB files rejected by GitHub)
 savedmodels/
 edgeai/
+bigpower/*.pth
+bigpower/*.pkl
+bigpower/*.onnx
+bigpower/*.pt
 
-# Training Outputs (charts are OK to push if small)
-# charts/  ← uncomment to exclude charts too
+# Training Outputs
 logs/
 
 # OS
@@ -40,3 +44,6 @@ desktop.ini
 *.tmp
 *.log
 .~lock.*
+win_ocr*.ps1
+debug_classifier.py
+test_win_ocr.py

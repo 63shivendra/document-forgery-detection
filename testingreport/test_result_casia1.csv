@@ -1,0 +1,17 @@
+Metric Category,Metric Name,Value / Percentage
+Metadata,Test Dataset,casia1
+Metadata,Checkpoint,best_model_splicing_combined_efficientnet-b2_20260908_1523.pth
+Metadata,Samples Evaluated,36
+Metadata,Detection Threshold,0.35
+Pixel-Level,Pixel Accuracy (%),42.4051
+Pixel-Level,Pixel Balanced Accuracy (%),50.5144
+Pixel-Level,Pixel Specificity / TNR (%),40.1992
+Pixel-Level,Pixel Recall / Sensitivity (%),60.8297
+Pixel-Level,Pixel Precision (%),6.4716
+Pixel-Level,Pixel F1-Score / Dice (%),10.8813
+Pixel-Level,Pixel IoU / Jaccard (%),6.0528
+Pixel-Level,Mean Absolute Error (MAE),0.381127
+Document-Level,Document Classification Accuracy (%),100.0
+Document-Level,Document Detection Precision (%),100.0
+Document-Level,Document Detection Recall (%),100.0
+Document-Level,Document Detection F1-Score (%),100.0

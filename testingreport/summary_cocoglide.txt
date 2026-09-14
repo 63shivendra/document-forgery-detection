@@ -1,0 +1,23 @@
+====================================================================
+TEST SET BENCHMARK REPORT: COCOGLIDE
+====================================================================
+Checkpoint Used                 : best_model_splicing_combined_efficientnet-b2_20260908_1523.pth
+Test Samples Evaluated          : 103
+Detection Threshold             : 0.35
+--------------------------------------------------------------------
+[PIXEL-LEVEL SEGMENTATION METRICS]
+  * Pixel Accuracy              : 31.63%
+  * Pixel Balanced Accuracy     : 50.56%
+  * Pixel Specificity (TNR)     : 10.73%
+  * Pixel Recall (Sensitivity)  : 90.40%
+  * Pixel Precision             : 25.99%
+  * Pixel F1-Score (Dice)       : 35.02%
+  * Pixel IoU (Jaccard)         : 24.71%
+  * Mean Absolute Error (MAE)   : 0.53082
+--------------------------------------------------------------------
+[DOCUMENT-LEVEL CLASSIFICATION METRICS]
+  * Document Classification Acc : 100.00%
+  * Document Detection Precision: 100.00%
+  * Document Detection Recall   : 100.00% (Fraud Capture Rate)
+  * Document Detection F1-Score : 100.00%
+====================================================================

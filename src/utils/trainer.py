@@ -19,12 +19,14 @@ class Trainer:
     - torch.compile kernel fusion for GPU throughput.
     - Per-experiment report saving: reports/<run_name>/
     """
-    def __init__(self, model, train_loader, val_loader, config, device='cuda'):
+    def __init__(self, model, train_loader, val_loader, config, device='cuda', resume_checkpoint=None):
         self.model = model.to(device)
         self.train_loader = train_loader
         self.val_loader = val_loader
         self.config = config
         self.device = device
+        self.start_epoch = 1
+        self.best_val_iou = 0.0
 
         self.criterion = FocalDiceLoss(
             focal_weight=config['loss']['focal_weight'],
@@ -71,6 +73,19 @@ class Trainer:
             schedulers=[self.warmup_scheduler, self.cosine_scheduler],
             milestones=[warmup_epochs]
         )
+
+        if resume_checkpoint is not None:
+            self.start_epoch = resume_checkpoint.get('epoch', 0) + 1
+            self.best_val_iou = resume_checkpoint.get('val_iou', 0.0)
+            self.model.load_state_dict(resume_checkpoint['model_state_dict'])
+            if 'optimizer_state_dict' in resume_checkpoint:
+                try:
+                    self.optimizer.load_state_dict(resume_checkpoint['optimizer_state_dict'])
+                except Exception as e:
+                    print(f" Notice: optimizer state re-init: {e}", flush=True)
+            for _ in range(1, self.start_epoch):
+                self.scheduler.step()
+            print(f" Resumed successfully! Continuing from Epoch {self.start_epoch} (Previous Best Val IoU: {self.best_val_iou*100:.2f}%)", flush=True)
 
         self.use_amp = config['training'].get('use_amp', True)
         self.scaler = GradScaler('cuda', enabled=self.use_amp)
@@ -181,12 +196,12 @@ class Trainer:
             'val_precision': [], 'val_recall': [],
             'lr_history': []
         }
-        best_val_iou = 0.0
+        best_val_iou = self.best_val_iou
         patience_counter = 0
         patience = self.config['training']['early_stopping_patience']
         start_time = time.time()
 
-        for epoch in range(1, self.config['training']['epochs'] + 1):
+        for epoch in range(self.start_epoch, self.config['training']['epochs'] + 1):
             train_loss = self.train_epoch()
             val_loss, val_metrics = self.evaluate()
 
@@ -244,17 +259,22 @@ class Trainer:
                 except Exception:
                     pass  # compile() wrapping may block trace; checkpoint is still saved
 
-                onnx_path = os.path.join(self.edgeai_dir, f"model_{run_name}.onnx")
+                onnx_path = os.path.join(self.save_dir, f"best_model_{run_name}.onnx")
+                edge_onnx_path = os.path.join(self.edgeai_dir, f"model_{run_name}.onnx")
                 try:
                     torch.onnx.export(
                         self.model, dummy_input, onnx_path,
                         export_params=True, opset_version=14,
                         do_constant_folding=True,
+                        dynamo=False,
                         input_names=['input_document'],
                         output_names=['forgery_mask_logits'],
                         dynamic_axes={'input_document': {0: 'batch_size'},
                                       'forgery_mask_logits': {0: 'batch_size'}}
                     )
+                    # Also mirror to edgeai
+                    import shutil
+                    shutil.copyfile(onnx_path, edge_onnx_path)
                     print(f"  --> Checkpoint (.pth): {best_ckpt_path}", flush=True)
                     print(f"  --> Pickle    (.pkl) : {pkl_path}", flush=True)
                     print(f"  --> ONNX      (.onnx): {onnx_path}", flush=True)
@@ -268,6 +288,10 @@ class Trainer:
                     print(f" Early stopping after {epoch} epochs (no improvement for {patience} epochs).", flush=True)
                     break
 
+            # Periodically free cached blocks to prevent long-run fragmentation
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
+
         total_time = (time.time() - start_time) / 60.0
 
         # Final summary
@@ -279,13 +303,64 @@ class Trainer:
         print(f"Best Val IoU : {best_val_iou*100:.2f}%", flush=True)
         print(f"Best Val F1  : {max(history['val_f1'])*100:.2f}%", flush=True)
 
-        # Save full JSON report to reports/<run_name>/report.json
+        # Save final model .pth and .onnx
+        final_ckpt_path = os.path.join(self.save_dir, f"final_model_{run_name}.pth")
+        torch.save({
+            'epoch': len(history['train_loss']),
+            'run_name': run_name,
+            'model_state_dict': self.model.state_dict(),
+            'val_iou': history['val_iou'][-1] if history['val_iou'] else 0.0,
+            'config': self.config
+        }, final_ckpt_path)
+        print(f" Final checkpoint saved: {final_ckpt_path}", flush=True)
+
+        final_onnx_path = os.path.join(self.save_dir, f"final_model_{run_name}.onnx")
+        try:
+            dummy_final = torch.randn(1, 3, *self.config['training']['image_size']).to(self.device)
+            torch.onnx.export(
+                self.model, dummy_final, final_onnx_path,
+                export_params=True, opset_version=14,
+                do_constant_folding=True,
+                dynamo=False,
+                input_names=['input_document'],
+                output_names=['forgery_mask_logits'],
+                dynamic_axes={'input_document': {0: 'batch_size'},
+                              'forgery_mask_logits': {0: 'batch_size'}}
+            )
+            print(f" Final ONNX model saved: {final_onnx_path}", flush=True)
+        except Exception as e:
+            print(f" Final ONNX export skipped: {e}", flush=True)
+
+        # Save full JSON report
         report_path = os.path.join(run_report_dir, 'report.json')
         with open(report_path, 'w') as f:
             json.dump(history, f, indent=2)
-        print(f" Full report saved: {report_path}", flush=True)
+        print(f" Full JSON report saved: {report_path}", flush=True)
 
-        # Save charts to reports/<run_name>/charts/
+        # Save tabular CSV report
+        csv_path = os.path.join(run_report_dir, 'metrics.csv')
+        try:
+            import csv
+            with open(csv_path, 'w', newline='') as f:
+                writer = csv.writer(f)
+                writer.writerow(['epoch', 'train_loss', 'val_loss', 'val_iou', 'val_f1', 'val_precision', 'val_recall', 'learning_rate'])
+                for ep in range(len(history['train_loss'])):
+                    writer.writerow([
+                        ep + 1,
+                        history['train_loss'][ep],
+                        history['val_loss'][ep],
+                        history['val_iou'][ep],
+                        history['val_f1'][ep],
+                        history['val_precision'][ep],
+                        history['val_recall'][ep],
+                        history['lr_history'][ep] if ep < len(history['lr_history']) else ''
+                    ])
+            print(f" Metrics CSV report saved: {csv_path}", flush=True)
+        except Exception as e:
+            print(f" CSV report export skipped: {e}", flush=True)
+
+        # Save visual charts in experiment report dir and global charts dir
         save_training_charts(history, output_dir=run_charts_dir, run_name=run_name)
+        save_training_charts(history, output_dir=self.charts_dir, run_name=run_name)
 
         return history

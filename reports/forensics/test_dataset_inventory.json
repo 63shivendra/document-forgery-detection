@@ -1,0 +1,876 @@
+{
+  "doctamper": {
+    "dataset_title": "Official DocTamper Text Tampering Test Set",
+    "total_test_samples": 30000,
+    "inspected_samples": [
+      {
+        "tampered_pixels": 0,
+        "tampered_percentage": 0.0,
+        "is_tampered": false,
+        "total_parts": 0,
+        "parts": [],
+        "sample_name": "doc_000000000",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 0,
+        "tampered_percentage": 0.0,
+        "is_tampered": false,
+        "total_parts": 0,
+        "parts": [],
+        "sample_name": "doc_000000001",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 1486,
+        "tampered_percentage": 1.008,
+        "is_tampered": true,
+        "total_parts": 3,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              0,
+              133,
+              52,
+              150
+            ],
+            "area_pixels": 747,
+            "aspect_ratio": 3.06
+          },
+          {
+            "part_id": 2,
+            "bbox": [
+              156,
+              160,
+              180,
+              174
+            ],
+            "area_pixels": 296,
+            "aspect_ratio": 1.71
+          },
+          {
+            "part_id": 3,
+            "bbox": [
+              338,
+              274,
+              374,
+              288
+            ],
+            "area_pixels": 443,
+            "aspect_ratio": 2.57
+          }
+        ],
+        "sample_name": "doc_000000002",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 0,
+        "tampered_percentage": 0.0,
+        "is_tampered": false,
+        "total_parts": 0,
+        "parts": [],
+        "sample_name": "doc_000000003",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 434,
+        "tampered_percentage": 0.294,
+        "is_tampered": true,
+        "total_parts": 1,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              10,
+              313,
+              42,
+              328
+            ],
+            "area_pixels": 434,
+            "aspect_ratio": 2.13
+          }
+        ],
+        "sample_name": "doc_000000004",
+        "resolution": [
+          384,
+          384
+        ]
+      }
+    ]
+  },
+  "doctamper_scd": {
+    "dataset_title": "DocTamper Single-Character Digit Tampering Test Set",
+    "total_test_samples": 18000,
+    "inspected_samples": [
+      {
+        "tampered_pixels": 1245,
+        "tampered_percentage": 0.844,
+        "is_tampered": true,
+        "total_parts": 2,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              252,
+              314,
+              273,
+              344
+            ],
+            "area_pixels": 629,
+            "aspect_ratio": 0.7
+          },
+          {
+            "part_id": 2,
+            "bbox": [
+              356,
+              314,
+              377,
+              346
+            ],
+            "area_pixels": 616,
+            "aspect_ratio": 0.66
+          }
+        ],
+        "sample_name": "doc_000000000",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 721,
+        "tampered_percentage": 0.489,
+        "is_tampered": true,
+        "total_parts": 5,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              111,
+              0,
+              120,
+              15
+            ],
+            "area_pixels": 134,
+            "aspect_ratio": 0.6
+          },
+          {
+            "part_id": 2,
+            "bbox": [
+              277,
+              6,
+              286,
+              22
+            ],
+            "area_pixels": 143,
+            "aspect_ratio": 0.56
+          },
+          {
+            "part_id": 3,
+            "bbox": [
+              290,
+              43,
+              300,
+              60
+            ],
+            "area_pixels": 166,
+            "aspect_ratio": 0.59
+          },
+          {
+            "part_id": 4,
+            "bbox": [
+              144,
+              75,
+              153,
+              91
+            ],
+            "area_pixels": 143,
+            "aspect_ratio": 0.56
+          },
+          {
+            "part_id": 5,
+            "bbox": [
+              236,
+              79,
+              245,
+              94
+            ],
+            "area_pixels": 135,
+            "aspect_ratio": 0.6
+          }
+        ],
+        "sample_name": "doc_000000001",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 1137,
+        "tampered_percentage": 0.771,
+        "is_tampered": true,
+        "total_parts": 2,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              306,
+              251,
+              327,
+              282
+            ],
+            "area_pixels": 564,
+            "aspect_ratio": 0.68
+          },
+          {
+            "part_id": 2,
+            "bbox": [
+              271,
+              253,
+              291,
+              286
+            ],
+            "area_pixels": 573,
+            "aspect_ratio": 0.61
+          }
+        ],
+        "sample_name": "doc_000000002",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 174,
+        "tampered_percentage": 0.118,
+        "is_tampered": true,
+        "total_parts": 1,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              316,
+              278,
+              327,
+              294
+            ],
+            "area_pixels": 174,
+            "aspect_ratio": 0.69
+          }
+        ],
+        "sample_name": "doc_000000003",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 2896,
+        "tampered_percentage": 1.964,
+        "is_tampered": true,
+        "total_parts": 3,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              106,
+              86,
+              132,
+              133
+            ],
+            "area_pixels": 1220,
+            "aspect_ratio": 0.55
+          },
+          {
+            "part_id": 2,
+            "bbox": [
+              82,
+              263,
+              107,
+              311
+            ],
+            "area_pixels": 1198,
+            "aspect_ratio": 0.52
+          },
+          {
+            "part_id": 3,
+            "bbox": [
+              0,
+              264,
+              10,
+              312
+            ],
+            "area_pixels": 478,
+            "aspect_ratio": 0.21
+          }
+        ],
+        "sample_name": "doc_000000004",
+        "resolution": [
+          384,
+          384
+        ]
+      }
+    ]
+  },
+  "cocoglide": {
+    "dataset_title": "COCOGLIDE / TruFor Splicing & AI Inpainting Benchmark",
+    "total_test_samples": 103,
+    "inspected_samples": [
+      {
+        "tampered_pixels": 37117,
+        "tampered_percentage": 25.172,
+        "is_tampered": true,
+        "total_parts": 1,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              0,
+              62,
+              181,
+              342
+            ],
+            "area_pixels": 37117,
+            "aspect_ratio": 0.65
+          }
+        ],
+        "sample_name": "glide_inpainting_val2017_521405_up.png",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 94039,
+        "tampered_percentage": 63.774,
+        "is_tampered": true,
+        "total_parts": 1,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              15,
+              0,
+              378,
+              384
+            ],
+            "area_pixels": 94039,
+            "aspect_ratio": 0.95
+          }
+        ],
+        "sample_name": "glide_inpainting_val2017_523782_up.png",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 77737,
+        "tampered_percentage": 52.719,
+        "is_tampered": true,
+        "total_parts": 1,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              7,
+              8,
+              342,
+              371
+            ],
+            "area_pixels": 77737,
+            "aspect_ratio": 0.92
+          }
+        ],
+        "sample_name": "glide_inpainting_val2017_524108_up.png",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 67190,
+        "tampered_percentage": 45.566,
+        "is_tampered": true,
+        "total_parts": 3,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              0,
+              13,
+              384,
+              294
+            ],
+            "area_pixels": 62501,
+            "aspect_ratio": 1.37
+          },
+          {
+            "part_id": 2,
+            "bbox": [
+              182,
+              267,
+              251,
+              318
+            ],
+            "area_pixels": 2426,
+            "aspect_ratio": 1.35
+          },
+          {
+            "part_id": 3,
+            "bbox": [
+              97,
+              269,
+              155,
+              330
+            ],
+            "area_pixels": 2263,
+            "aspect_ratio": 0.95
+          }
+        ],
+        "sample_name": "glide_inpainting_val2017_525322_up.png",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 133333,
+        "tampered_percentage": 90.422,
+        "is_tampered": true,
+        "total_parts": 1,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              5,
+              0,
+              384,
+              384
+            ],
+            "area_pixels": 133333,
+            "aspect_ratio": 0.99
+          }
+        ],
+        "sample_name": "glide_inpainting_val2017_526103_up.png",
+        "resolution": [
+          384,
+          384
+        ]
+      }
+    ]
+  },
+  "splicing": {
+    "dataset_title": "Splicing & Copy-Move Forgery Dataset",
+    "total_test_samples": 21,
+    "inspected_samples": [
+      {
+        "tampered_pixels": 2375,
+        "tampered_percentage": 1.611,
+        "is_tampered": true,
+        "total_parts": 1,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              146,
+              191,
+              198,
+              266
+            ],
+            "area_pixels": 2375,
+            "aspect_ratio": 0.69
+          }
+        ],
+        "sample_name": "tp_081.jpg",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 411,
+        "tampered_percentage": 0.279,
+        "is_tampered": true,
+        "total_parts": 1,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              169,
+              322,
+              194,
+              364
+            ],
+            "area_pixels": 411,
+            "aspect_ratio": 0.6
+          }
+        ],
+        "sample_name": "tp_082.jpg",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 427,
+        "tampered_percentage": 0.29,
+        "is_tampered": true,
+        "total_parts": 1,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              81,
+              241,
+              106,
+              284
+            ],
+            "area_pixels": 427,
+            "aspect_ratio": 0.58
+          }
+        ],
+        "sample_name": "tp_083.jpg",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 494,
+        "tampered_percentage": 0.335,
+        "is_tampered": true,
+        "total_parts": 1,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              58,
+              334,
+              94,
+              375
+            ],
+            "area_pixels": 494,
+            "aspect_ratio": 0.88
+          }
+        ],
+        "sample_name": "tp_084.jpg",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 371,
+        "tampered_percentage": 0.252,
+        "is_tampered": true,
+        "total_parts": 1,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              298,
+              211,
+              329,
+              244
+            ],
+            "area_pixels": 371,
+            "aspect_ratio": 0.94
+          }
+        ],
+        "sample_name": "tp_085.jpg",
+        "resolution": [
+          384,
+          384
+        ]
+      }
+    ]
+  },
+  "casia": {
+    "dataset_title": "CASIA 2.0 Tampered & Authentic Test Benchmark",
+    "total_test_samples": 1025,
+    "inspected_samples": [
+      {
+        "tampered_pixels": 15455,
+        "tampered_percentage": 10.481,
+        "is_tampered": true,
+        "total_parts": 1,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              11,
+              123,
+              170,
+              278
+            ],
+            "area_pixels": 15455,
+            "aspect_ratio": 1.03
+          }
+        ],
+        "sample_name": "Tp_S_NNN_S_N_pla00072_pla00072_00600.tif",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 20181,
+        "tampered_percentage": 13.686,
+        "is_tampered": true,
+        "total_parts": 1,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              139,
+              250,
+              381,
+              384
+            ],
+            "area_pixels": 20181,
+            "aspect_ratio": 1.81
+          }
+        ],
+        "sample_name": "Tp_S_NNN_S_N_pla00075_pla00075_10621.jpg",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 4173,
+        "tampered_percentage": 2.83,
+        "is_tampered": true,
+        "total_parts": 1,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              65,
+              156,
+              169,
+              225
+            ],
+            "area_pixels": 4173,
+            "aspect_ratio": 1.51
+          }
+        ],
+        "sample_name": "Tp_S_NNN_S_N_pla00077_pla00077_00602.tif",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 7253,
+        "tampered_percentage": 4.919,
+        "is_tampered": true,
+        "total_parts": 1,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              85,
+              270,
+              221,
+              381
+            ],
+            "area_pixels": 7253,
+            "aspect_ratio": 1.23
+          }
+        ],
+        "sample_name": "Tp_S_NNN_S_N_pla00078_pla00078_00603.tif",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 12668,
+        "tampered_percentage": 8.591,
+        "is_tampered": true,
+        "total_parts": 1,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              0,
+              172,
+              74,
+              382
+            ],
+            "area_pixels": 12668,
+            "aspect_ratio": 0.35
+          }
+        ],
+        "sample_name": "Tp_S_NNN_S_N_pla00079_pla00079_00604.tif",
+        "resolution": [
+          384,
+          384
+        ]
+      }
+    ]
+  },
+  "casia1": {
+    "dataset_title": "CASIA 1.0 Tampered & Copy-Move Test Benchmark",
+    "total_test_samples": 36,
+    "inspected_samples": [
+      {
+        "tampered_pixels": 24892,
+        "tampered_percentage": 16.881,
+        "is_tampered": true,
+        "total_parts": 1,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              44,
+              21,
+              165,
+              340
+            ],
+            "area_pixels": 24892,
+            "aspect_ratio": 0.38
+          }
+        ],
+        "sample_name": "Sp_S_CNN_A_nat0078_nat0078_0004_combine.png",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 5252,
+        "tampered_percentage": 3.562,
+        "is_tampered": true,
+        "total_parts": 1,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              96,
+              158,
+              319,
+              257
+            ],
+            "area_pixels": 5252,
+            "aspect_ratio": 2.25
+          }
+        ],
+        "sample_name": "Sp_S_CNN_A_pla0060_pla0060_0192_combine.png",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 1824,
+        "tampered_percentage": 1.237,
+        "is_tampered": true,
+        "total_parts": 1,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              282,
+              190,
+              311,
+              281
+            ],
+            "area_pixels": 1824,
+            "aspect_ratio": 0.32
+          }
+        ],
+        "sample_name": "Sp_S_CNN_R_sec0097_sec0097_0006_combine.png",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 22333,
+        "tampered_percentage": 15.146,
+        "is_tampered": true,
+        "total_parts": 2,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              227,
+              130,
+              352,
+              305
+            ],
+            "area_pixels": 11964,
+            "aspect_ratio": 0.71
+          },
+          {
+            "part_id": 2,
+            "bbox": [
+              0,
+              169,
+              102,
+              350
+            ],
+            "area_pixels": 10369,
+            "aspect_ratio": 0.56
+          }
+        ],
+        "sample_name": "Sp_S_NNN_A_ani0031_ani0031_0197_combine.png",
+        "resolution": [
+          384,
+          384
+        ]
+      },
+      {
+        "tampered_pixels": 24621,
+        "tampered_percentage": 16.697,
+        "is_tampered": true,
+        "total_parts": 2,
+        "parts": [
+          {
+            "part_id": 1,
+            "bbox": [
+              291,
+              69,
+              384,
+              272
+            ],
+            "area_pixels": 12701,
+            "aspect_ratio": 0.46
+          },
+          {
+            "part_id": 2,
+            "bbox": [
+              18,
+              264,
+              149,
+              384
+            ],
+            "area_pixels": 11920,
+            "aspect_ratio": 1.09
+          }
+        ],
+        "sample_name": "Sp_S_NNN_A_ani0041_ani0041_0199_combine.png",
+        "resolution": [
+          384,
+          384
+        ]
+      }
+    ]
+  }
+}

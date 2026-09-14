@@ -1,0 +1,17 @@
+Metric Category,Metric Name,Value / Percentage
+Metadata,Test Dataset,cocoglide
+Metadata,Checkpoint,best_model_splicing_combined_efficientnet-b2_20260908_1523.pth
+Metadata,Samples Evaluated,103
+Metadata,Detection Threshold,0.35
+Pixel-Level,Pixel Accuracy (%),31.6328
+Pixel-Level,Pixel Balanced Accuracy (%),50.564
+Pixel-Level,Pixel Specificity / TNR (%),10.7266
+Pixel-Level,Pixel Recall / Sensitivity (%),90.4014
+Pixel-Level,Pixel Precision (%),25.9887
+Pixel-Level,Pixel F1-Score / Dice (%),35.0195
+Pixel-Level,Pixel IoU / Jaccard (%),24.7136
+Pixel-Level,Mean Absolute Error (MAE),0.530823
+Document-Level,Document Classification Accuracy (%),100.0
+Document-Level,Document Detection Precision (%),100.0
+Document-Level,Document Detection Recall (%),100.0
+Document-Level,Document Detection F1-Score (%),100.0

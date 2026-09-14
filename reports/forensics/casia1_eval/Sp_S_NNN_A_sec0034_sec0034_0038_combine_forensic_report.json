@@ -1,0 +1,72 @@
+{
+  "document_name": "Sp_S_NNN_A_sec0034_sec0034_0038_combine.png",
+  "dimensions": [
+    1152,
+    256
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.8163,
+  "confidence": 0.8163,
+  "risk_level": "CRITICAL",
+  "total_tampered_regions": 2,
+  "tampered_area_percentage": 76.953,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        885,
+        111,
+        981,
+        195
+      ],
+      "normalized_bbox": [
+        0.7682,
+        0.4336,
+        0.8516,
+        0.7617
+      ],
+      "width": 96,
+      "height": 84,
+      "aspect_ratio": 1.143,
+      "area_pixels": 8064,
+      "area_percentage": 2.734,
+      "peak_confidence": 0.8846,
+      "mean_confidence": 0.6184,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Photo / Seal / Region Splicing"
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        0,
+        0,
+        855,
+        256
+      ],
+      "normalized_bbox": [
+        0.0,
+        0.0,
+        0.7422,
+        1.0
+      ],
+      "width": 855,
+      "height": 256,
+      "aspect_ratio": 3.34,
+      "area_pixels": 218880,
+      "area_percentage": 74.219,
+      "peak_confidence": 0.8091,
+      "mean_confidence": 0.5269,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Localized Pixel Manipulation"
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "reports/forensics/casia1_eval\\Sp_S_NNN_A_sec0034_sec0034_0038_combine_annotated.jpg",
+    "audit_panel": "reports/forensics/casia1_eval\\Sp_S_NNN_A_sec0034_sec0034_0038_combine_audit_panel.jpg",
+    "crops": [
+      "reports/forensics/casia1_eval\\Sp_S_NNN_A_sec0034_sec0034_0038_combine_part_1.jpg",
+      "reports/forensics/casia1_eval\\Sp_S_NNN_A_sec0034_sec0034_0038_combine_part_2.jpg"
+    ]
+  }
+}

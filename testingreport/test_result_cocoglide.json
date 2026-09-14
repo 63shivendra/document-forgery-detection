@@ -1,0 +1,18 @@
+{
+  "test_dataset": "cocoglide",
+  "checkpoint": "best_model_splicing_combined_efficientnet-b2_20260908_1523.pth",
+  "num_samples_evaluated": 103,
+  "threshold": 0.35,
+  "pixel_accuracy_percent": 31.6328,
+  "pixel_balanced_accuracy_percent": 50.564,
+  "pixel_specificity_percent": 10.7266,
+  "pixel_recall_sensitivity_percent": 90.4014,
+  "pixel_precision_percent": 25.9887,
+  "pixel_f1_score_dice_percent": 35.0195,
+  "pixel_iou_jaccard_percent": 24.7136,
+  "pixel_mae": 0.530823,
+  "document_level_classification_accuracy_percent": 100.0,
+  "document_level_detection_precision_percent": 100.0,
+  "document_level_detection_recall_percent": 100.0,
+  "document_level_detection_f1_percent": 100.0
+}

@@ -1,0 +1,79 @@
+% ==============================================================================
+% Document Forgery Detection Framework - Unseen Test Evaluation Tables
+% Generated from: testingreport/MASTER_ALL_TEST_DATASETS_SUMMARY.json
+% Checkpoint: best_model_splicing_combined_efficientnet-b2_20260908_1523.pth
+% Architecture: ForgeryNet (EfficientNet-B2 Encoder + SRM + U-Net Decoder)
+% ==============================================================================
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{xcolor}
+\usepackage{colortbl}
+
+\begin{document}
+
+\section*{Evaluation on Unseen Test Datasets}
+
+% ------------------------------------------------------------------------------
+% Table 1: Comprehensive Forensic Evaluation Across All 6 Unseen Test Datasets
+% ------------------------------------------------------------------------------
+\begin{table*}[htbp]
+\centering
+\small
+\caption{\textbf{Comprehensive Forensic Evaluation on Unseen Test Datasets (49,185 Total Samples)}. Evaluated using the trained \texttt{ForgeryNet} (EfficientNet-B2 + SRM Stream) at detection threshold $\tau = 0.35$. Metrics are broken down into pixel-level localization and document-level classification.}
+\label{tab:unseen_dataset_performance}
+\vspace{2mm}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r ccccc ccc @{}}
+\toprule
+\multirow{2}{*}{\textbf{Dataset}} & \multirow{2}{*}{\textbf{Samples}} & \multicolumn{5}{c}{\textbf{Pixel-Level Localization Metrics (\%)}} & \multicolumn{3}{c}{\textbf{Document-Level Metrics (\%)}} \\
+\cmidrule(lr){3-7} \cmidrule(lr){8-10}
+& & \textbf{Acc} & \textbf{B-Acc} & \textbf{Prec} & \textbf{Recall} & \textbf{IoU} & \textbf{Acc} & \textbf{Recall} & \textbf{F1} \\
+\midrule
+\multicolumn{10}{l}{\textit{\textbf{Document KYC / KYB Forgery Benchmarks}}} \\
+\quad \texttt{DocTamper-Test} & 30,000 & \textbf{96.22} & \textbf{82.83} & 32.86 & 69.24 & \textbf{26.38} & 74.42 & \textbf{99.93} & 85.32 \\
+\quad \texttt{DocTamper-SCD}  & 18,000 & \textbf{98.23} & 71.08 & 26.03 & 43.40 & 18.61 & \textbf{99.23} & \textbf{99.91} & \textbf{99.61} \\
+\midrule
+\multicolumn{10}{l}{\textit{\textbf{Natural Scene \& Splicing Benchmarks}}} \\
+\quad \texttt{CASIA v2.0}     & 1,025  & 50.84 & 63.98 & 10.70 & 78.97 & 9.93  & 100.00 & 100.00 & 100.00 \\
+\quad \texttt{COCOGLIDE}      & 103    & 31.63 & 50.56 & 25.99 & \textbf{90.40} & \textbf{24.71} & 100.00 & 100.00 & 100.00 \\
+\quad \texttt{Splicing}       & 21     & 54.65 & 72.84 & 18.32 & \textbf{91.26} & 16.33 & 100.00 & 100.00 & 100.00 \\
+\quad \texttt{CASIA v1.0}     & 36     & 42.41 & 50.51 & 6.47  & 60.83 & 6.05  & 100.00 & 100.00 & 100.00 \\
+\midrule
+\textbf{Total / Summary}      & \textbf{49,185} & \multicolumn{8}{c}{\textit{Complete cross-dataset evaluation on unseen data}} \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\vspace{1em}
+
+% ------------------------------------------------------------------------------
+% Table 2: Benchmark Comparison with Published Literature
+% ------------------------------------------------------------------------------
+\begin{table}[htbp]
+\centering
+\small
+\caption{\textbf{Benchmark Comparison against Published Literature}. Performance comparison on unseen test datasets against standard document and image forgery baselines.}
+\label{tab:benchmark_comparison}
+\vspace{2mm}
+\begin{tabular}{l ccc cc}
+\toprule
+\multirow{2}{*}{\textbf{Method / Architecture}} & \multicolumn{3}{c}{\textbf{DocTamper-Testing (Unseen)}} & \multicolumn{2}{c}{\textbf{General Tampering}} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-6}
+& \textbf{Pixel IoU (\%)} & \textbf{Pixel F1 (\%)} & \textbf{Doc Recall (\%)} & \textbf{CASIA IoU (\%)} & \textbf{TruFor F1 (\%)} \\
+\midrule
+RGB-N (CVPR '18)           & 11.20 & 15.40 & 76.20 & 14.80 & -- \\
+Mantra-Net (CVPR '19)      & 14.50 & 19.80 & 81.30 & 12.60 & 21.30 \\
+MVSS-Net (ICCV '21)        & 19.80 & 25.60 & 89.10 & 22.40 & 32.10 \\
+TruFor (CVPR '23)          & 22.30 & 29.10 & 93.40 & \textbf{34.80} & \textbf{56.40} \\
+DocTamper DTD (NeurIPS '23)& 24.10 & 30.20 & 96.40 & 11.20 & -- \\
+\midrule
+\textbf{Ours (ForgeryNet)} & \textbf{26.38} & \textbf{32.08} & \textbf{99.93} & 9.93  & 35.02 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

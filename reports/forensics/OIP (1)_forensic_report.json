@@ -1,0 +1,282 @@
+{
+  "document_name": "OIP (1).jpg",
+  "dimensions": [
+    348,
+    220
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.6579,
+  "confidence": 0.6579,
+  "risk_level": "HIGH",
+  "total_tampered_regions": 10,
+  "tampered_area_percentage": 6.994,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        13,
+        183,
+        68,
+        201
+      ],
+      "normalized_bbox": [
+        0.0374,
+        0.8318,
+        0.1954,
+        0.9136
+      ],
+      "width": 55,
+      "height": 18,
+      "aspect_ratio": 3.056,
+      "area_pixels": 990,
+      "area_percentage": 1.293,
+      "peak_confidence": 0.7985,
+      "mean_confidence": 0.5041,
+      "document_region": "Footer / Terms / Authority Seal",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        121,
+        183,
+        180,
+        209
+      ],
+      "normalized_bbox": [
+        0.3477,
+        0.8318,
+        0.5172,
+        0.95
+      ],
+      "width": 59,
+      "height": 26,
+      "aspect_ratio": 2.269,
+      "area_pixels": 1534,
+      "area_percentage": 2.004,
+      "peak_confidence": 0.7191,
+      "mean_confidence": 0.5069,
+      "document_region": "Footer / Terms / Authority Seal",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 3,
+      "bbox": [
+        280,
+        19,
+        334,
+        33
+      ],
+      "normalized_bbox": [
+        0.8046,
+        0.0864,
+        0.9598,
+        0.15
+      ],
+      "width": 54,
+      "height": 14,
+      "aspect_ratio": 3.857,
+      "area_pixels": 756,
+      "area_percentage": 0.987,
+      "peak_confidence": 0.7019,
+      "mean_confidence": 0.47,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 4,
+      "bbox": [
+        97,
+        15,
+        148,
+        34
+      ],
+      "normalized_bbox": [
+        0.2787,
+        0.0682,
+        0.4253,
+        0.1545
+      ],
+      "width": 51,
+      "height": 19,
+      "aspect_ratio": 2.684,
+      "area_pixels": 969,
+      "area_percentage": 1.266,
+      "peak_confidence": 0.6142,
+      "mean_confidence": 0.4452,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 5,
+      "bbox": [
+        223,
+        19,
+        233,
+        28
+      ],
+      "normalized_bbox": [
+        0.6408,
+        0.0864,
+        0.6695,
+        0.1273
+      ],
+      "width": 10,
+      "height": 9,
+      "aspect_ratio": 1.111,
+      "area_pixels": 90,
+      "area_percentage": 0.118,
+      "peak_confidence": 0.5842,
+      "mean_confidence": 0.4158,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 6,
+      "bbox": [
+        225,
+        39,
+        266,
+        52
+      ],
+      "normalized_bbox": [
+        0.6466,
+        0.1773,
+        0.7644,
+        0.2364
+      ],
+      "width": 41,
+      "height": 13,
+      "aspect_ratio": 3.154,
+      "area_pixels": 533,
+      "area_percentage": 0.696,
+      "peak_confidence": 0.5799,
+      "mean_confidence": 0.4522,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 7,
+      "bbox": [
+        278,
+        40,
+        290,
+        52
+      ],
+      "normalized_bbox": [
+        0.7989,
+        0.1818,
+        0.8333,
+        0.2364
+      ],
+      "width": 12,
+      "height": 12,
+      "aspect_ratio": 1.0,
+      "area_pixels": 144,
+      "area_percentage": 0.188,
+      "peak_confidence": 0.5784,
+      "mean_confidence": 0.4408,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 8,
+      "bbox": [
+        56,
+        24,
+        84,
+        33
+      ],
+      "normalized_bbox": [
+        0.1609,
+        0.1091,
+        0.2414,
+        0.15
+      ],
+      "width": 28,
+      "height": 9,
+      "aspect_ratio": 3.111,
+      "area_pixels": 252,
+      "area_percentage": 0.329,
+      "peak_confidence": 0.4941,
+      "mean_confidence": 0.3879,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 9,
+      "bbox": [
+        22,
+        27,
+        34,
+        32
+      ],
+      "normalized_bbox": [
+        0.0632,
+        0.1227,
+        0.0977,
+        0.1455
+      ],
+      "width": 12,
+      "height": 5,
+      "aspect_ratio": 2.4,
+      "area_pixels": 60,
+      "area_percentage": 0.078,
+      "peak_confidence": 0.4801,
+      "mean_confidence": 0.3997,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 10,
+      "bbox": [
+        253,
+        25,
+        262,
+        28
+      ],
+      "normalized_bbox": [
+        0.727,
+        0.1136,
+        0.7529,
+        0.1273
+      ],
+      "width": 9,
+      "height": 3,
+      "aspect_ratio": 3.0,
+      "area_pixels": 27,
+      "area_percentage": 0.035,
+      "peak_confidence": 0.3999,
+      "mean_confidence": 0.3651,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "reports/forensics\\OIP (1)_annotated.jpg",
+    "audit_panel": "reports/forensics\\OIP (1)_audit_panel.jpg",
+    "crops": [
+      "reports/forensics\\OIP (1)_part_1.jpg",
+      "reports/forensics\\OIP (1)_part_2.jpg",
+      "reports/forensics\\OIP (1)_part_3.jpg",
+      "reports/forensics\\OIP (1)_part_4.jpg",
+      "reports/forensics\\OIP (1)_part_5.jpg",
+      "reports/forensics\\OIP (1)_part_6.jpg",
+      "reports/forensics\\OIP (1)_part_7.jpg",
+      "reports/forensics\\OIP (1)_part_8.jpg",
+      "reports/forensics\\OIP (1)_part_9.jpg",
+      "reports/forensics\\OIP (1)_part_10.jpg"
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "document_name": "Sp_D_NND_A_cha0042_arc0036_0601_combine.png",
+  "dimensions": [
+    1152,
+    256
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.7525,
+  "confidence": 0.7525,
+  "risk_level": "HIGH",
+  "total_tampered_regions": 4,
+  "tampered_area_percentage": 88.219,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        150,
+        0,
+        1152,
+        256
+      ],
+      "normalized_bbox": [
+        0.1302,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "width": 1002,
+      "height": 256,
+      "aspect_ratio": 3.914,
+      "area_pixels": 256512,
+      "area_percentage": 86.979,
+      "peak_confidence": 0.843,
+      "mean_confidence": 0.4889,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Localized Pixel Manipulation"
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        36,
+        177,
+        141,
+        210
+      ],
+      "normalized_bbox": [
+        0.0312,
+        0.6914,
+        0.1224,
+        0.8203
+      ],
+      "width": 105,
+      "height": 33,
+      "aspect_ratio": 3.182,
+      "area_pixels": 3465,
+      "area_percentage": 1.175,
+      "peak_confidence": 0.4377,
+      "mean_confidence": 0.3844,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Text / Number Field Alteration"
+    },
+    {
+      "region_id": 3,
+      "bbox": [
+        45,
+        237,
+        63,
+        243
+      ],
+      "normalized_bbox": [
+        0.0391,
+        0.9258,
+        0.0547,
+        0.9492
+      ],
+      "width": 18,
+      "height": 6,
+      "aspect_ratio": 3.0,
+      "area_pixels": 108,
+      "area_percentage": 0.037,
+      "peak_confidence": 0.3926,
+      "mean_confidence": 0.3697,
+      "document_region": "Footer / Terms / Authority Seal",
+      "distortion_type": "Text / Number Field Alteration"
+    },
+    {
+      "region_id": 4,
+      "bbox": [
+        42,
+        249,
+        63,
+        253
+      ],
+      "normalized_bbox": [
+        0.0365,
+        0.9727,
+        0.0547,
+        0.9883
+      ],
+      "width": 21,
+      "height": 4,
+      "aspect_ratio": 5.25,
+      "area_pixels": 84,
+      "area_percentage": 0.028,
+      "peak_confidence": 0.3754,
+      "mean_confidence": 0.3636,
+      "document_region": "Footer / Terms / Authority Seal",
+      "distortion_type": "Text / Number Field Alteration"
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "reports/forensics/casia1_eval\\Sp_D_NND_A_cha0042_arc0036_0601_combine_annotated.jpg",
+    "audit_panel": "reports/forensics/casia1_eval\\Sp_D_NND_A_cha0042_arc0036_0601_combine_audit_panel.jpg",
+    "crops": [
+      "reports/forensics/casia1_eval\\Sp_D_NND_A_cha0042_arc0036_0601_combine_part_1.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_NND_A_cha0042_arc0036_0601_combine_part_2.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_NND_A_cha0042_arc0036_0601_combine_part_3.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_NND_A_cha0042_arc0036_0601_combine_part_4.jpg"
+    ]
+  }
+}

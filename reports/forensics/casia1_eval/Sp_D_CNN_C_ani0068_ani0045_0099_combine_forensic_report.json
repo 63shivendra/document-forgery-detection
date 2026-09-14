@@ -1,0 +1,222 @@
+{
+  "document_name": "Sp_D_CNN_C_ani0068_ani0045_0099_combine.png",
+  "dimensions": [
+    1152,
+    256
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.8978,
+  "confidence": 0.8978,
+  "risk_level": "CRITICAL",
+  "total_tampered_regions": 8,
+  "tampered_area_percentage": 48.492,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        873,
+        197,
+        1020,
+        256
+      ],
+      "normalized_bbox": [
+        0.7578,
+        0.7695,
+        0.8854,
+        1.0
+      ],
+      "width": 147,
+      "height": 59,
+      "aspect_ratio": 2.492,
+      "area_pixels": 8673,
+      "area_percentage": 2.941,
+      "peak_confidence": 0.9992,
+      "mean_confidence": 0.6608,
+      "document_region": "Footer / Authorized Signature Field",
+      "distortion_type": "Copy-Move / Region Splicing"
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        45,
+        28,
+        402,
+        256
+      ],
+      "normalized_bbox": [
+        0.0391,
+        0.1094,
+        0.349,
+        1.0
+      ],
+      "width": 357,
+      "height": 228,
+      "aspect_ratio": 1.566,
+      "area_pixels": 81396,
+      "area_percentage": 27.6,
+      "peak_confidence": 0.8814,
+      "mean_confidence": 0.5955,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Copy-Move / Region Splicing"
+    },
+    {
+      "region_id": 3,
+      "bbox": [
+        390,
+        28,
+        654,
+        219
+      ],
+      "normalized_bbox": [
+        0.3385,
+        0.1094,
+        0.5677,
+        0.8555
+      ],
+      "width": 264,
+      "height": 191,
+      "aspect_ratio": 1.382,
+      "area_pixels": 50424,
+      "area_percentage": 17.098,
+      "peak_confidence": 0.8754,
+      "mean_confidence": 0.587,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Photo / Seal / Region Splicing"
+    },
+    {
+      "region_id": 4,
+      "bbox": [
+        501,
+        252,
+        552,
+        256
+      ],
+      "normalized_bbox": [
+        0.4349,
+        0.9844,
+        0.4792,
+        1.0
+      ],
+      "width": 51,
+      "height": 4,
+      "aspect_ratio": 12.75,
+      "area_pixels": 204,
+      "area_percentage": 0.069,
+      "peak_confidence": 0.4653,
+      "mean_confidence": 0.3854,
+      "document_region": "Footer / Terms / Authority Seal",
+      "distortion_type": "Text / Number Field Alteration"
+    },
+    {
+      "region_id": 5,
+      "bbox": [
+        0,
+        246,
+        45,
+        256
+      ],
+      "normalized_bbox": [
+        0.0,
+        0.9609,
+        0.0391,
+        1.0
+      ],
+      "width": 45,
+      "height": 10,
+      "aspect_ratio": 4.5,
+      "area_pixels": 450,
+      "area_percentage": 0.153,
+      "peak_confidence": 0.4635,
+      "mean_confidence": 0.3665,
+      "document_region": "Footer / Terms / Authority Seal",
+      "distortion_type": "Text / Number Field Alteration"
+    },
+    {
+      "region_id": 6,
+      "bbox": [
+        573,
+        239,
+        630,
+        256
+      ],
+      "normalized_bbox": [
+        0.4974,
+        0.9336,
+        0.5469,
+        1.0
+      ],
+      "width": 57,
+      "height": 17,
+      "aspect_ratio": 3.353,
+      "area_pixels": 969,
+      "area_percentage": 0.329,
+      "peak_confidence": 0.4523,
+      "mean_confidence": 0.3641,
+      "document_region": "Footer / Authorized Signature Field",
+      "distortion_type": "Text / Number Field Alteration"
+    },
+    {
+      "region_id": 7,
+      "bbox": [
+        1092,
+        227,
+        1134,
+        245
+      ],
+      "normalized_bbox": [
+        0.9479,
+        0.8867,
+        0.9844,
+        0.957
+      ],
+      "width": 42,
+      "height": 18,
+      "aspect_ratio": 2.333,
+      "area_pixels": 756,
+      "area_percentage": 0.256,
+      "peak_confidence": 0.435,
+      "mean_confidence": 0.3845,
+      "document_region": "Footer / Authorized Signature Field",
+      "distortion_type": "Text / Number Field Alteration"
+    },
+    {
+      "region_id": 8,
+      "bbox": [
+        33,
+        142,
+        48,
+        151
+      ],
+      "normalized_bbox": [
+        0.0286,
+        0.5547,
+        0.0417,
+        0.5898
+      ],
+      "width": 15,
+      "height": 9,
+      "aspect_ratio": 1.667,
+      "area_pixels": 135,
+      "area_percentage": 0.046,
+      "peak_confidence": 0.4102,
+      "mean_confidence": 0.3724,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Localized Pixel Manipulation"
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "reports/forensics/casia1_eval\\Sp_D_CNN_C_ani0068_ani0045_0099_combine_annotated.jpg",
+    "audit_panel": "reports/forensics/casia1_eval\\Sp_D_CNN_C_ani0068_ani0045_0099_combine_audit_panel.jpg",
+    "crops": [
+      "reports/forensics/casia1_eval\\Sp_D_CNN_C_ani0068_ani0045_0099_combine_part_1.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_CNN_C_ani0068_ani0045_0099_combine_part_2.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_CNN_C_ani0068_ani0045_0099_combine_part_3.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_CNN_C_ani0068_ani0045_0099_combine_part_4.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_CNN_C_ani0068_ani0045_0099_combine_part_5.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_CNN_C_ani0068_ani0045_0099_combine_part_6.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_CNN_C_ani0068_ani0045_0099_combine_part_7.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_CNN_C_ani0068_ani0045_0099_combine_part_8.jpg"
+    ]
+  }
+}

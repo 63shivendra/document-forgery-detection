@@ -1,0 +1,97 @@
+{
+  "document_name": "Sp_D_CRN_A_nat0033_obj0059_0385_combine.png",
+  "dimensions": [
+    1152,
+    256
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.8888,
+  "confidence": 0.8888,
+  "risk_level": "CRITICAL",
+  "total_tampered_regions": 3,
+  "tampered_area_percentage": 3.137,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        948,
+        132,
+        1032,
+        213
+      ],
+      "normalized_bbox": [
+        0.8229,
+        0.5156,
+        0.8958,
+        0.832
+      ],
+      "width": 84,
+      "height": 81,
+      "aspect_ratio": 1.037,
+      "area_pixels": 6804,
+      "area_percentage": 2.307,
+      "peak_confidence": 0.9995,
+      "mean_confidence": 0.9207,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Photo / Seal / Region Splicing"
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        186,
+        177,
+        258,
+        209
+      ],
+      "normalized_bbox": [
+        0.1615,
+        0.6914,
+        0.224,
+        0.8164
+      ],
+      "width": 72,
+      "height": 32,
+      "aspect_ratio": 2.25,
+      "area_pixels": 2304,
+      "area_percentage": 0.781,
+      "peak_confidence": 0.8873,
+      "mean_confidence": 0.6616,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Text / Number Field Alteration"
+    },
+    {
+      "region_id": 3,
+      "bbox": [
+        177,
+        105,
+        195,
+        113
+      ],
+      "normalized_bbox": [
+        0.1536,
+        0.4102,
+        0.1693,
+        0.4414
+      ],
+      "width": 18,
+      "height": 8,
+      "aspect_ratio": 2.25,
+      "area_pixels": 144,
+      "area_percentage": 0.049,
+      "peak_confidence": 0.4943,
+      "mean_confidence": 0.4278,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Text / Number Field Alteration"
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "reports/forensics/casia1_eval\\Sp_D_CRN_A_nat0033_obj0059_0385_combine_annotated.jpg",
+    "audit_panel": "reports/forensics/casia1_eval\\Sp_D_CRN_A_nat0033_obj0059_0385_combine_audit_panel.jpg",
+    "crops": [
+      "reports/forensics/casia1_eval\\Sp_D_CRN_A_nat0033_obj0059_0385_combine_part_1.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_CRN_A_nat0033_obj0059_0385_combine_part_2.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_CRN_A_nat0033_obj0059_0385_combine_part_3.jpg"
+    ]
+  }
+}

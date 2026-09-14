@@ -1,0 +1,2440 @@
+{
+  "dataset_name": "cocoglide",
+  "dataset_title": "COCOGLIDE / TruFor Splicing & Inpainting",
+  "total_samples_evaluated": 36,
+  "document_level_accuracy": 100.0,
+  "confusion_matrix": {
+    "true_positives": 36,
+    "true_negatives": 0,
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "mean_pixel_metrics": {
+    "mean_iou": 20.37,
+    "mean_dice_f1": 30.07,
+    "mean_recall": 92.89,
+    "mean_precision": 20.84
+  },
+  "samples": [
+    {
+      "index": 0,
+      "sample_name": "glide_inpainting_val2017_521405_up.png",
+      "clean_name": "glide_inpainting_val2017_521405_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 30.6,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 35813,
+        "bounding_boxes": [
+          [
+            201,
+            68,
+            384,
+            339
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.804,
+        "fraud_score": 0.804,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 147094,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.8987,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 24.35,
+        "dice_f1": 39.16,
+        "precision": 24.35,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_521405_up_comparison.jpg"
+    },
+    {
+      "index": 1,
+      "sample_name": "glide_inpainting_val2017_523782_up.png",
+      "clean_name": "glide_inpainting_val2017_523782_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 29.2,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 96500,
+        "bounding_boxes": [
+          [
+            3,
+            0,
+            374,
+            384
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.8288,
+        "fraud_score": 0.8288,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 147424,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.883,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 65.45,
+        "dice_f1": 79.12,
+        "precision": 65.45,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_523782_up_comparison.jpg"
+    },
+    {
+      "index": 2,
+      "sample_name": "glide_inpainting_val2017_524108_up.png",
+      "clean_name": "glide_inpainting_val2017_524108_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 41.3,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 83487,
+        "bounding_boxes": [
+          [
+            38,
+            2,
+            384,
+            375
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7364,
+        "fraud_score": 0.7364,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 147070,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7539,
+            "area_pixels": 147456,
+            "extracted_text": "Ct"
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 56.77,
+        "dice_f1": 72.42,
+        "precision": 56.77,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_524108_up_comparison.jpg"
+    },
+    {
+      "index": 3,
+      "sample_name": "glide_inpainting_val2017_525322_up.png",
+      "clean_name": "glide_inpainting_val2017_525322_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 29.1,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 67190,
+        "bounding_boxes": [
+          [
+            0,
+            13,
+            384,
+            294
+          ],
+          [
+            182,
+            267,
+            251,
+            318
+          ],
+          [
+            97,
+            269,
+            155,
+            330
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7955,
+        "fraud_score": 0.7955,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 147445,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.8162,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 45.57,
+        "dice_f1": 62.61,
+        "precision": 45.57,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_525322_up_comparison.jpg"
+    },
+    {
+      "index": 4,
+      "sample_name": "glide_inpainting_val2017_526103_up.png",
+      "clean_name": "glide_inpainting_val2017_526103_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 49.2,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 127806,
+        "bounding_boxes": [
+          [
+            0,
+            0,
+            373,
+            384
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7456,
+        "fraud_score": 0.7456,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 133788,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.816,
+            "area_pixels": 147456,
+            "extracted_text": "ngrqsia n6iza"
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 91.61,
+        "dice_f1": 95.62,
+        "precision": 93.48,
+        "recall": 97.86
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_526103_up_comparison.jpg"
+    },
+    {
+      "index": 5,
+      "sample_name": "glide_inpainting_val2017_526392_up.png",
+      "clean_name": "glide_inpainting_val2017_526392_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 28.1,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 12071,
+        "bounding_boxes": [
+          [
+            133,
+            90,
+            269,
+            210
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7196,
+        "fraud_score": 0.7196,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 146745,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7671,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 8.23,
+        "dice_f1": 15.2,
+        "precision": 8.23,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_526392_up_comparison.jpg"
+    },
+    {
+      "index": 6,
+      "sample_name": "glide_inpainting_val2017_528524_up.png",
+      "clean_name": "glide_inpainting_val2017_528524_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 29.3,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 12617,
+        "bounding_boxes": [
+          [
+            105,
+            81,
+            270,
+            323
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7201,
+        "fraud_score": 0.7201,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 147297,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7695,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 8.57,
+        "dice_f1": 15.78,
+        "precision": 8.57,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_528524_up_comparison.jpg"
+    },
+    {
+      "index": 7,
+      "sample_name": "glide_inpainting_val2017_528980_up.png",
+      "clean_name": "glide_inpainting_val2017_528980_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 29.4,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 5834,
+        "bounding_boxes": [
+          [
+            65,
+            127,
+            260,
+            234
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7606,
+        "fraud_score": 0.7606,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 139820,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.8383,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 4.17,
+        "dice_f1": 8.01,
+        "precision": 4.17,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_528980_up_comparison.jpg"
+    },
+    {
+      "index": 8,
+      "sample_name": "glide_inpainting_val2017_529105_up.png",
+      "clean_name": "glide_inpainting_val2017_529105_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 26.7,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 4219,
+        "bounding_boxes": [
+          [
+            120,
+            170,
+            218,
+            242
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7639,
+        "fraud_score": 0.7639,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 146907,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.767,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 2.87,
+        "dice_f1": 5.58,
+        "precision": 2.87,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_529105_up_comparison.jpg"
+    },
+    {
+      "index": 9,
+      "sample_name": "glide_inpainting_val2017_530052_up.png",
+      "clean_name": "glide_inpainting_val2017_530052_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 29.2,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 8404,
+        "bounding_boxes": [
+          [
+            75,
+            144,
+            307,
+            202
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.6961,
+        "fraud_score": 0.6961,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 144345,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7224,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 5.82,
+        "dice_f1": 11.0,
+        "precision": 5.82,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_530052_up_comparison.jpg"
+    },
+    {
+      "index": 10,
+      "sample_name": "glide_inpainting_val2017_530457_up.png",
+      "clean_name": "glide_inpainting_val2017_530457_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 38.8,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 46956,
+        "bounding_boxes": [
+          [
+            123,
+            110,
+            341,
+            362
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.8497,
+        "fraud_score": 0.8497,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 71762,
+        "detected_regions_count": 5,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              300,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.9684,
+            "area_pixels": 115200,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              214,
+              0,
+              384,
+              140
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.8208,
+            "area_pixels": 23800,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 3,
+            "bounding_box": [
+              283,
+              352,
+              315,
+              376
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4467,
+            "area_pixels": 768,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 4,
+            "bounding_box": [
+              363,
+              330,
+              384,
+              366
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4423,
+            "area_pixels": 756,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 5,
+            "bounding_box": [
+              204,
+              100,
+              209,
+              115
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.3859,
+            "area_pixels": 75,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 25.13,
+        "dice_f1": 40.16,
+        "precision": 33.22,
+        "recall": 50.77
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_530457_up_comparison.jpg"
+    },
+    {
+      "index": 11,
+      "sample_name": "glide_inpainting_val2017_531495_up.png",
+      "clean_name": "glide_inpainting_val2017_531495_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 37.2,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 63782,
+        "bounding_boxes": [
+          [
+            15,
+            35,
+            308,
+            380
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.8753,
+        "fraud_score": 0.8753,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 114569,
+        "detected_regions_count": 4,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.9517,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              155,
+              142,
+              166,
+              151
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.5761,
+            "area_pixels": 99,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 3,
+            "bounding_box": [
+              28,
+              168,
+              38,
+              177
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4191,
+            "area_pixels": 90,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 4,
+            "bounding_box": [
+              129,
+              154,
+              141,
+              177
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4048,
+            "area_pixels": 276,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 37.63,
+        "dice_f1": 54.68,
+        "precision": 42.56,
+        "recall": 76.45
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_531495_up_comparison.jpg"
+    },
+    {
+      "index": 12,
+      "sample_name": "glide_inpainting_val2017_532129_up.png",
+      "clean_name": "glide_inpainting_val2017_532129_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 29.6,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 4610,
+        "bounding_boxes": [
+          [
+            0,
+            277,
+            61,
+            367
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.8401,
+        "fraud_score": 0.8401,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 144970,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.9162,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 3.18,
+        "dice_f1": 6.16,
+        "precision": 3.18,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_532129_up_comparison.jpg"
+    },
+    {
+      "index": 13,
+      "sample_name": "glide_inpainting_val2017_532575_up.png",
+      "clean_name": "glide_inpainting_val2017_532575_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 27.1,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 19446,
+        "bounding_boxes": [
+          [
+            80,
+            185,
+            255,
+            384
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7657,
+        "fraud_score": 0.7657,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 146915,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7706,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 13.24,
+        "dice_f1": 23.38,
+        "precision": 13.24,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_532575_up_comparison.jpg"
+    },
+    {
+      "index": 14,
+      "sample_name": "glide_inpainting_val2017_533206_up.png",
+      "clean_name": "glide_inpainting_val2017_533206_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 28.9,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 41511,
+        "bounding_boxes": [
+          [
+            148,
+            25,
+            384,
+            384
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7751,
+        "fraud_score": 0.7751,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 140541,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.8488,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 29.38,
+        "dice_f1": 45.42,
+        "precision": 29.42,
+        "recall": 99.59
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_533206_up_comparison.jpg"
+    },
+    {
+      "index": 15,
+      "sample_name": "glide_inpainting_val2017_534601_up.png",
+      "clean_name": "glide_inpainting_val2017_534601_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 29.0,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 27698,
+        "bounding_boxes": [
+          [
+            0,
+            123,
+            222,
+            279
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7766,
+        "fraud_score": 0.7766,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 140849,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Inpainting / Content Erasure / White-Out",
+            "peak_confidence": 0.8558,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 19.51,
+        "dice_f1": 32.66,
+        "precision": 19.54,
+        "recall": 99.36
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_534601_up_comparison.jpg"
+    },
+    {
+      "index": 16,
+      "sample_name": "glide_inpainting_val2017_534639_up.png",
+      "clean_name": "glide_inpainting_val2017_534639_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 27.8,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 6711,
+        "bounding_boxes": [
+          [
+            332,
+            210,
+            384,
+            365
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7871,
+        "fraud_score": 0.7871,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 147443,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7872,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 4.55,
+        "dice_f1": 8.71,
+        "precision": 4.55,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_534639_up_comparison.jpg"
+    },
+    {
+      "index": 17,
+      "sample_name": "glide_inpainting_val2017_534664_up.png",
+      "clean_name": "glide_inpainting_val2017_534664_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 29.8,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 50071,
+        "bounding_boxes": [
+          [
+            30,
+            196,
+            353,
+            384
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.8355,
+        "fraud_score": 0.8355,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 147451,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Inpainting / Content Erasure / White-Out",
+            "peak_confidence": 0.8511,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 33.96,
+        "dice_f1": 50.7,
+        "precision": 33.96,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_534664_up_comparison.jpg"
+    },
+    {
+      "index": 18,
+      "sample_name": "glide_inpainting_val2017_535156_up.png",
+      "clean_name": "glide_inpainting_val2017_535156_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 48.2,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 51536,
+        "bounding_boxes": [
+          [
+            129,
+            114,
+            293,
+            276
+          ],
+          [
+            1,
+            231,
+            294,
+            384
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.8309,
+        "fraud_score": 0.8309,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 134518,
+        "detected_regions_count": 6,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.9075,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              368,
+              377,
+              377,
+              384
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3955,
+            "area_pixels": 63,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 3,
+            "bounding_box": [
+              240,
+              349,
+              252,
+              359
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3857,
+            "area_pixels": 120,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 4,
+            "bounding_box": [
+              226,
+              351,
+              232,
+              359
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3816,
+            "area_pixels": 48,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 5,
+            "bounding_box": [
+              338,
+              358,
+              358,
+              372
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3795,
+            "area_pixels": 280,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 6,
+            "bounding_box": [
+              295,
+              361,
+              308,
+              366
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.3698,
+            "area_pixels": 65,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 31.14,
+        "dice_f1": 47.49,
+        "precision": 32.84,
+        "recall": 85.72
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_535156_up_comparison.jpg"
+    },
+    {
+      "index": 19,
+      "sample_name": "glide_inpainting_val2017_537672_up.png",
+      "clean_name": "glide_inpainting_val2017_537672_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 26.9,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 17549,
+        "bounding_boxes": [
+          [
+            133,
+            229,
+            289,
+            380
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.8609,
+        "fraud_score": 0.8609,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 146880,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.9187,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 11.95,
+        "dice_f1": 21.35,
+        "precision": 11.95,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_537672_up_comparison.jpg"
+    },
+    {
+      "index": 20,
+      "sample_name": "glide_inpainting_val2017_537802_up.png",
+      "clean_name": "glide_inpainting_val2017_537802_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 28.7,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 50879,
+        "bounding_boxes": [
+          [
+            121,
+            0,
+            279,
+            384
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7233,
+        "fraud_score": 0.7233,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 146332,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7467,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 34.61,
+        "dice_f1": 51.42,
+        "precision": 34.65,
+        "recall": 99.66
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_537802_up_comparison.jpg"
+    },
+    {
+      "index": 21,
+      "sample_name": "glide_inpainting_val2017_53994_up.png",
+      "clean_name": "glide_inpainting_val2017_53994_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 27.4,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 24600,
+        "bounding_boxes": [
+          [
+            234,
+            108,
+            384,
+            376
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7447,
+        "fraud_score": 0.7447,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 146668,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7824,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 16.77,
+        "dice_f1": 28.73,
+        "precision": 16.77,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_53994_up_comparison.jpg"
+    },
+    {
+      "index": 22,
+      "sample_name": "glide_inpainting_val2017_540280_up.png",
+      "clean_name": "glide_inpainting_val2017_540280_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 27.2,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 21359,
+        "bounding_boxes": [
+          [
+            213,
+            190,
+            384,
+            384
+          ],
+          [
+            1,
+            279,
+            121,
+            384
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7906,
+        "fraud_score": 0.7906,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 147448,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7942,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 14.49,
+        "dice_f1": 25.31,
+        "precision": 14.49,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_540280_up_comparison.jpg"
+    },
+    {
+      "index": 23,
+      "sample_name": "glide_inpainting_val2017_540928_up.png",
+      "clean_name": "glide_inpainting_val2017_540928_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 26.6,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 20342,
+        "bounding_boxes": [
+          [
+            87,
+            0,
+            301,
+            178
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.8168,
+        "fraud_score": 0.8168,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 146961,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.8314,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 13.84,
+        "dice_f1": 24.32,
+        "precision": 13.84,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_540928_up_comparison.jpg"
+    },
+    {
+      "index": 24,
+      "sample_name": "glide_inpainting_val2017_542625_up.png",
+      "clean_name": "glide_inpainting_val2017_542625_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 33.1,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 7321,
+        "bounding_boxes": [
+          [
+            0,
+            255,
+            74,
+            384
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.8013,
+        "fraud_score": 0.8013,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 147362,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.8662,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 4.97,
+        "dice_f1": 9.47,
+        "precision": 4.97,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_542625_up_comparison.jpg"
+    },
+    {
+      "index": 25,
+      "sample_name": "glide_inpainting_val2017_543300_up.png",
+      "clean_name": "glide_inpainting_val2017_543300_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 28.5,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 14481,
+        "bounding_boxes": [
+          [
+            0,
+            198,
+            384,
+            329
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.8552,
+        "fraud_score": 0.8552,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 147424,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.8943,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 9.82,
+        "dice_f1": 17.89,
+        "precision": 9.82,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_543300_up_comparison.jpg"
+    },
+    {
+      "index": 26,
+      "sample_name": "glide_inpainting_val2017_544052_up.png",
+      "clean_name": "glide_inpainting_val2017_544052_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 68.3,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 4999,
+        "bounding_boxes": [
+          [
+            289,
+            83,
+            347,
+            248
+          ],
+          [
+            0,
+            101,
+            81,
+            242
+          ],
+          [
+            258,
+            123,
+            276,
+            148
+          ],
+          [
+            60,
+            124,
+            103,
+            198
+          ],
+          [
+            276,
+            160,
+            291,
+            193
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7064,
+        "fraud_score": 0.7064,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 72154,
+        "detected_regions_count": 12,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              67,
+              22,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7618,
+            "area_pixels": 114754,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              0,
+              0,
+              15,
+              86
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.5368,
+            "area_pixels": 1290,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 3,
+            "bounding_box": [
+              347,
+              101,
+              384,
+              147
+            ],
+            "document_region": "Photo / ID Portrait / Stamp Area",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4707,
+            "area_pixels": 1702,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 4,
+            "bounding_box": [
+              372,
+              12,
+              384,
+              28
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4645,
+            "area_pixels": 192,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 5,
+            "bounding_box": [
+              0,
+              104,
+              20,
+              149
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.4582,
+            "area_pixels": 900,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 6,
+            "bounding_box": [
+              360,
+              243,
+              384,
+              276
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.457,
+            "area_pixels": 792,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 7,
+            "bounding_box": [
+              0,
+              227,
+              5,
+              245
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.4252,
+            "area_pixels": 90,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 8,
+            "bounding_box": [
+              22,
+              349,
+              70,
+              384
+            ],
+            "document_region": "Footer / Terms / Authority Seal",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4218,
+            "area_pixels": 1680,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 9,
+            "bounding_box": [
+              323,
+              330,
+              336,
+              342
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3864,
+            "area_pixels": 156,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 10,
+            "bounding_box": [
+              359,
+              318,
+              370,
+              342
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3838,
+            "area_pixels": 264,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 11,
+            "bounding_box": [
+              69,
+              126,
+              73,
+              133
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3793,
+            "area_pixels": 28,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 12,
+            "bounding_box": [
+              59,
+              203,
+              65,
+              215
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3655,
+            "area_pixels": 72,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 2.34,
+        "dice_f1": 4.58,
+        "precision": 2.45,
+        "recall": 35.31
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_544052_up_comparison.jpg"
+    },
+    {
+      "index": 27,
+      "sample_name": "glide_inpainting_val2017_544811_up.png",
+      "clean_name": "glide_inpainting_val2017_544811_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 26.9,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 7676,
+        "bounding_boxes": [
+          [
+            127,
+            34,
+            252,
+            198
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.8437,
+        "fraud_score": 0.8437,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 5925,
+        "detected_regions_count": 3,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              172,
+              64,
+              260
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.9992,
+            "area_pixels": 5632,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              99,
+              223,
+              189,
+              281
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Copy-Move / Region Splicing",
+            "peak_confidence": 0.86,
+            "area_pixels": 5220,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 3,
+            "bounding_box": [
+              372,
+              368,
+              384,
+              374
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.738,
+            "area_pixels": 72,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 0.0,
+        "dice_f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_544811_up_comparison.jpg"
+    },
+    {
+      "index": 28,
+      "sample_name": "glide_inpainting_val2017_545407_up.png",
+      "clean_name": "glide_inpainting_val2017_545407_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 34.6,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 14139,
+        "bounding_boxes": [
+          [
+            0,
+            66,
+            275,
+            266
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.8488,
+        "fraud_score": 0.8488,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 147446,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.8691,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 9.59,
+        "dice_f1": 17.5,
+        "precision": 9.59,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_545407_up_comparison.jpg"
+    },
+    {
+      "index": 29,
+      "sample_name": "glide_inpainting_val2017_545826_up.png",
+      "clean_name": "glide_inpainting_val2017_545826_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 29.2,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 3858,
+        "bounding_boxes": [
+          [
+            198,
+            63,
+            239,
+            141
+          ],
+          [
+            148,
+            142,
+            174,
+            190
+          ],
+          [
+            225,
+            159,
+            246,
+            202
+          ],
+          [
+            326,
+            249,
+            330,
+            258
+          ],
+          [
+            76,
+            273,
+            82,
+            287
+          ],
+          [
+            326,
+            273,
+            333,
+            285
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7942,
+        "fraud_score": 0.7942,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 147392,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.8307,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 2.62,
+        "dice_f1": 5.1,
+        "precision": 2.62,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_545826_up_comparison.jpg"
+    },
+    {
+      "index": 30,
+      "sample_name": "glide_inpainting_val2017_546826_up.png",
+      "clean_name": "glide_inpainting_val2017_546826_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 47.9,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 36497,
+        "bounding_boxes": [
+          [
+            31,
+            48,
+            162,
+            347
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7234,
+        "fraud_score": 0.7234,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 146892,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7553,
+            "area_pixels": 147456,
+            "extracted_text": "'"
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 24.84,
+        "dice_f1": 39.8,
+        "precision": 24.84,
+        "recall": 99.99
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_546826_up_comparison.jpg"
+    },
+    {
+      "index": 31,
+      "sample_name": "glide_inpainting_val2017_546829_up.png",
+      "clean_name": "glide_inpainting_val2017_546829_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 30.7,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 4667,
+        "bounding_boxes": [
+          [
+            77,
+            1,
+            102,
+            62
+          ],
+          [
+            348,
+            46,
+            372,
+            107
+          ],
+          [
+            34,
+            81,
+            81,
+            138
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7283,
+        "fraud_score": 0.7283,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 146721,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7894,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 3.17,
+        "dice_f1": 6.14,
+        "precision": 3.17,
+        "recall": 99.55
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_546829_up_comparison.jpg"
+    },
+    {
+      "index": 32,
+      "sample_name": "glide_inpainting_val2017_548506_up.png",
+      "clean_name": "glide_inpainting_val2017_548506_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 29.8,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 12369,
+        "bounding_boxes": [
+          [
+            271,
+            79,
+            384,
+            251
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7794,
+        "fraud_score": 0.7794,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 147102,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Inpainting / Content Erasure / White-Out",
+            "peak_confidence": 0.7998,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 8.41,
+        "dice_f1": 15.51,
+        "precision": 8.41,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_548506_up_comparison.jpg"
+    },
+    {
+      "index": 33,
+      "sample_name": "glide_inpainting_val2017_549167_up.png",
+      "clean_name": "glide_inpainting_val2017_549167_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 29.2,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 9491,
+        "bounding_boxes": [
+          [
+            130,
+            159,
+            215,
+            305
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7543,
+        "fraud_score": 0.7543,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 147356,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7583,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 6.44,
+        "dice_f1": 12.1,
+        "precision": 6.44,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_549167_up_comparison.jpg"
+    },
+    {
+      "index": 34,
+      "sample_name": "glide_inpainting_val2017_550322_up.png",
+      "clean_name": "glide_inpainting_val2017_550322_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 29.3,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 53394,
+        "bounding_boxes": [
+          [
+            0,
+            132,
+            384,
+            281
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.715,
+        "fraud_score": 0.715,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 144304,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7743,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 36.86,
+        "dice_f1": 53.87,
+        "precision": 36.9,
+        "recall": 99.72
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_550322_up_comparison.jpg"
+    },
+    {
+      "index": 35,
+      "sample_name": "glide_inpainting_val2017_552612_up.png",
+      "clean_name": "glide_inpainting_val2017_552612_up",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 29.2,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 31203,
+        "bounding_boxes": [
+          [
+            91,
+            151,
+            380,
+            306
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7052,
+        "fraud_score": 0.7052,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 144868,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7118,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 21.54,
+        "dice_f1": 35.44,
+        "precision": 21.54,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\cocoglide\\comparison_boards\\glide_inpainting_val2017_552612_up_comparison.jpg"
+    }
+  ]
+}

@@ -1,0 +1,3446 @@
+{
+  "dataset_name": "casia1",
+  "dataset_title": "CASIA 1.0 Tampered Benchmark",
+  "total_samples_evaluated": 36,
+  "document_level_accuracy": 100.0,
+  "confusion_matrix": {
+    "true_positives": 36,
+    "true_negatives": 0,
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "mean_pixel_metrics": {
+    "mean_iou": 5.95,
+    "mean_dice_f1": 10.77,
+    "mean_recall": 66.29,
+    "mean_precision": 6.29
+  },
+  "samples": [
+    {
+      "index": 0,
+      "sample_name": "Sp_S_CNN_A_nat0078_nat0078_0004_combine.png",
+      "clean_name": "Sp_S_CNN_A_nat0078_nat0078_0004_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 22.6,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 23510,
+        "bounding_boxes": [
+          [
+            218,
+            26,
+            336,
+            336
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.8644,
+        "fraud_score": 0.8644,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 1393,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              170,
+              300,
+              229,
+              360
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 1.0,
+            "area_pixels": 3540,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 0.0,
+        "dice_f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_S_CNN_A_nat0078_nat0078_0004_combine_comparison.jpg"
+    },
+    {
+      "index": 1,
+      "sample_name": "Sp_S_CNN_A_pla0060_pla0060_0192_combine.png",
+      "clean_name": "Sp_S_CNN_A_pla0060_pla0060_0192_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 31.3,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 4906,
+        "bounding_boxes": [
+          [
+            67,
+            161,
+            286,
+            250
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.6633,
+        "fraud_score": 0.6633,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 110905,
+        "detected_regions_count": 2,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7221,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              5,
+              87,
+              16,
+              93
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3752,
+            "area_pixels": 66,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 3.89,
+        "dice_f1": 7.49,
+        "precision": 3.91,
+        "recall": 88.36
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_S_CNN_A_pla0060_pla0060_0192_combine_comparison.jpg"
+    },
+    {
+      "index": 2,
+      "sample_name": "Sp_S_CNN_R_sec0097_sec0097_0006_combine.png",
+      "clean_name": "Sp_S_CNN_R_sec0097_sec0097_0006_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 29.6,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 1718,
+        "bounding_boxes": [
+          [
+            77,
+            193,
+            107,
+            282
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.873,
+        "fraud_score": 0.873,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 2309,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              245,
+              171,
+              276,
+              260
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.9948,
+            "area_pixels": 2759,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 0.0,
+        "dice_f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_S_CNN_R_sec0097_sec0097_0006_combine_comparison.jpg"
+    },
+    {
+      "index": 3,
+      "sample_name": "Sp_S_NNN_A_ani0031_ani0031_0197_combine.png",
+      "clean_name": "Sp_S_NNN_A_ani0031_ani0031_0197_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 49.9,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 24049,
+        "bounding_boxes": [
+          [
+            234,
+            114,
+            356,
+            300
+          ],
+          [
+            0,
+            178,
+            100,
+            366
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.8404,
+        "fraud_score": 0.8404,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 21323,
+        "detected_regions_count": 7,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              58,
+              132,
+              224,
+              325
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.9722,
+            "area_pixels": 32038,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              339,
+              332,
+              384,
+              379
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4918,
+            "area_pixels": 2115,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 3,
+            "bounding_box": [
+              0,
+              315,
+              4,
+              324
+            ],
+            "document_region": "Footer / Terms / Authority Seal",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.4398,
+            "area_pixels": 36,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 4,
+            "bounding_box": [
+              6,
+              373,
+              18,
+              384
+            ],
+            "document_region": "Footer / Terms / Authority Seal",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4388,
+            "area_pixels": 132,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 5,
+            "bounding_box": [
+              157,
+              373,
+              200,
+              384
+            ],
+            "document_region": "Footer / Terms / Authority Seal",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.4182,
+            "area_pixels": 473,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 6,
+            "bounding_box": [
+              99,
+              374,
+              116,
+              384
+            ],
+            "document_region": "Footer / Terms / Authority Seal",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4135,
+            "area_pixels": 170,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 7,
+            "bounding_box": [
+              293,
+              378,
+              314,
+              384
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.3962,
+            "area_pixels": 126,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 3.24,
+        "dice_f1": 6.28,
+        "precision": 6.68,
+        "recall": 5.93
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_S_NNN_A_ani0031_ani0031_0197_combine_comparison.jpg"
+    },
+    {
+      "index": 4,
+      "sample_name": "Sp_S_NNN_A_ani0041_ani0041_0199_combine.png",
+      "clean_name": "Sp_S_NNN_A_ani0041_ani0041_0199_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 44.0,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 24621,
+        "bounding_boxes": [
+          [
+            0,
+            69,
+            93,
+            272
+          ],
+          [
+            235,
+            264,
+            366,
+            384
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7785,
+        "fraud_score": 0.7785,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 77220,
+        "detected_regions_count": 7,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              303,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Inpainting / Content Erasure / White-Out",
+            "peak_confidence": 0.8718,
+            "area_pixels": 116352,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              358,
+              0,
+              384,
+              19
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4421,
+            "area_pixels": 494,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 3,
+            "bounding_box": [
+              350,
+              144,
+              384,
+              178
+            ],
+            "document_region": "Photo / ID Portrait / Stamp Area",
+            "distortion_type": "Inpainting / Content Erasure / White-Out",
+            "peak_confidence": 0.4145,
+            "area_pixels": 1156,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 4,
+            "bounding_box": [
+              314,
+              101,
+              329,
+              109
+            ],
+            "document_region": "Photo / ID Portrait / Stamp Area",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3829,
+            "area_pixels": 120,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 5,
+            "bounding_box": [
+              314,
+              167,
+              322,
+              175
+            ],
+            "document_region": "Photo / ID Portrait / Stamp Area",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.379,
+            "area_pixels": 64,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 6,
+            "bounding_box": [
+              5,
+              322,
+              15,
+              334
+            ],
+            "document_region": "Footer / Terms / Authority Seal",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3657,
+            "area_pixels": 120,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 7,
+            "bounding_box": [
+              5,
+              218,
+              11,
+              224
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3627,
+            "area_pixels": 36,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 3.18,
+        "dice_f1": 6.17,
+        "precision": 4.07,
+        "recall": 12.76
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_S_NNN_A_ani0041_ani0041_0199_combine_comparison.jpg"
+    },
+    {
+      "index": 5,
+      "sample_name": "Sp_S_NNN_A_ani0092_ani0092_0012_combine.png",
+      "clean_name": "Sp_S_NNN_A_ani0092_ani0092_0012_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 25.8,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 1361,
+        "bounding_boxes": [
+          [
+            285,
+            330,
+            341,
+            384
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.8777,
+        "fraud_score": 0.8777,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 2813,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              314,
+              298,
+              369,
+              361
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.9981,
+            "area_pixels": 3465,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 2.43,
+        "dice_f1": 4.74,
+        "precision": 3.52,
+        "recall": 7.27
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_S_NNN_A_ani0092_ani0092_0012_combine_comparison.jpg"
+    },
+    {
+      "index": 6,
+      "sample_name": "Sp_S_NNN_A_art0060_art0060_0205_combine.png",
+      "clean_name": "Sp_S_NNN_A_art0060_art0060_0205_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 43.2,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 7217,
+        "bounding_boxes": [
+          [
+            128,
+            0,
+            174,
+            209
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.714,
+        "fraud_score": 0.714,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 121078,
+        "detected_regions_count": 6,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7863,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              375,
+              176,
+              384,
+              184
+            ],
+            "document_region": "Photo / ID Portrait / Stamp Area",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.397,
+            "area_pixels": 72,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 3,
+            "bounding_box": [
+              0,
+              172,
+              5,
+              177
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3853,
+            "area_pixels": 25,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 4,
+            "bounding_box": [
+              358,
+              157,
+              362,
+              165
+            ],
+            "document_region": "Photo / ID Portrait / Stamp Area",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3714,
+            "area_pixels": 32,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 5,
+            "bounding_box": [
+              87,
+              128,
+              92,
+              140
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.371,
+            "area_pixels": 60,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 6,
+            "bounding_box": [
+              110,
+              187,
+              117,
+              191
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3701,
+            "area_pixels": 28,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 5.61,
+        "dice_f1": 10.62,
+        "precision": 5.63,
+        "recall": 94.42
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_S_NNN_A_art0060_art0060_0205_combine_comparison.jpg"
+    },
+    {
+      "index": 7,
+      "sample_name": "Sp_S_NNN_A_cha0064_cha0064_0024_combine.png",
+      "clean_name": "Sp_S_NNN_A_cha0064_cha0064_0024_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 35.8,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 1005,
+        "bounding_boxes": [
+          [
+            85,
+            75,
+            117,
+            120
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7908,
+        "fraud_score": 0.7908,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 100094,
+        "detected_regions_count": 4,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.898,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              198,
+              78,
+              209,
+              85
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4304,
+            "area_pixels": 77,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 3,
+            "bounding_box": [
+              166,
+              0,
+              208,
+              79
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.423,
+            "area_pixels": 3318,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 4,
+            "bounding_box": [
+              64,
+              149,
+              69,
+              156
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.365,
+            "area_pixels": 35,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 0.56,
+        "dice_f1": 1.11,
+        "precision": 0.56,
+        "recall": 56.02
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_S_NNN_A_cha0064_cha0064_0024_combine_comparison.jpg"
+    },
+    {
+      "index": 8,
+      "sample_name": "Sp_S_NNN_A_cha0083_cha0083_0025_combine.png",
+      "clean_name": "Sp_S_NNN_A_cha0083_cha0083_0025_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 52.1,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 5402,
+        "bounding_boxes": [
+          [
+            136,
+            158,
+            220,
+            241
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.9015,
+        "fraud_score": 0.9015,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 17342,
+        "detected_regions_count": 9,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              20,
+              297,
+              112,
+              384
+            ],
+            "document_region": "Footer / Terms / Authority Seal",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.9832,
+            "area_pixels": 8004,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              297,
+              100,
+              379,
+              199
+            ],
+            "document_region": "Photo / ID Portrait / Stamp Area",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.6537,
+            "area_pixels": 8118,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 3,
+            "bounding_box": [
+              331,
+              61,
+              384,
+              130
+            ],
+            "document_region": "Photo / ID Portrait / Stamp Area",
+            "distortion_type": "Inpainting / Content Erasure / White-Out",
+            "peak_confidence": 0.5941,
+            "area_pixels": 3657,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 4,
+            "bounding_box": [
+              38,
+              41,
+              76,
+              82
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.5237,
+            "area_pixels": 1558,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 5,
+            "bounding_box": [
+              325,
+              267,
+              363,
+              376
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.506,
+            "area_pixels": 4142,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 6,
+            "bounding_box": [
+              257,
+              116,
+              279,
+              158
+            ],
+            "document_region": "Photo / ID Portrait / Stamp Area",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4644,
+            "area_pixels": 924,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 7,
+            "bounding_box": [
+              272,
+              258,
+              286,
+              291
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.4586,
+            "area_pixels": 462,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 8,
+            "bounding_box": [
+              259,
+              160,
+              269,
+              170
+            ],
+            "document_region": "Photo / ID Portrait / Stamp Area",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3969,
+            "area_pixels": 100,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 9,
+            "bounding_box": [
+              268,
+              305,
+              273,
+              316
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.387,
+            "area_pixels": 55,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 0.0,
+        "dice_f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_S_NNN_A_cha0083_cha0083_0025_combine_comparison.jpg"
+    },
+    {
+      "index": 9,
+      "sample_name": "Sp_S_NNN_A_cha0085_cha0085_0026_combine.png",
+      "clean_name": "Sp_S_NNN_A_cha0085_cha0085_0026_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 29.8,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 1279,
+        "bounding_boxes": [
+          [
+            225,
+            124,
+            262,
+            161
+          ],
+          [
+            350,
+            281,
+            381,
+            307
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7296,
+        "fraud_score": 0.7296,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 147283,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7527,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 0.87,
+        "dice_f1": 1.72,
+        "precision": 0.87,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_S_NNN_A_cha0085_cha0085_0026_combine_comparison.jpg"
+    },
+    {
+      "index": 10,
+      "sample_name": "Sp_S_NNN_A_cha0091_cha0091_0027_combine.png",
+      "clean_name": "Sp_S_NNN_A_cha0091_cha0091_0027_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 48.3,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 8015,
+        "bounding_boxes": [
+          [
+            32,
+            26,
+            98,
+            96
+          ],
+          [
+            330,
+            43,
+            384,
+            144
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.8929,
+        "fraud_score": 0.8929,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 33817,
+        "detected_regions_count": 2,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              140,
+              42,
+              332,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Copy-Move / Region Splicing",
+            "peak_confidence": 0.9778,
+            "area_pixels": 65664,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              93,
+              357,
+              121,
+              384
+            ],
+            "document_region": "Footer / Terms / Authority Seal",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4315,
+            "area_pixels": 756,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 0.0,
+        "dice_f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_S_NNN_A_cha0091_cha0091_0027_combine_comparison.jpg"
+    },
+    {
+      "index": 11,
+      "sample_name": "Sp_S_NNN_A_nat0041_nat0041_0208_combine.png",
+      "clean_name": "Sp_S_NNN_A_nat0041_nat0041_0208_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 33.6,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 11547,
+        "bounding_boxes": [
+          [
+            152,
+            208,
+            309,
+            260
+          ],
+          [
+            213,
+            261,
+            374,
+            312
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.6636,
+        "fraud_score": 0.6636,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 137123,
+        "detected_regions_count": 2,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7064,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              151,
+              199,
+              162,
+              203
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.3637,
+            "area_pixels": 44,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 7.29,
+        "dice_f1": 13.6,
+        "precision": 7.37,
+        "recall": 87.53
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_S_NNN_A_nat0041_nat0041_0208_combine_comparison.jpg"
+    },
+    {
+      "index": 12,
+      "sample_name": "Sp_S_NNN_A_nat0052_nat0052_0209_combine.png",
+      "clean_name": "Sp_S_NNN_A_nat0052_nat0052_0209_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 29.3,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 14620,
+        "bounding_boxes": [
+          [
+            5,
+            227,
+            137,
+            384
+          ],
+          [
+            192,
+            265,
+            260,
+            353
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7359,
+        "fraud_score": 0.7359,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 121826,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7909,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 10.87,
+        "dice_f1": 19.61,
+        "precision": 10.98,
+        "recall": 91.49
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_S_NNN_A_nat0052_nat0052_0209_combine_comparison.jpg"
+    },
+    {
+      "index": 13,
+      "sample_name": "Sp_S_NNN_A_nat0074_nat0074_0210_combine.png",
+      "clean_name": "Sp_S_NNN_A_nat0074_nat0074_0210_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 29.4,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 3273,
+        "bounding_boxes": [
+          [
+            166,
+            226,
+            280,
+            275
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7193,
+        "fraud_score": 0.7193,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 147451,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7524,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 2.22,
+        "dice_f1": 4.34,
+        "precision": 2.22,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_S_NNN_A_nat0074_nat0074_0210_combine_comparison.jpg"
+    },
+    {
+      "index": 14,
+      "sample_name": "Sp_S_NNN_A_pla0099_pla0099_0214_combine.png",
+      "clean_name": "Sp_S_NNN_A_pla0099_pla0099_0214_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 28.3,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 5707,
+        "bounding_boxes": [
+          [
+            51,
+            76,
+            122,
+            198
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.6908,
+        "fraud_score": 0.6908,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 146414,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.711,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 3.9,
+        "dice_f1": 7.5,
+        "precision": 3.9,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_S_NNN_A_pla0099_pla0099_0214_combine_comparison.jpg"
+    },
+    {
+      "index": 15,
+      "sample_name": "Sp_S_NNN_A_sec0013_sec0013_0036_combine.png",
+      "clean_name": "Sp_S_NNN_A_sec0013_sec0013_0036_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 83.3,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 9992,
+        "bounding_boxes": [
+          [
+            243,
+            241,
+            383,
+            353
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7768,
+        "fraud_score": 0.7768,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 19507,
+        "detected_regions_count": 15,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              134,
+              139
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.8957,
+            "area_pixels": 18626,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              277,
+              127,
+              384,
+              279
+            ],
+            "document_region": "Photo / ID Portrait / Stamp Area",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7829,
+            "area_pixels": 16264,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 3,
+            "bounding_box": [
+              235,
+              222,
+              247,
+              230
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4466,
+            "area_pixels": 96,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 4,
+            "bounding_box": [
+              222,
+              43,
+              236,
+              61
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4458,
+            "area_pixels": 252,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 5,
+            "bounding_box": [
+              126,
+              175,
+              132,
+              188
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.423,
+            "area_pixels": 78,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 6,
+            "bounding_box": [
+              76,
+              150,
+              104,
+              171
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4216,
+            "area_pixels": 588,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 7,
+            "bounding_box": [
+              162,
+              279,
+              183,
+              300
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4099,
+            "area_pixels": 441,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 8,
+            "bounding_box": [
+              0,
+              183,
+              14,
+              190
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.4085,
+            "area_pixels": 98,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 9,
+            "bounding_box": [
+              142,
+              36,
+              158,
+              45
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.399,
+            "area_pixels": 144,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 10,
+            "bounding_box": [
+              46,
+              296,
+              57,
+              308
+            ],
+            "document_region": "Footer / Terms / Authority Seal",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3866,
+            "area_pixels": 132,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 11,
+            "bounding_box": [
+              276,
+              219,
+              283,
+              231
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3837,
+            "area_pixels": 84,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 12,
+            "bounding_box": [
+              146,
+              306,
+              159,
+              312
+            ],
+            "document_region": "Footer / Terms / Authority Seal",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.3783,
+            "area_pixels": 78,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 13,
+            "bounding_box": [
+              218,
+              351,
+              225,
+              364
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3774,
+            "area_pixels": 91,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 14,
+            "bounding_box": [
+              195,
+              0,
+              208,
+              5
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.3767,
+            "area_pixels": 65,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 15,
+            "bounding_box": [
+              167,
+              310,
+              172,
+              317
+            ],
+            "document_region": "Footer / Terms / Authority Seal",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.37,
+            "area_pixels": 35,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 2.67,
+        "dice_f1": 5.19,
+        "precision": 3.93,
+        "recall": 7.67
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_S_NNN_A_sec0013_sec0013_0036_combine_comparison.jpg"
+    },
+    {
+      "index": 16,
+      "sample_name": "Sp_S_NNN_A_sec0034_sec0034_0038_combine.png",
+      "clean_name": "Sp_S_NNN_A_sec0034_sec0034_0038_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 35.3,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 3231,
+        "bounding_boxes": [
+          [
+            126,
+            189,
+            190,
+            276
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7137,
+        "fraud_score": 0.7137,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 110171,
+        "detected_regions_count": 3,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7925,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              64,
+              202,
+              85,
+              228
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3963,
+            "area_pixels": 546,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 3,
+            "bounding_box": [
+              9,
+              311,
+              14,
+              320
+            ],
+            "document_region": "Footer / Terms / Authority Seal",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3582,
+            "area_pixels": 45,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 2.93,
+        "dice_f1": 5.7,
+        "precision": 2.93,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_S_NNN_A_sec0034_sec0034_0038_combine_comparison.jpg"
+    },
+    {
+      "index": 17,
+      "sample_name": "Sp_S_NNN_A_sec0038_sec0038_0039_combine.png",
+      "clean_name": "Sp_S_NNN_A_sec0038_sec0038_0039_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 73.0,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 6360,
+        "bounding_boxes": [
+          [
+            241,
+            186,
+            376,
+            262
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7121,
+        "fraud_score": 0.7121,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 86340,
+        "detected_regions_count": 11,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              7,
+              52,
+              377,
+              378
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7954,
+            "area_pixels": 120620,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              7,
+              35,
+              148,
+              54
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.5696,
+            "area_pixels": 2679,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 3,
+            "bounding_box": [
+              333,
+              22,
+              378,
+              37
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.4851,
+            "area_pixels": 675,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 4,
+            "bounding_box": [
+              8,
+              169,
+              17,
+              206
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.4173,
+            "area_pixels": 333,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 5,
+            "bounding_box": [
+              269,
+              29,
+              300,
+              40
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.4144,
+            "area_pixels": 341,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 6,
+            "bounding_box": [
+              182,
+              34,
+              254,
+              46
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.4132,
+            "area_pixels": 864,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 7,
+            "bounding_box": [
+              93,
+              367,
+              103,
+              375
+            ],
+            "document_region": "Footer / Terms / Authority Seal",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4075,
+            "area_pixels": 80,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 8,
+            "bounding_box": [
+              363,
+              303,
+              370,
+              312
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4044,
+            "area_pixels": 63,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 9,
+            "bounding_box": [
+              161,
+              42,
+              169,
+              49
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3841,
+            "area_pixels": 56,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 10,
+            "bounding_box": [
+              8,
+              291,
+              19,
+              298
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3756,
+            "area_pixels": 77,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 11,
+            "bounding_box": [
+              9,
+              236,
+              15,
+              241
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3704,
+            "area_pixels": 30,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 7.12,
+        "dice_f1": 13.3,
+        "precision": 7.14,
+        "recall": 96.9
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_S_NNN_A_sec0038_sec0038_0039_combine_comparison.jpg"
+    },
+    {
+      "index": 18,
+      "sample_name": "Sp_D_CND_A_pla0005_pla0023_0281_combine.png",
+      "clean_name": "Sp_D_CND_A_pla0005_pla0023_0281_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 29.0,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 12867,
+        "bounding_boxes": [
+          [
+            128,
+            130,
+            272,
+            264
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.799,
+        "fraud_score": 0.799,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 145781,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.8276,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 8.83,
+        "dice_f1": 16.22,
+        "precision": 8.83,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_D_CND_A_pla0005_pla0023_0281_combine_comparison.jpg"
+    },
+    {
+      "index": 19,
+      "sample_name": "Sp_D_CNN_A_art0024_ani0032_0268_combine.png",
+      "clean_name": "Sp_D_CNN_A_art0024_ani0032_0268_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 29.7,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 9103,
+        "bounding_boxes": [
+          [
+            166,
+            152,
+            273,
+            341
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7007,
+        "fraud_score": 0.7007,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 143076,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7244,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 6.36,
+        "dice_f1": 11.96,
+        "precision": 6.36,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_D_CNN_A_art0024_ani0032_0268_combine_comparison.jpg"
+    },
+    {
+      "index": 20,
+      "sample_name": "Sp_D_CNN_A_cha0025_pla0067_0269_combine.png",
+      "clean_name": "Sp_D_CNN_A_cha0025_pla0067_0269_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 30.1,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 17609,
+        "bounding_boxes": [
+          [
+            236,
+            167,
+            293,
+            341
+          ],
+          [
+            65,
+            169,
+            124,
+            342
+          ],
+          [
+            139,
+            169,
+            198,
+            341
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.6721,
+        "fraud_score": 0.6721,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 144516,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7103,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 12.04,
+        "dice_f1": 21.49,
+        "precision": 12.05,
+        "recall": 98.93
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_D_CNN_A_cha0025_pla0067_0269_combine_comparison.jpg"
+    },
+    {
+      "index": 21,
+      "sample_name": "Sp_D_CNN_A_nat0071_ani0024_0270_combine.png",
+      "clean_name": "Sp_D_CNN_A_nat0071_ani0024_0270_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 32.5,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 8937,
+        "bounding_boxes": [
+          [
+            78,
+            104,
+            288,
+            218
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7737,
+        "fraud_score": 0.7737,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 147445,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Inpainting / Content Erasure / White-Out",
+            "peak_confidence": 0.8107,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 6.06,
+        "dice_f1": 11.43,
+        "precision": 6.06,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_D_CNN_A_nat0071_ani0024_0270_combine_comparison.jpg"
+    },
+    {
+      "index": 22,
+      "sample_name": "Sp_D_CNN_A_pla0030_pla0061_0272_combine.png",
+      "clean_name": "Sp_D_CNN_A_pla0030_pla0061_0272_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 28.4,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 17921,
+        "bounding_boxes": [
+          [
+            29,
+            123,
+            354,
+            346
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7422,
+        "fraud_score": 0.7422,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 147136,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7876,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 12.18,
+        "dice_f1": 21.71,
+        "precision": 12.18,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_D_CNN_A_pla0030_pla0061_0272_combine_comparison.jpg"
+    },
+    {
+      "index": 23,
+      "sample_name": "Sp_D_CNN_A_pla0070_pla0073_0273_combine.png",
+      "clean_name": "Sp_D_CNN_A_pla0070_pla0073_0273_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 27.3,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 15479,
+        "bounding_boxes": [
+          [
+            102,
+            103,
+            282,
+            224
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7102,
+        "fraud_score": 0.7102,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 144539,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7239,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 10.71,
+        "dice_f1": 19.35,
+        "precision": 10.71,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_D_CNN_A_pla0070_pla0073_0273_combine_comparison.jpg"
+    },
+    {
+      "index": 24,
+      "sample_name": "Sp_D_CNN_A_pla0079_pla0049_0274_combine.png",
+      "clean_name": "Sp_D_CNN_A_pla0079_pla0049_0274_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 29.3,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 9425,
+        "bounding_boxes": [
+          [
+            140,
+            8,
+            378,
+            137
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.6817,
+        "fraud_score": 0.6817,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 136714,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              5,
+              0,
+              384,
+              380
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7135,
+            "area_pixels": 144020,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 6.89,
+        "dice_f1": 12.89,
+        "precision": 6.89,
+        "recall": 99.96
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_D_CNN_A_pla0079_pla0049_0274_combine_comparison.jpg"
+    },
+    {
+      "index": 25,
+      "sample_name": "Sp_D_CNN_A_sec0012_ani0007_0275_combine.png",
+      "clean_name": "Sp_D_CNN_A_sec0012_ani0007_0275_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 55.9,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 13434,
+        "bounding_boxes": [
+          [
+            84,
+            244,
+            309,
+            365
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7066,
+        "fraud_score": 0.7066,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 88824,
+        "detected_regions_count": 8,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              86,
+              0,
+              321,
+              67
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.7548,
+            "area_pixels": 15745,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              0,
+              109,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.647,
+            "area_pixels": 105600,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 3,
+            "bounding_box": [
+              0,
+              0,
+              74,
+              84
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.6079,
+            "area_pixels": 6216,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 4,
+            "bounding_box": [
+              0,
+              86,
+              11,
+              118
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.5118,
+            "area_pixels": 352,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 5,
+            "bounding_box": [
+              171,
+              82,
+              210,
+              106
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4386,
+            "area_pixels": 936,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 6,
+            "bounding_box": [
+              355,
+              13,
+              365,
+              21
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3752,
+            "area_pixels": 80,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 7,
+            "bounding_box": [
+              329,
+              248,
+              335,
+              255
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3704,
+            "area_pixels": 42,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 8,
+            "bounding_box": [
+              281,
+              20,
+              287,
+              30
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3699,
+            "area_pixels": 60,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 14.23,
+        "dice_f1": 24.92,
+        "precision": 14.34,
+        "recall": 94.83
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_D_CNN_A_sec0012_ani0007_0275_combine_comparison.jpg"
+    },
+    {
+      "index": 26,
+      "sample_name": "Sp_D_CNN_C_ani0068_ani0045_0099_combine.png",
+      "clean_name": "Sp_D_CNN_C_ani0068_ani0045_0099_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 21.3,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 698,
+        "bounding_boxes": [
+          [
+            216,
+            295,
+            240,
+            343
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.9004,
+        "fraud_score": 0.9004,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 8601,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              161,
+              41,
+              271,
+              146
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.9989,
+            "area_pixels": 11550,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 0.0,
+        "dice_f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_D_CNN_C_ani0068_ani0045_0099_combine_comparison.jpg"
+    },
+    {
+      "index": 27,
+      "sample_name": "Sp_D_CNN_R_art0027_art0066_0100_combine.png",
+      "clean_name": "Sp_D_CNN_R_art0027_art0066_0100_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 51.0,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 5289,
+        "bounding_boxes": [
+          [
+            22,
+            305,
+            162,
+            344
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.8101,
+        "fraud_score": 0.8101,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 104389,
+        "detected_regions_count": 8,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              5,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.9045,
+            "area_pixels": 145536,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              284,
+              37,
+              298,
+              49
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4238,
+            "area_pixels": 168,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 3,
+            "bounding_box": [
+              228,
+              0,
+              284,
+              36
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4236,
+            "area_pixels": 2016,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 4,
+            "bounding_box": [
+              233,
+              45,
+              250,
+              67
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4045,
+            "area_pixels": 374,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 5,
+            "bounding_box": [
+              262,
+              50,
+              274,
+              65
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3875,
+            "area_pixels": 180,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 6,
+            "bounding_box": [
+              208,
+              51,
+              213,
+              57
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3856,
+            "area_pixels": 30,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 7,
+            "bounding_box": [
+              66,
+              290,
+              72,
+              297
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3811,
+            "area_pixels": 42,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 8,
+            "bounding_box": [
+              18,
+              167,
+              23,
+              175
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3766,
+            "area_pixels": 40,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 3.44,
+        "dice_f1": 6.64,
+        "precision": 3.49,
+        "recall": 68.9
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_D_CNN_R_art0027_art0066_0100_combine_comparison.jpg"
+    },
+    {
+      "index": 28,
+      "sample_name": "Sp_D_CNN_R_art0044_art0018_0278_combine.png",
+      "clean_name": "Sp_D_CNN_R_art0044_art0018_0278_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 61.9,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 5296,
+        "bounding_boxes": [
+          [
+            128,
+            114,
+            227,
+            180
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.6854,
+        "fraud_score": 0.6854,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 111904,
+        "detected_regions_count": 7,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7459,
+            "area_pixels": 147456,
+            "extracted_text": "MAFL IUNER"
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              0,
+              0,
+              92,
+              214
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4974,
+            "area_pixels": 19688,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 3,
+            "bounding_box": [
+              351,
+              0,
+              384,
+              35
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4438,
+            "area_pixels": 1155,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 4,
+            "bounding_box": [
+              379,
+              166,
+              384,
+              171
+            ],
+            "document_region": "Photo / ID Portrait / Stamp Area",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4062,
+            "area_pixels": 25,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 5,
+            "bounding_box": [
+              67,
+              325,
+              74,
+              333
+            ],
+            "document_region": "Footer / Terms / Authority Seal",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3841,
+            "area_pixels": 56,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 6,
+            "bounding_box": [
+              303,
+              5,
+              323,
+              18
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3726,
+            "area_pixels": 260,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 7,
+            "bounding_box": [
+              87,
+              168,
+              100,
+              177
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3644,
+            "area_pixels": 117,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 4.67,
+        "dice_f1": 8.92,
+        "precision": 4.67,
+        "recall": 98.66
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_D_CNN_R_art0044_art0018_0278_combine_comparison.jpg"
+    },
+    {
+      "index": 29,
+      "sample_name": "Sp_D_CRN_A_arc0024_ani0031_0265_combine.png",
+      "clean_name": "Sp_D_CRN_A_arc0024_ani0031_0265_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 30.6,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 20205,
+        "bounding_boxes": [
+          [
+            0,
+            162,
+            115,
+            345
+          ],
+          [
+            232,
+            195,
+            363,
+            342
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7107,
+        "fraud_score": 0.7107,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 139101,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7657,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 13.5,
+        "dice_f1": 23.78,
+        "precision": 13.62,
+        "recall": 93.76
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_D_CRN_A_arc0024_ani0031_0265_combine_comparison.jpg"
+    },
+    {
+      "index": 30,
+      "sample_name": "Sp_D_CRN_A_nat0033_obj0059_0385_combine.png",
+      "clean_name": "Sp_D_CRN_A_nat0033_obj0059_0385_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 33.6,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 13860,
+        "bounding_boxes": [
+          [
+            184,
+            72,
+            265,
+            324
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7338,
+        "fraud_score": 0.7338,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 107060,
+        "detected_regions_count": 3,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              49,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.8261,
+            "area_pixels": 128640,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              0,
+              17,
+              6,
+              24
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4127,
+            "area_pixels": 42,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 3,
+            "bounding_box": [
+              0,
+              42,
+              5,
+              50
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4088,
+            "area_pixels": 40,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 11.5,
+        "dice_f1": 20.63,
+        "precision": 11.65,
+        "recall": 90.01
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_D_CRN_A_nat0033_obj0059_0385_combine_comparison.jpg"
+    },
+    {
+      "index": 31,
+      "sample_name": "Sp_D_CRN_A_nat0077_nat0067_0387_combine.png",
+      "clean_name": "Sp_D_CRN_A_nat0077_nat0067_0387_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 30.7,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 1899,
+        "bounding_boxes": [
+          [
+            110,
+            218,
+            155,
+            296
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.6981,
+        "fraud_score": 0.6981,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 136797,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.7433,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 1.39,
+        "dice_f1": 2.74,
+        "precision": 1.39,
+        "recall": 100.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_D_CRN_A_nat0077_nat0067_0387_combine_comparison.jpg"
+    },
+    {
+      "index": 32,
+      "sample_name": "Sp_D_NND_A_ani0025_cha0081_0594_combine.png",
+      "clean_name": "Sp_D_NND_A_ani0025_cha0081_0594_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 49.9,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 49679,
+        "bounding_boxes": [
+          [
+            65,
+            68,
+            384,
+            384
+          ],
+          [
+            0,
+            301,
+            114,
+            384
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7705,
+        "fraud_score": 0.7705,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 118492,
+        "detected_regions_count": 8,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.8758,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              357,
+              178,
+              384,
+              234
+            ],
+            "document_region": "Photo / ID Portrait / Stamp Area",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4434,
+            "area_pixels": 1512,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 3,
+            "bounding_box": [
+              249,
+              366,
+              267,
+              384
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4089,
+            "area_pixels": 324,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 4,
+            "bounding_box": [
+              216,
+              351,
+              224,
+              358
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3839,
+            "area_pixels": 56,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 5,
+            "bounding_box": [
+              363,
+              91,
+              379,
+              104
+            ],
+            "document_region": "Photo / ID Portrait / Stamp Area",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3834,
+            "area_pixels": 208,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 6,
+            "bounding_box": [
+              344,
+              266,
+              351,
+              271
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3777,
+            "area_pixels": 35,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 7,
+            "bounding_box": [
+              320,
+              351,
+              331,
+              364
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3759,
+            "area_pixels": 143,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 8,
+            "bounding_box": [
+              345,
+              223,
+              357,
+              242
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.375,
+            "area_pixels": 228,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 23.24,
+        "dice_f1": 37.71,
+        "precision": 26.76,
+        "recall": 63.83
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_D_NND_A_ani0025_cha0081_0594_combine_comparison.jpg"
+    },
+    {
+      "index": 33,
+      "sample_name": "Sp_D_NND_A_art0040_arc0079_0600_combine.png",
+      "clean_name": "Sp_D_NND_A_art0040_arc0079_0600_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 66.6,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 13975,
+        "bounding_boxes": [
+          [
+            0,
+            161,
+            185,
+            343
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7277,
+        "fraud_score": 0.7277,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 74770,
+        "detected_regions_count": 8,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              9,
+              234,
+              181,
+              384
+            ],
+            "document_region": "Footer / Terms / Authority Seal",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.8222,
+            "area_pixels": 25800,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              79,
+              5,
+              384,
+              290
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.6994,
+            "area_pixels": 86925,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 3,
+            "bounding_box": [
+              71,
+              17,
+              172,
+              91
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.5724,
+            "area_pixels": 7474,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 4,
+            "bounding_box": [
+              95,
+              0,
+              169,
+              9
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.4504,
+            "area_pixels": 666,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 5,
+            "bounding_box": [
+              0,
+              52,
+              6,
+              62
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4145,
+            "area_pixels": 60,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 6,
+            "bounding_box": [
+              0,
+              6,
+              26,
+              63
+            ],
+            "document_region": "Header / Issuer / Document Title",
+            "distortion_type": "Inpainting / Content Erasure / White-Out",
+            "peak_confidence": 0.4065,
+            "area_pixels": 1482,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 7,
+            "bounding_box": [
+              9,
+              179,
+              15,
+              209
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.3814,
+            "area_pixels": 180,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 8,
+            "bounding_box": [
+              106,
+              139,
+              112,
+              146
+            ],
+            "document_region": "Document Body (Left Field / Label Column)",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.363,
+            "area_pixels": 42,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 12.99,
+        "dice_f1": 23.0,
+        "precision": 13.65,
+        "recall": 73.02
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_D_NND_A_art0040_arc0079_0600_combine_comparison.jpg"
+    },
+    {
+      "index": 34,
+      "sample_name": "Sp_D_NND_A_cha0042_arc0036_0601_combine.png",
+      "clean_name": "Sp_D_NND_A_cha0042_arc0036_0601_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 33.6,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 17286,
+        "bounding_boxes": [
+          [
+            252,
+            146,
+            383,
+            340
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.8932,
+        "fraud_score": 0.8932,
+        "risk_level": "CRITICAL",
+        "tampered_pixels_detected": 3614,
+        "detected_regions_count": 1,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              208,
+              178,
+              243,
+              336
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 1.0,
+            "area_pixels": 5530,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 0.0,
+        "dice_f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_D_NND_A_cha0042_arc0036_0601_combine_comparison.jpg"
+    },
+    {
+      "index": 35,
+      "sample_name": "Sp_D_NND_A_nat0031_nat0096_0610_combine.png",
+      "clean_name": "Sp_D_NND_A_nat0031_nat0096_0610_combine",
+      "resolution": [
+        384,
+        384
+      ],
+      "inference_time_ms": 47.2,
+      "ground_truth": {
+        "is_tampered": true,
+        "tampered_pixels": 17171,
+        "bounding_boxes": [
+          [
+            243,
+            132,
+            342,
+            384
+          ]
+        ]
+      },
+      "model_prediction": {
+        "verdict": "TAMPERED / FAKE",
+        "is_fake": true,
+        "confidence": 0.7868,
+        "fraud_score": 0.7868,
+        "risk_level": "HIGH",
+        "tampered_pixels_detected": 95990,
+        "detected_regions_count": 7,
+        "detected_regions": [
+          {
+            "region_id": 1,
+            "bounding_box": [
+              0,
+              0,
+              384,
+              384
+            ],
+            "document_region": "Document Body (Text / Number / Value Field)",
+            "distortion_type": "Photo / Seal / Region Splicing",
+            "peak_confidence": 0.8978,
+            "area_pixels": 147456,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 2,
+            "bounding_box": [
+              187,
+              376,
+              264,
+              384
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.4562,
+            "area_pixels": 616,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 3,
+            "bounding_box": [
+              311,
+              159,
+              329,
+              178
+            ],
+            "document_region": "Photo / ID Portrait / Stamp Area",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4307,
+            "area_pixels": 342,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 4,
+            "bounding_box": [
+              168,
+              377,
+              176,
+              384
+            ],
+            "document_region": "Footer / Terms / Authority Seal",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.4083,
+            "area_pixels": 56,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 5,
+            "bounding_box": [
+              261,
+              347,
+              271,
+              354
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3918,
+            "area_pixels": 70,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 6,
+            "bounding_box": [
+              287,
+              377,
+              307,
+              384
+            ],
+            "document_region": "Footer / Authorized Signature Field",
+            "distortion_type": "Text / Number Field Alteration",
+            "peak_confidence": 0.3884,
+            "area_pixels": 140,
+            "extracted_text": ""
+          },
+          {
+            "region_id": 7,
+            "bounding_box": [
+              341,
+              111,
+              346,
+              118
+            ],
+            "document_region": "Photo / ID Portrait / Stamp Area",
+            "distortion_type": "Localized Pixel Manipulation",
+            "peak_confidence": 0.3623,
+            "area_pixels": 35,
+            "extracted_text": ""
+          }
+        ]
+      },
+      "metrics": {
+        "verdict_match": true,
+        "iou": 9.3,
+        "dice_f1": 17.02,
+        "precision": 10.03,
+        "recall": 56.09
+      },
+      "evidence_board_path": "reports/forensics/complete_eval\\casia1\\comparison_boards\\Sp_D_NND_A_nat0031_nat0096_0610_combine_comparison.jpg"
+    }
+  ]
+}

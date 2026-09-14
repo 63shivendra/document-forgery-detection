@@ -252,12 +252,93 @@ class CASIADataset(Dataset):
         return img_tensor, mask_tensor, img_name
 
 
+class CASIA1Dataset(Dataset):
+    """
+    CASIA 1.0 Dataset loader from test_datasets/CASIA1.0/groundtruth/Samples
+    Reads composite triple-panel images (_combine.png) and extracts:
+    - Tampered image (middle panel)
+    - Binary forgery mask (right panel)
+    """
+    def __init__(self, data_root="test_datasets/CASIA1.0", img_size=(256, 256)):
+        self.img_size = img_size
+        self.augmenter = DocumentAugmenter(img_size=img_size)
+        import glob
+        self.combines = sorted(glob.glob(os.path.join(data_root, '**', '*_combine.png'), recursive=True))
+
+    def __len__(self):
+        return len(self.combines)
+
+    def __getitem__(self, idx):
+        file_path = self.combines[idx]
+        composite = Image.open(file_path).convert('RGB')
+        w, h = composite.size
+        tampered_img = composite.crop((w // 3, 0, 2 * (w // 3), h))
+        mask_img = composite.crop((2 * (w // 3), 0, w, h)).convert('L')
+        img_tensor, mask_tensor = self.augmenter(tampered_img, mask_img)
+        return img_tensor, mask_tensor, os.path.basename(file_path)
+
+
+class RecodaiScientificDataset(Dataset):
+    """
+    Recod.ai / LUC Scientific Image Forgery Detection Dataset Loader.
+    Automatically resolves images and ground truth masks from Kaggle download.
+    """
+    def __init__(self, data_root="data/recodai_scientific", img_size=(256, 256)):
+        self.img_size = img_size
+        self.augmenter = DocumentAugmenter(img_size=img_size)
+        import glob
+
+        # If kagglehub_path.txt exists, read the real kaggle cache path
+        pointer_file = os.path.join(data_root, "kagglehub_path.txt")
+        if os.path.exists(pointer_file):
+            with open(pointer_file, "r") as pf:
+                cache_path = pf.read().strip()
+                if os.path.exists(cache_path):
+                    data_root = cache_path
+
+        # Find all images recursively
+        all_files = glob.glob(os.path.join(data_root, "**", "*.*"), recursive=True)
+        img_candidates = [f for f in all_files if f.lower().endswith(('.png', '.jpg', '.jpeg', '.tif', '.bmp'))]
+
+        self.mask_map = {}
+        images = []
+        for f in img_candidates:
+            lower = f.lower()
+            if 'mask' in lower or '_gt' in lower:
+                base = os.path.splitext(os.path.basename(f))[0].replace('_mask', '').replace('_gt', '').replace('mask_', '')
+                self.mask_map[base] = f
+            else:
+                images.append(f)
+
+        if not images:
+            images = img_candidates
+
+        self.images = sorted(images)
+
+    def __len__(self):
+        return len(self.images)
+
+    def __getitem__(self, idx):
+        img_path = self.images[idx]
+        image = Image.open(img_path).convert('RGB')
+        base = os.path.splitext(os.path.basename(img_path))[0]
+
+        mask_path = self.mask_map.get(base)
+        if mask_path and os.path.exists(mask_path):
+            mask = Image.open(mask_path).convert('L')
+        else:
+            mask = Image.new('L', image.size, 0)
+
+        img_tensor, mask_tensor = self.augmenter(image, mask)
+        return img_tensor, mask_tensor, os.path.basename(img_path)
+
+
 from torch.utils.data import Dataset, ConcatDataset
 
 def get_dataset(dataset_name, data_root="./data", split="train", img_size=(256, 256)):
     """
     Universal Factory Function to return the appropriate Dataset instance.
-    Supports individual datasets ('doctamper', 'cocoglide', 'casia', 'splicing')
+    Supports individual datasets ('doctamper', 'cocoglide', 'casia', 'splicing', 'casia1')
     and unified combined training ('combined' / 'splicing_combined').
     """
     dataset_name = dataset_name.lower()
@@ -266,7 +347,6 @@ def get_dataset(dataset_name, data_root="./data", split="train", img_size=(256, 
         casia_path      = os.path.join(data_root, 'CASIA 2.0 Image Tampering Detection Dataset')
         cocoglide_path  = os.path.join(data_root, 'COCOGLIDE_trufor')
         splicing_path   = os.path.join(data_root, 'Image Forgery detecion dataset (splicing)')
-        # DocTamper LMDB: 120k document forgery images — biggest single quality boost
         doctamper_train = os.path.join(data_root, 'Doctamper', 'DocTamperV1-TrainingSet')
         doctamper_test  = os.path.join(data_root, 'Doctamper', 'DocTamperV1-TestingSet')
 
@@ -278,7 +358,6 @@ def get_dataset(dataset_name, data_root="./data", split="train", img_size=(256, 
         if os.path.exists(splicing_path):
             datasets.append(SplicingDataset(data_root=splicing_path, img_size=img_size, is_train=(split=='train')))
 
-        # Add DocTamper LMDB: use TrainingSet for train split, TestingSet for val split
         if split == 'train' and os.path.exists(doctamper_train):
             datasets.append(DocTamperLMDBDataset(lmdb_dir=doctamper_train, img_size=img_size, is_train=True))
         elif split != 'train' and os.path.exists(doctamper_test):
@@ -286,6 +365,17 @@ def get_dataset(dataset_name, data_root="./data", split="train", img_size=(256, 
 
         return ConcatDataset(datasets)
 
+    elif 'recodai' in dataset_name or 'scientific' in dataset_name or 'luc' in dataset_name:
+        recod_path = os.path.join(data_root, 'recodai_scientific')
+        return RecodaiScientificDataset(data_root=recod_path, img_size=img_size)
+
+    elif 'casia1' in dataset_name:
+        casia1_path = os.path.join('test_datasets', 'CASIA1.0')
+        return CASIA1Dataset(data_root=casia1_path, img_size=img_size)
+
+    elif 'scd' in dataset_name:
+        lmdb_path = os.path.join(data_root, 'Doctamper', 'DocTamperV1-SCD')
+        return DocTamperLMDBDataset(lmdb_dir=lmdb_path, img_size=img_size, is_train=False)
 
     elif 'doctamper' in dataset_name:
         if split == 'train':

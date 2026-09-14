@@ -1,0 +1,100 @@
+{
+  "document_name": "OIP (2)_qr_1.png",
+  "dimensions": [
+    95,
+    95
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.6979,
+  "confidence": 0.6979,
+  "risk_level": "HIGH",
+  "total_tampered_regions": 3,
+  "tampered_area_percentage": 100.122,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        0,
+        0,
+        95,
+        95
+      ],
+      "normalized_bbox": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "width": 95,
+      "height": 95,
+      "aspect_ratio": 1.0,
+      "area_pixels": 9025,
+      "area_percentage": 100.0,
+      "peak_confidence": 0.7493,
+      "mean_confidence": 0.4944,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Photo / Seal / Region Splicing",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        0,
+        0,
+        2,
+        1
+      ],
+      "normalized_bbox": [
+        0.0,
+        0.0,
+        0.0211,
+        0.0105
+      ],
+      "width": 2,
+      "height": 1,
+      "aspect_ratio": 2.0,
+      "area_pixels": 2,
+      "area_percentage": 0.022,
+      "peak_confidence": 0.4415,
+      "mean_confidence": 0.3871,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 3,
+      "bbox": [
+        64,
+        94,
+        73,
+        95
+      ],
+      "normalized_bbox": [
+        0.6737,
+        0.9895,
+        0.7684,
+        1.0
+      ],
+      "width": 9,
+      "height": 1,
+      "aspect_ratio": 9.0,
+      "area_pixels": 9,
+      "area_percentage": 0.1,
+      "peak_confidence": 0.4004,
+      "mean_confidence": 0.3708,
+      "document_region": "Footer / Authorized Signature Field",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "reports/forensics\\OIP (2)_qr_1_annotated.jpg",
+    "audit_panel": "reports/forensics\\OIP (2)_qr_1_audit_panel.jpg",
+    "crops": [
+      "reports/forensics\\OIP (2)_qr_1_part_1.jpg",
+      "reports/forensics\\OIP (2)_qr_1_part_2.jpg",
+      "reports/forensics\\OIP (2)_qr_1_part_3.jpg"
+    ]
+  }
+}

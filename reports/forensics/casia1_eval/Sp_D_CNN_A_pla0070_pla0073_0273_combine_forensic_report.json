@@ -1,0 +1,97 @@
+{
+  "document_name": "Sp_D_CNN_A_pla0070_pla0073_0273_combine.png",
+  "dimensions": [
+    768,
+    384
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.9196,
+  "confidence": 0.9196,
+  "risk_level": "CRITICAL",
+  "total_tampered_regions": 3,
+  "tampered_area_percentage": 9.053,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        62,
+        103,
+        188,
+        225
+      ],
+      "normalized_bbox": [
+        0.0807,
+        0.2682,
+        0.2448,
+        0.5859
+      ],
+      "width": 126,
+      "height": 122,
+      "aspect_ratio": 1.033,
+      "area_pixels": 15372,
+      "area_percentage": 5.212,
+      "peak_confidence": 0.9998,
+      "mean_confidence": 0.9444,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Photo / Seal / Region Splicing"
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        568,
+        103,
+        696,
+        191
+      ],
+      "normalized_bbox": [
+        0.7396,
+        0.2682,
+        0.9062,
+        0.4974
+      ],
+      "width": 128,
+      "height": 88,
+      "aspect_ratio": 1.455,
+      "area_pixels": 11264,
+      "area_percentage": 3.819,
+      "peak_confidence": 0.936,
+      "mean_confidence": 0.6722,
+      "document_region": "Photo / ID Portrait / Stamp Area",
+      "distortion_type": "Copy-Move / Region Splicing"
+    },
+    {
+      "region_id": 3,
+      "bbox": [
+        46,
+        147,
+        54,
+        155
+      ],
+      "normalized_bbox": [
+        0.0599,
+        0.3828,
+        0.0703,
+        0.4036
+      ],
+      "width": 8,
+      "height": 8,
+      "aspect_ratio": 1.0,
+      "area_pixels": 64,
+      "area_percentage": 0.022,
+      "peak_confidence": 0.4647,
+      "mean_confidence": 0.407,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Localized Pixel Manipulation"
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "reports/forensics/casia1_eval\\Sp_D_CNN_A_pla0070_pla0073_0273_combine_annotated.jpg",
+    "audit_panel": "reports/forensics/casia1_eval\\Sp_D_CNN_A_pla0070_pla0073_0273_combine_audit_panel.jpg",
+    "crops": [
+      "reports/forensics/casia1_eval\\Sp_D_CNN_A_pla0070_pla0073_0273_combine_part_1.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_CNN_A_pla0070_pla0073_0273_combine_part_2.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_CNN_A_pla0070_pla0073_0273_combine_part_3.jpg"
+    ]
+  }
+}

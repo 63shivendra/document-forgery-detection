@@ -1,0 +1,72 @@
+{
+  "document_name": "Sp_D_CNN_A_sec0012_ani0007_0275_combine.png",
+  "dimensions": [
+    768,
+    384
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.9136,
+  "confidence": 0.9136,
+  "risk_level": "CRITICAL",
+  "total_tampered_regions": 2,
+  "tampered_area_percentage": 12.728,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        540,
+        243,
+        714,
+        377
+      ],
+      "normalized_bbox": [
+        0.7031,
+        0.6328,
+        0.9297,
+        0.9818
+      ],
+      "width": 174,
+      "height": 134,
+      "aspect_ratio": 1.299,
+      "area_pixels": 23316,
+      "area_percentage": 7.906,
+      "peak_confidence": 0.9998,
+      "mean_confidence": 0.9015,
+      "document_region": "Footer / Authorized Signature Field",
+      "distortion_type": "Photo / Seal / Region Splicing"
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        60,
+        255,
+        218,
+        345
+      ],
+      "normalized_bbox": [
+        0.0781,
+        0.6641,
+        0.2839,
+        0.8984
+      ],
+      "width": 158,
+      "height": 90,
+      "aspect_ratio": 1.756,
+      "area_pixels": 14220,
+      "area_percentage": 4.822,
+      "peak_confidence": 0.9661,
+      "mean_confidence": 0.7746,
+      "document_region": "Footer / Terms / Authority Seal",
+      "distortion_type": "Copy-Move / Region Splicing"
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "reports/forensics/casia1_eval\\Sp_D_CNN_A_sec0012_ani0007_0275_combine_annotated.jpg",
+    "audit_panel": "reports/forensics/casia1_eval\\Sp_D_CNN_A_sec0012_ani0007_0275_combine_audit_panel.jpg",
+    "crops": [
+      "reports/forensics/casia1_eval\\Sp_D_CNN_A_sec0012_ani0007_0275_combine_part_1.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_CNN_A_sec0012_ani0007_0275_combine_part_2.jpg"
+    ]
+  }
+}

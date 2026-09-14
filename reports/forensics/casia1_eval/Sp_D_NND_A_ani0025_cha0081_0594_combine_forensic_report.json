@@ -1,0 +1,122 @@
+{
+  "document_name": "Sp_D_NND_A_ani0025_cha0081_0594_combine.png",
+  "dimensions": [
+    768,
+    384
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.8693,
+  "confidence": 0.8693,
+  "risk_level": "CRITICAL",
+  "total_tampered_regions": 4,
+  "tampered_area_percentage": 104.502,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        0,
+        0,
+        530,
+        384
+      ],
+      "normalized_bbox": [
+        0.0,
+        0.0,
+        0.6901,
+        1.0
+      ],
+      "width": 530,
+      "height": 384,
+      "aspect_ratio": 1.38,
+      "area_pixels": 203520,
+      "area_percentage": 69.01,
+      "peak_confidence": 0.9514,
+      "mean_confidence": 0.6616,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Photo / Seal / Region Splicing"
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        316,
+        134,
+        440,
+        303
+      ],
+      "normalized_bbox": [
+        0.4115,
+        0.349,
+        0.5729,
+        0.7891
+      ],
+      "width": 124,
+      "height": 169,
+      "aspect_ratio": 0.734,
+      "area_pixels": 20956,
+      "area_percentage": 7.106,
+      "peak_confidence": 0.7899,
+      "mean_confidence": 0.5255,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Photo / Seal / Region Splicing"
+    },
+    {
+      "region_id": 3,
+      "bbox": [
+        508,
+        67,
+        768,
+        384
+      ],
+      "normalized_bbox": [
+        0.6615,
+        0.1745,
+        1.0,
+        1.0
+      ],
+      "width": 260,
+      "height": 317,
+      "aspect_ratio": 0.82,
+      "area_pixels": 82420,
+      "area_percentage": 27.947,
+      "peak_confidence": 0.7059,
+      "mean_confidence": 0.478,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Photo / Seal / Region Splicing"
+    },
+    {
+      "region_id": 4,
+      "bbox": [
+        0,
+        0,
+        48,
+        27
+      ],
+      "normalized_bbox": [
+        0.0,
+        0.0,
+        0.0625,
+        0.0703
+      ],
+      "width": 48,
+      "height": 27,
+      "aspect_ratio": 1.778,
+      "area_pixels": 1296,
+      "area_percentage": 0.439,
+      "peak_confidence": 0.5318,
+      "mean_confidence": 0.4102,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Localized Pixel Manipulation"
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "reports/forensics/casia1_eval\\Sp_D_NND_A_ani0025_cha0081_0594_combine_annotated.jpg",
+    "audit_panel": "reports/forensics/casia1_eval\\Sp_D_NND_A_ani0025_cha0081_0594_combine_audit_panel.jpg",
+    "crops": [
+      "reports/forensics/casia1_eval\\Sp_D_NND_A_ani0025_cha0081_0594_combine_part_1.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_NND_A_ani0025_cha0081_0594_combine_part_2.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_NND_A_ani0025_cha0081_0594_combine_part_3.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_NND_A_ani0025_cha0081_0594_combine_part_4.jpg"
+    ]
+  }
+}

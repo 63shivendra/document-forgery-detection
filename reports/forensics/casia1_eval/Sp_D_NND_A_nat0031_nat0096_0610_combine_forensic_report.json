@@ -1,0 +1,97 @@
+{
+  "document_name": "Sp_D_NND_A_nat0031_nat0096_0610_combine.png",
+  "dimensions": [
+    1152,
+    256
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.899,
+  "confidence": 0.899,
+  "risk_level": "CRITICAL",
+  "total_tampered_regions": 3,
+  "tampered_area_percentage": 88.789,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        0,
+        0,
+        843,
+        256
+      ],
+      "normalized_bbox": [
+        0.0,
+        0.0,
+        0.7318,
+        1.0
+      ],
+      "width": 843,
+      "height": 256,
+      "aspect_ratio": 3.293,
+      "area_pixels": 215808,
+      "area_percentage": 73.177,
+      "peak_confidence": 0.9926,
+      "mean_confidence": 0.678,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Copy-Move / Region Splicing"
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        897,
+        88,
+        1140,
+        256
+      ],
+      "normalized_bbox": [
+        0.7786,
+        0.3438,
+        0.9896,
+        1.0
+      ],
+      "width": 243,
+      "height": 168,
+      "aspect_ratio": 1.446,
+      "area_pixels": 40824,
+      "area_percentage": 13.843,
+      "peak_confidence": 0.8139,
+      "mean_confidence": 0.584,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Localized Pixel Manipulation"
+    },
+    {
+      "region_id": 3,
+      "bbox": [
+        0,
+        219,
+        141,
+        256
+      ],
+      "normalized_bbox": [
+        0.0,
+        0.8555,
+        0.1224,
+        1.0
+      ],
+      "width": 141,
+      "height": 37,
+      "aspect_ratio": 3.811,
+      "area_pixels": 5217,
+      "area_percentage": 1.769,
+      "peak_confidence": 0.5786,
+      "mean_confidence": 0.4593,
+      "document_region": "Footer / Terms / Authority Seal",
+      "distortion_type": "Text / Number Field Alteration"
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "reports/forensics/casia1_eval\\Sp_D_NND_A_nat0031_nat0096_0610_combine_annotated.jpg",
+    "audit_panel": "reports/forensics/casia1_eval\\Sp_D_NND_A_nat0031_nat0096_0610_combine_audit_panel.jpg",
+    "crops": [
+      "reports/forensics/casia1_eval\\Sp_D_NND_A_nat0031_nat0096_0610_combine_part_1.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_NND_A_nat0031_nat0096_0610_combine_part_2.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_NND_A_nat0031_nat0096_0610_combine_part_3.jpg"
+    ]
+  }
+}

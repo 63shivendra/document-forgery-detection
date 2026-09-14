@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-09-11 11:28:50",
+  "total_elapsed_seconds": 12.49,
+  "datasets": {
+    "splicing": {
+      "title": "Splicing & Copy-Move Forgery Dataset",
+      "samples_evaluated": 21,
+      "document_accuracy": 100.0,
+      "mean_recall": 95.02,
+      "mean_iou": 19.54,
+      "mean_dice_f1": 25.36,
+      "mean_precision": 20.54,
+      "json_report": "reports/forensics/complete_eval\\splicing\\evaluation_report.json",
+      "boards_dir": "reports/forensics/complete_eval\\splicing\\comparison_boards"
+    },
+    "casia1": {
+      "title": "CASIA 1.0 Tampered Benchmark",
+      "samples_evaluated": 36,
+      "document_accuracy": 100.0,
+      "mean_recall": 66.29,
+      "mean_iou": 5.95,
+      "mean_dice_f1": 10.77,
+      "mean_precision": 6.29,
+      "json_report": "reports/forensics/complete_eval\\casia1\\evaluation_report.json",
+      "boards_dir": "reports/forensics/complete_eval\\casia1\\comparison_boards"
+    },
+    "cocoglide": {
+      "title": "COCOGLIDE / TruFor Splicing & Inpainting",
+      "samples_evaluated": 36,
+      "document_accuracy": 100.0,
+      "mean_recall": 92.89,
+      "mean_iou": 20.37,
+      "mean_dice_f1": 30.07,
+      "mean_precision": 20.84,
+      "json_report": "reports/forensics/complete_eval\\cocoglide\\evaluation_report.json",
+      "boards_dir": "reports/forensics/complete_eval\\cocoglide\\comparison_boards"
+    },
+    "doctamper": {
+      "title": "DocTamper Document Text Tampering",
+      "samples_evaluated": 36,
+      "document_accuracy": 61.11,
+      "mean_recall": 62.71,
+      "mean_iou": 37.27,
+      "mean_dice_f1": 44.97,
+      "mean_precision": 47.09,
+      "json_report": "reports/forensics/complete_eval\\doctamper\\evaluation_report.json",
+      "boards_dir": "reports/forensics/complete_eval\\doctamper\\comparison_boards"
+    },
+    "doctamper_scd": {
+      "title": "DocTamper Single Character / Digit Tampering",
+      "samples_evaluated": 36,
+      "document_accuracy": 97.22,
+      "mean_recall": 37.24,
+      "mean_iou": 16.89,
+      "mean_dice_f1": 25.23,
+      "mean_precision": 25.44,
+      "json_report": "reports/forensics/complete_eval\\doctamper_scd\\evaluation_report.json",
+      "boards_dir": "reports/forensics/complete_eval\\doctamper_scd\\comparison_boards"
+    }
+  }
+}

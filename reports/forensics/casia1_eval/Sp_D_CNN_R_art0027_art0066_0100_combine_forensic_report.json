@@ -1,0 +1,47 @@
+{
+  "document_name": "Sp_D_CNN_R_art0027_art0066_0100_combine.png",
+  "dimensions": [
+    1152,
+    256
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.7473,
+  "confidence": 0.7473,
+  "risk_level": "HIGH",
+  "total_tampered_regions": 1,
+  "tampered_area_percentage": 85.677,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        0,
+        0,
+        987,
+        256
+      ],
+      "normalized_bbox": [
+        0.0,
+        0.0,
+        0.8568,
+        1.0
+      ],
+      "width": 987,
+      "height": 256,
+      "aspect_ratio": 3.855,
+      "area_pixels": 252672,
+      "area_percentage": 85.677,
+      "peak_confidence": 0.7833,
+      "mean_confidence": 0.591,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Localized Pixel Manipulation"
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "reports/forensics/casia1_eval\\Sp_D_CNN_R_art0027_art0066_0100_combine_annotated.jpg",
+    "audit_panel": "reports/forensics/casia1_eval\\Sp_D_CNN_R_art0027_art0066_0100_combine_audit_panel.jpg",
+    "crops": [
+      "reports/forensics/casia1_eval\\Sp_D_CNN_R_art0027_art0066_0100_combine_part_1.jpg"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+====================================================================
+TEST SET BENCHMARK REPORT: SPLICING
+====================================================================
+Checkpoint Used                 : best_model_splicing_combined_efficientnet-b2_20260908_1523.pth
+Test Samples Evaluated          : 21
+Detection Threshold             : 0.35
+--------------------------------------------------------------------
+[PIXEL-LEVEL SEGMENTATION METRICS]
+  * Pixel Accuracy              : 54.65%
+  * Pixel Balanced Accuracy     : 72.84%
+  * Pixel Specificity (TNR)     : 54.42%
+  * Pixel Recall (Sensitivity)  : 91.26%
+  * Pixel Precision             : 18.32%
+  * Pixel F1-Score (Dice)       : 20.89%
+  * Pixel IoU (Jaccard)         : 16.33%
+  * Mean Absolute Error (MAE)   : 0.27584
+--------------------------------------------------------------------
+[DOCUMENT-LEVEL CLASSIFICATION METRICS]
+  * Document Classification Acc : 100.00%
+  * Document Detection Precision: 100.00%
+  * Document Detection Recall   : 100.00% (Fraud Capture Rate)
+  * Document Detection F1-Score : 100.00%
+====================================================================

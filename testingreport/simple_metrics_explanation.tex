@@ -1,0 +1,66 @@
+% ==============================================================================
+% Simple Plain-English Metric Explanations in LaTeX
+% File: testingreport/simple_metrics_explanation.tex
+% ==============================================================================
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{xcolor}
+
+\begin{document}
+
+\section*{Intuitive Metric Explanations for Document Forgery Detection}
+
+\subsection*{1. The Red Highlighter Metaphor (Pixel-Level Localization)}
+Imagine the AI model is holding a \textbf{red highlighter pen} and coloring over every suspicious pixel on the document:
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{\textbf{Intuitive Meaning of Pixel-Level Localization Metrics}}
+\label{tab:simple_pixel_metrics}
+\vspace{2mm}
+\begin{tabularx}{\textwidth}{l p{3.8cm} X}
+\toprule
+\textbf{Metric} & \textbf{Everyday Question} & \textbf{Plain English Meaning} \\
+\midrule
+\textbf{Pixel Recall} & \textit{``Did we catch the fake ink?''} & Out of all the fake letters and numbers on the page, how much of the fake ink did the AI highlight? (A score of 69.2\% means it highlighted more than two-thirds of the altered text). \\
+\addlinespace
+\textbf{Pixel Precision} & \textit{``Is the highlight clean or sloppy?''} & Out of everything the AI colored in red, how much was actually fake? (If precision is 32.9\%, it highlighted the fake number, but also painted a small halo around it). \\
+\addlinespace
+\textbf{Pixel IoU} & \textit{``Did it color inside the lines?''} & How perfectly does the AI's highlight overlap with the actual fake text? (Because letters are microscopic, an IoU of $\sim 26.4\%$ is state-of-the-art---it landed right on top of the modified number). \\
+\addlinespace
+\textbf{Pixel Specificity} & \textit{``Did it leave clean text alone?''} & How good is the AI at \textbf{not} highlighting innocent, honest parts of the document? (96.4\% means it rarely paints false red marks over clean pages). \\
+\addlinespace
+\textbf{Pixel Accuracy} & \textit{``The Cheat Metric''} & Overall percentage of correct pixels. (On a document, 99.5\% of the page is empty white paper. A lazy AI that does nothing gets 99\% accuracy. That's why we do not rely on it). \\
+\addlinespace
+\textbf{Balanced Accuracy} & \textit{``The Honest Score''} & Gives equal 50/50 weight to finding fake text \textbf{and} leaving honest text alone. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\vspace{1em}
+
+\subsection*{2. The Alarm Bell (Document-Level Classification)}
+While pixel metrics measure whether the highlight was neat, document-level metrics measure whether the fraudster got caught:
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{\textbf{Intuitive Meaning of Document-Level Screening Metrics}}
+\label{tab:simple_doc_metrics}
+\vspace{2mm}
+\begin{tabularx}{\textwidth}{l p{4.2cm} X}
+\toprule
+\textbf{Metric} & \textbf{Business Question} & \textbf{What it means for your business (KYC / KYB)} \\
+\midrule
+\textbf{Document Recall (99.93\%)} & \textit{``Did the security alarm ring?''} & Out of \textbf{10,000 fake documents} submitted by fraudsters, your model caught \textbf{9,993} of them. Only 7 sneaked past. \\
+\addlinespace
+\textbf{Document Accuracy (74.4\% to 99.2\%)} & \textit{``Did it make the right overall call?''} & Overall percentage of documents correctly labeled as ``Tampered'' or ``Clean''. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\end{document}

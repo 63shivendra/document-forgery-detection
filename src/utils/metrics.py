@@ -46,57 +46,101 @@ class FocalDiceLoss(nn.Module):
         return self.focal_weight * focal_loss + self.dice_weight * dice_loss
 
 
-def calculate_pixel_metrics(pred_probs, targets, threshold=0.35):
+def calculate_pixel_metrics(pred_probs, targets, threshold=0.35, min_forged_pixels=15):
     """
-    Computes Sample-Averaged Pixel-Level IoU, F1-Score, Precision, and Recall.
-
-    threshold=0.35: EfficientNet encoders with pretrained weights tend to output
-    conservative probabilities (0.2-0.45 range for forgery). Using 0.35 instead
-    of 0.5 recovers true positive detections that would otherwise be counted as zero.
-
-    pred_probs: [B, 1, H, W] tensor of float probabilities in [0, 1]
-    targets   : [B, 1, H, W] ground truth binary mask
+    Computes comprehensive Forensic Evaluation Metrics:
+    - Pixel Accuracy: (TP + TN) / (TP + TN + FP + FN)
+    - Pixel Balanced Accuracy: (Sensitivity + Specificity) / 2
+    - Pixel Specificity (TNR): TN / (TN + FP)
+    - Pixel IoU (Jaccard Index): TP / (TP + FP + FN)
+    - Pixel F1-Score (Dice): 2*TP / (2*TP + FP + FN)
+    - Pixel Precision: TP / (TP + FP)
+    - Pixel Recall (Sensitivity / TPR): TP / (TP + FN)
+    - Mean Absolute Error (MAE): mean(|P - Y|)
+    - Image-Level Document Classification Accuracy: Document Tampered vs Authentic
     """
     pred_bin = (pred_probs >= threshold).float()
     batch_size = pred_probs.size(0)
 
-    total_iou, total_f1, total_prec, total_rec = 0.0, 0.0, 0.0, 0.0
+    acc_stats = {
+        'iou': 0.0,
+        'f1': 0.0,
+        'precision': 0.0,
+        'recall': 0.0,
+        'pixel_accuracy': 0.0,
+        'balanced_accuracy': 0.0,
+        'specificity': 0.0,
+        'mae': 0.0,
+        'image_accuracy': 0.0,
+        'image_tp': 0.0,
+        'image_fp': 0.0,
+        'image_fn': 0.0,
+        'image_tn': 0.0
+    }
 
     for b in range(batch_size):
         p = pred_bin[b, 0]
         t = targets[b, 0]
+        raw_p = pred_probs[b, 0]
 
-        intersection = (p * t).sum().item()
-        total_pred = p.sum().item()
-        total_gt = t.sum().item()
+        tp = (p * t).sum().item()
+        fp = (p * (1 - t)).sum().item()
+        fn = ((1 - p) * t).sum().item()
+        tn = ((1 - p) * (1 - t)).sum().item()
+        total_px = tp + fp + fn + tn
 
-        if total_gt == 0 and total_pred == 0:
-            # Both empty: perfect score (image is authentic and correctly predicted)
+        # 1. Pixel Accuracy
+        pixel_acc = (tp + tn) / (total_px + 1e-7)
+
+        # 2. Specificity (Background / Non-tampered accuracy)
+        specificity = tn / (tn + fp + 1e-7)
+
+        # 3. Precision & Recall
+        if (tp + fn) == 0 and (tp + fp) == 0:
             iou = 1.0
             precision = 1.0
             recall = 1.0
             f1 = 1.0
-        elif total_gt == 0 and total_pred > 0:
-            # False positive: predicted forgery where none exists
+        elif (tp + fn) == 0 and (tp + fp) > 0:
             iou = 0.0
             precision = 0.0
             recall = 1.0
             f1 = 0.0
         else:
-            union = total_pred + total_gt - intersection
-            iou = intersection / (union + 1e-7)
-            precision = intersection / (total_pred + 1e-7)
-            recall = intersection / (total_gt + 1e-7)
-            f1 = (2.0 * precision * recall) / (precision + recall + 1e-7)
+            union = tp + fp + fn
+            iou = tp / (union + 1e-7)
+            precision = tp / (tp + fp + 1e-7)
+            recall = tp / (tp + fn + 1e-7)
+            f1 = (2.0 * tp) / (2.0 * tp + fp + fn + 1e-7)
 
-        total_iou += iou
-        total_f1 += f1
-        total_prec += precision
-        total_rec += recall
+        # 4. Balanced Accuracy
+        balanced_acc = (recall + specificity) / 2.0
 
-    return {
-        'iou': total_iou / batch_size,
-        'f1': total_f1 / batch_size,
-        'precision': total_prec / batch_size,
-        'recall': total_rec / batch_size
-    }
+        # 5. Mean Absolute Error
+        mae = torch.abs(raw_p - t).mean().item()
+
+        # 6. Image-Level Document Classification (Tampered vs Authentic)
+        gt_tampered = 1 if (tp + fn) > 0 else 0
+        pred_tampered = 1 if (tp + fp) >= min_forged_pixels else 0
+        img_correct = 1.0 if (gt_tampered == pred_tampered) else 0.0
+
+        acc_stats['iou'] += iou
+        acc_stats['f1'] += f1
+        acc_stats['precision'] += precision
+        acc_stats['recall'] += recall
+        acc_stats['pixel_accuracy'] += pixel_acc
+        acc_stats['balanced_accuracy'] += balanced_acc
+        acc_stats['specificity'] += specificity
+        acc_stats['mae'] += mae
+        acc_stats['image_accuracy'] += img_correct
+
+        if gt_tampered == 1 and pred_tampered == 1:
+            acc_stats['image_tp'] += 1.0
+        elif gt_tampered == 0 and pred_tampered == 1:
+            acc_stats['image_fp'] += 1.0
+        elif gt_tampered == 1 and pred_tampered == 0:
+            acc_stats['image_fn'] += 1.0
+        else:
+            acc_stats['image_tn'] += 1.0
+
+    return {k: v / batch_size for k, v in acc_stats.items()}

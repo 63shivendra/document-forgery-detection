@@ -1,0 +1,26 @@
+% ==============================================================================
+% MASTER ALL TEST DATASETS SUMMARY (LaTeX Format)
+% Generated from: testingreport/MASTER_ALL_TEST_DATASETS_SUMMARY.csv
+% Total Unseen Samples Evaluated: 49,185
+% ==============================================================================
+
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\caption{Full Metrics Matrix across all 6 Unseen Test Datasets evaluated by the ForgeryNet architecture.}
+\label{tab:master_all_metrics}
+\begin{tabular}{l r rrrrrrrr rrrr}
+\toprule
+\textbf{Dataset} & \textbf{Samples} & \textbf{Pix-Acc} & \textbf{Pix-BAcc} & \textbf{Pix-Spec} & \textbf{Pix-Rec} & \textbf{Pix-Prec} & \textbf{Pix-F1} & \textbf{Pix-IoU} & \textbf{MAE} & \textbf{Doc-Acc} & \textbf{Doc-Rec} & \textbf{Doc-Prec} & \textbf{Doc-F1} \\
+& & (\%) & (\%) & (\%) & (\%) & (\%) & (\%) & (\%) & & (\%) & (\%) & (\%) & (\%) \\
+\midrule
+doctamper      & 30,000 & 96.22 & 82.83 & 96.42 & 69.24 & 32.86 & 32.08 & 26.38 & 0.0334 & 74.42  & 99.93 & 74.43  & 85.32 \\
+doctamper\_scd & 18,000 & 98.23 & 71.08 & 98.75 & 43.40 & 26.03 & 27.39 & 18.61 & 0.0175 & 99.23  & 99.91 & 99.32  & 99.61 \\
+casia          & 1,025  & 50.84 & 63.98 & 48.98 & 78.97 & 10.70 & 15.21 & 9.93  & 0.3326 & 100.00 & 100.00 & 100.00 & 100.00 \\
+cocoglide      & 103    & 31.63 & 50.56 & 10.73 & 90.40 & 25.99 & 35.02 & 24.71 & 0.5308 & 100.00 & 100.00 & 100.00 & 100.00 \\
+splicing       & 21     & 54.65 & 72.84 & 54.42 & 91.26 & 18.32 & 20.89 & 16.33 & 0.2758 & 100.00 & 100.00 & 100.00 & 100.00 \\
+casia1         & 36     & 42.41 & 50.51 & 40.20 & 60.83 & 6.47  & 10.88 & 6.05  & 0.3811 & 100.00 & 100.00 & 100.00 & 100.00 \\
+\bottomrule
+\end{tabular}
+\end{table*}

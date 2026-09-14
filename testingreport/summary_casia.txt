@@ -1,0 +1,23 @@
+====================================================================
+TEST SET BENCHMARK REPORT: CASIA
+====================================================================
+Checkpoint Used                 : best_model_splicing_combined_efficientnet-b2_20260908_1523.pth
+Test Samples Evaluated          : 1025
+Detection Threshold             : 0.35
+--------------------------------------------------------------------
+[PIXEL-LEVEL SEGMENTATION METRICS]
+  * Pixel Accuracy              : 50.84%
+  * Pixel Balanced Accuracy     : 63.98%
+  * Pixel Specificity (TNR)     : 48.98%
+  * Pixel Recall (Sensitivity)  : 78.97%
+  * Pixel Precision             : 10.70%
+  * Pixel F1-Score (Dice)       : 15.21%
+  * Pixel IoU (Jaccard)         : 9.93%
+  * Mean Absolute Error (MAE)   : 0.33258
+--------------------------------------------------------------------
+[DOCUMENT-LEVEL CLASSIFICATION METRICS]
+  * Document Classification Acc : 100.00%
+  * Document Detection Precision: 100.00%
+  * Document Detection Recall   : 100.00% (Fraud Capture Rate)
+  * Document Detection F1-Score : 100.00%
+====================================================================

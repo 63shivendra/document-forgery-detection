@@ -1,0 +1,72 @@
+{
+  "document_name": "Sp_D_CNN_A_pla0079_pla0049_0274_combine.png",
+  "dimensions": [
+    768,
+    384
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.8735,
+  "confidence": 0.8735,
+  "risk_level": "CRITICAL",
+  "total_tampered_regions": 2,
+  "tampered_area_percentage": 14.773,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        594,
+        0,
+        768,
+        134
+      ],
+      "normalized_bbox": [
+        0.7734,
+        0.0,
+        1.0,
+        0.349
+      ],
+      "width": 174,
+      "height": 134,
+      "aspect_ratio": 1.299,
+      "area_pixels": 23316,
+      "area_percentage": 7.906,
+      "peak_confidence": 0.9928,
+      "mean_confidence": 0.7941,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Photo / Seal / Region Splicing"
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        90,
+        4,
+        256,
+        126
+      ],
+      "normalized_bbox": [
+        0.1172,
+        0.0104,
+        0.3333,
+        0.3281
+      ],
+      "width": 166,
+      "height": 122,
+      "aspect_ratio": 1.361,
+      "area_pixels": 20252,
+      "area_percentage": 6.867,
+      "peak_confidence": 0.9241,
+      "mean_confidence": 0.679,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Photo / Seal / Region Splicing"
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "reports/forensics/casia1_eval\\Sp_D_CNN_A_pla0079_pla0049_0274_combine_annotated.jpg",
+    "audit_panel": "reports/forensics/casia1_eval\\Sp_D_CNN_A_pla0079_pla0049_0274_combine_audit_panel.jpg",
+    "crops": [
+      "reports/forensics/casia1_eval\\Sp_D_CNN_A_pla0079_pla0049_0274_combine_part_1.jpg",
+      "reports/forensics/casia1_eval\\Sp_D_CNN_A_pla0079_pla0049_0274_combine_part_2.jpg"
+    ]
+  }
+}

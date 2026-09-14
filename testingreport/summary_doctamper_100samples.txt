@@ -1,0 +1,23 @@
+====================================================================
+COMPREHENSIVE TEST SET BENCHMARK REPORT: DOCTAMPER
+====================================================================
+Checkpoint Used                 : best_model_splicing_combined_efficientnet-b2_20260908_1523.pth
+Test Samples Evaluated          : 100
+Detection Threshold             : 0.35
+--------------------------------------------------------------------
+[PIXEL-LEVEL SEGMENTATION METRICS]
+  * Pixel Accuracy              : 95.78%
+  * Pixel Balanced Accuracy     : 83.98%
+  * Pixel Specificity (TNR)     : 95.99%
+  * Pixel Recall (Sensitivity)  : 71.97%
+  * Pixel Precision             : 35.11%
+  * Pixel F1-Score (Dice)       : 34.81%
+  * Pixel IoU (Jaccard)         : 28.92%
+  * Mean Absolute Error (MAE)   : 0.03638
+--------------------------------------------------------------------
+[DOCUMENT-LEVEL CLASSIFICATION METRICS]
+  * Document Classification Acc : 73.00%
+  * Document Detection Precision: 73.00%
+  * Document Detection Recall   : 100.00%
+  * Document Detection F1-Score : 84.39%
+====================================================================

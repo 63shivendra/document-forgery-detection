@@ -2,33 +2,33 @@ import os
 import argparse
 import yaml
 import torch
-from src.models.dual_branch_unet import DualBranchUNet
+from src.models.forgery_net import ForgeryNet
 
-def export_to_onnx(model_path=None, dataset_name="doctamper", output_dir="edgeai", config_path="config.yaml"):
+def export_to_onnx(model_path=None, dataset_name="splicing_combined", output_dir=None, config_path="config.yaml"):
     """
-    Exports trained PyTorch model to ONNX format (.onnx) for Edge AI deployment.
+    Exports trained ForgeryNet PyTorch model to ONNX format (.onnx) for Edge AI deployment.
     """
     with open(config_path, 'r') as f:
         config = yaml.safe_load(f)
 
     device = 'cpu'  # Export on CPU for universal ONNX runtime compatibility
+    if output_dir is None:
+        output_dir = config['paths'].get('saved_models_dir', './bigpower')
     os.makedirs(output_dir, exist_ok=True)
 
     if model_path is None:
-        model_path = os.path.join(config['paths']['saved_models_dir'], f"best_model_{dataset_name.lower()}.pth")
+        model_path = os.path.join(output_dir, f"best_model_{dataset_name.lower()}.pth")
 
     print(f"==================================================")
-    print(f"  ONNX Model Exporter for Edge AI Deployment       ")
+    print(f"  ONNX Model Exporter for ForgeryNet v2.0")
     print(f"  Source Checkpoint : {model_path}")
     print(f"  Output Directory  : {output_dir}")
     print(f"==================================================")
 
     # Instantiate Model
-    model = DualBranchUNet(
-        in_channels=config['model']['in_channels'],
+    model = ForgeryNet(
         out_channels=config['model']['out_channels'],
-        base_filters=config['model']['base_filters'],
-        num_groups=config['model']['num_groups'],
+        encoder_name=config['model']['encoder'],
         dropout_prob=config['model']['spatial_dropout']
     ).to(device)
 
@@ -44,7 +44,7 @@ def export_to_onnx(model_path=None, dataset_name="doctamper", output_dir="edgeai
 
     model.eval()
 
-    # Create dummy input tensor for ONNX tracing [Batch=1, Channels=3, Height=256, Width=256]
+    # Create dummy input tensor for ONNX tracing
     img_h, img_w = config['training']['image_size']
     dummy_input = torch.randn(1, 3, img_h, img_w, device=device)
 
@@ -59,6 +59,7 @@ def export_to_onnx(model_path=None, dataset_name="doctamper", output_dir="edgeai
         export_params=True,
         opset_version=14,
         do_constant_folding=True,
+        dynamo=False,
         input_names=['input_document'],
         output_names=['forgery_mask_logits'],
         dynamic_axes={
@@ -70,13 +71,14 @@ def export_to_onnx(model_path=None, dataset_name="doctamper", output_dir="edgeai
     print(f"\n SUCCESS! ONNX Model exported to:\n  - [file:///{os.path.abspath(onnx_output_path)}]")
 
 def main():
-    parser = argparse.ArgumentParser(description="Export Trained PyTorch Model to ONNX format for Edge AI")
+    parser = argparse.ArgumentParser(description="Export Trained ForgeryNet Model to ONNX format")
     parser.add_argument('--model-path', type=str, help='Path to .pth checkpoint')
-    parser.add_argument('--dataset', type=str, default='doctamper', help='Dataset name identifier')
-    parser.add_argument('--output-dir', type=str, default='edgeai', help='Folder to save .onnx file')
+    parser.add_argument('--dataset', type=str, default='splicing_combined', help='Dataset name identifier')
+    parser.add_argument('--output-dir', type=str, default=None, help='Folder to save .onnx file (defaults to config saved_models_dir)')
+    parser.add_argument('--config', type=str, default='config.yaml', help='Path to config.yaml')
     args = parser.parse_args()
 
-    export_to_onnx(model_path=args.model_path, dataset_name=args.dataset, output_dir=args.output_dir)
+    export_to_onnx(model_path=args.model_path, dataset_name=args.dataset, output_dir=args.output_dir, config_path=args.config)
 
 if __name__ == '__main__':
     main()

@@ -1,0 +1,74 @@
+{
+  "document_name": "OIP (2).jpg",
+  "dimensions": [
+    349,
+    220
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.8209,
+  "confidence": 0.8209,
+  "risk_level": "CRITICAL",
+  "total_tampered_regions": 2,
+  "tampered_area_percentage": 0.292,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        221,
+        36,
+        233,
+        48
+      ],
+      "normalized_bbox": [
+        0.6332,
+        0.1636,
+        0.6676,
+        0.2182
+      ],
+      "width": 12,
+      "height": 12,
+      "aspect_ratio": 1.0,
+      "area_pixels": 144,
+      "area_percentage": 0.188,
+      "peak_confidence": 0.9598,
+      "mean_confidence": 0.8122,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Copy-Move / Region Splicing",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        21,
+        199,
+        29,
+        209
+      ],
+      "normalized_bbox": [
+        0.0602,
+        0.9045,
+        0.0831,
+        0.95
+      ],
+      "width": 8,
+      "height": 10,
+      "aspect_ratio": 0.8,
+      "area_pixels": 80,
+      "area_percentage": 0.104,
+      "peak_confidence": 0.8057,
+      "mean_confidence": 0.6379,
+      "document_region": "Footer / Terms / Authority Seal",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": ""
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "reports/forensics\\OIP (2)_annotated.jpg",
+    "audit_panel": "reports/forensics\\OIP (2)_audit_panel.jpg",
+    "crops": [
+      "reports/forensics\\OIP (2)_part_1.jpg",
+      "reports/forensics\\OIP (2)_part_2.jpg"
+    ]
+  }
+}

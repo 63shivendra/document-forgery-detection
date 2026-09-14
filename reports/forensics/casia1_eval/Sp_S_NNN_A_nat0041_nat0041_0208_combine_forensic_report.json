@@ -1,0 +1,247 @@
+{
+  "document_name": "Sp_S_NNN_A_nat0041_nat0041_0208_combine.png",
+  "dimensions": [
+    1152,
+    256
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.9403,
+  "confidence": 0.9403,
+  "risk_level": "CRITICAL",
+  "total_tampered_regions": 9,
+  "tampered_area_percentage": 39.704,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        0,
+        0,
+        807,
+        113
+      ],
+      "normalized_bbox": [
+        0.0,
+        0.0,
+        0.7005,
+        0.4414
+      ],
+      "width": 807,
+      "height": 113,
+      "aspect_ratio": 7.142,
+      "area_pixels": 91191,
+      "area_percentage": 30.921,
+      "peak_confidence": 0.9951,
+      "mean_confidence": 0.8109,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Copy-Move / Region Splicing"
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        891,
+        137,
+        1152,
+        229
+      ],
+      "normalized_bbox": [
+        0.7734,
+        0.5352,
+        1.0,
+        0.8945
+      ],
+      "width": 261,
+      "height": 92,
+      "aspect_ratio": 2.837,
+      "area_pixels": 24012,
+      "area_percentage": 8.142,
+      "peak_confidence": 0.9735,
+      "mean_confidence": 0.7349,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Copy-Move / Region Splicing"
+    },
+    {
+      "region_id": 3,
+      "bbox": [
+        126,
+        121,
+        150,
+        141
+      ],
+      "normalized_bbox": [
+        0.1094,
+        0.4727,
+        0.1302,
+        0.5508
+      ],
+      "width": 24,
+      "height": 20,
+      "aspect_ratio": 1.2,
+      "area_pixels": 480,
+      "area_percentage": 0.163,
+      "peak_confidence": 0.4391,
+      "mean_confidence": 0.3861,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Localized Pixel Manipulation"
+    },
+    {
+      "region_id": 4,
+      "bbox": [
+        1005,
+        126,
+        1062,
+        131
+      ],
+      "normalized_bbox": [
+        0.8724,
+        0.4922,
+        0.9219,
+        0.5117
+      ],
+      "width": 57,
+      "height": 5,
+      "aspect_ratio": 11.4,
+      "area_pixels": 285,
+      "area_percentage": 0.097,
+      "peak_confidence": 0.4293,
+      "mean_confidence": 0.3864,
+      "document_region": "Photo / ID Portrait / Stamp Area",
+      "distortion_type": "Text / Number Field Alteration"
+    },
+    {
+      "region_id": 5,
+      "bbox": [
+        129,
+        146,
+        147,
+        151
+      ],
+      "normalized_bbox": [
+        0.112,
+        0.5703,
+        0.1276,
+        0.5898
+      ],
+      "width": 18,
+      "height": 5,
+      "aspect_ratio": 3.6,
+      "area_pixels": 90,
+      "area_percentage": 0.031,
+      "peak_confidence": 0.4265,
+      "mean_confidence": 0.381,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Text / Number Field Alteration"
+    },
+    {
+      "region_id": 6,
+      "bbox": [
+        807,
+        23,
+        837,
+        33
+      ],
+      "normalized_bbox": [
+        0.7005,
+        0.0898,
+        0.7266,
+        0.1289
+      ],
+      "width": 30,
+      "height": 10,
+      "aspect_ratio": 3.0,
+      "area_pixels": 300,
+      "area_percentage": 0.102,
+      "peak_confidence": 0.423,
+      "mean_confidence": 0.3779,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Text / Number Field Alteration"
+    },
+    {
+      "region_id": 7,
+      "bbox": [
+        420,
+        125,
+        459,
+        135
+      ],
+      "normalized_bbox": [
+        0.3646,
+        0.4883,
+        0.3984,
+        0.5273
+      ],
+      "width": 39,
+      "height": 10,
+      "aspect_ratio": 3.9,
+      "area_pixels": 390,
+      "area_percentage": 0.132,
+      "peak_confidence": 0.421,
+      "mean_confidence": 0.383,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Text / Number Field Alteration"
+    },
+    {
+      "region_id": 8,
+      "bbox": [
+        507,
+        125,
+        525,
+        135
+      ],
+      "normalized_bbox": [
+        0.4401,
+        0.4883,
+        0.4557,
+        0.5273
+      ],
+      "width": 18,
+      "height": 10,
+      "aspect_ratio": 1.8,
+      "area_pixels": 180,
+      "area_percentage": 0.061,
+      "peak_confidence": 0.4105,
+      "mean_confidence": 0.3778,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Localized Pixel Manipulation"
+    },
+    {
+      "region_id": 9,
+      "bbox": [
+        444,
+        87,
+        471,
+        93
+      ],
+      "normalized_bbox": [
+        0.3854,
+        0.3398,
+        0.4089,
+        0.3633
+      ],
+      "width": 27,
+      "height": 6,
+      "aspect_ratio": 4.5,
+      "area_pixels": 162,
+      "area_percentage": 0.055,
+      "peak_confidence": 0.4076,
+      "mean_confidence": 0.3734,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Text / Number Field Alteration"
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "reports/forensics/casia1_eval\\Sp_S_NNN_A_nat0041_nat0041_0208_combine_annotated.jpg",
+    "audit_panel": "reports/forensics/casia1_eval\\Sp_S_NNN_A_nat0041_nat0041_0208_combine_audit_panel.jpg",
+    "crops": [
+      "reports/forensics/casia1_eval\\Sp_S_NNN_A_nat0041_nat0041_0208_combine_part_1.jpg",
+      "reports/forensics/casia1_eval\\Sp_S_NNN_A_nat0041_nat0041_0208_combine_part_2.jpg",
+      "reports/forensics/casia1_eval\\Sp_S_NNN_A_nat0041_nat0041_0208_combine_part_3.jpg",
+      "reports/forensics/casia1_eval\\Sp_S_NNN_A_nat0041_nat0041_0208_combine_part_4.jpg",
+      "reports/forensics/casia1_eval\\Sp_S_NNN_A_nat0041_nat0041_0208_combine_part_5.jpg",
+      "reports/forensics/casia1_eval\\Sp_S_NNN_A_nat0041_nat0041_0208_combine_part_6.jpg",
+      "reports/forensics/casia1_eval\\Sp_S_NNN_A_nat0041_nat0041_0208_combine_part_7.jpg",
+      "reports/forensics/casia1_eval\\Sp_S_NNN_A_nat0041_nat0041_0208_combine_part_8.jpg",
+      "reports/forensics/casia1_eval\\Sp_S_NNN_A_nat0041_nat0041_0208_combine_part_9.jpg"
+    ]
+  }
+}

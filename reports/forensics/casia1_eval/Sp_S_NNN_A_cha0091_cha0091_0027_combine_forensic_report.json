@@ -1,0 +1,72 @@
+{
+  "document_name": "Sp_S_NNN_A_cha0091_cha0091_0027_combine.png",
+  "dimensions": [
+    1152,
+    256
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.8468,
+  "confidence": 0.8468,
+  "risk_level": "CRITICAL",
+  "total_tampered_regions": 2,
+  "tampered_area_percentage": 80.61,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        0,
+        0,
+        909,
+        256
+      ],
+      "normalized_bbox": [
+        0.0,
+        0.0,
+        0.7891,
+        1.0
+      ],
+      "width": 909,
+      "height": 256,
+      "aspect_ratio": 3.551,
+      "area_pixels": 232704,
+      "area_percentage": 78.906,
+      "peak_confidence": 0.9683,
+      "mean_confidence": 0.5528,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Copy-Move / Region Splicing"
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        1077,
+        29,
+        1152,
+        96
+      ],
+      "normalized_bbox": [
+        0.9349,
+        0.1133,
+        1.0,
+        0.375
+      ],
+      "width": 75,
+      "height": 67,
+      "aspect_ratio": 1.119,
+      "area_pixels": 5025,
+      "area_percentage": 1.704,
+      "peak_confidence": 0.5646,
+      "mean_confidence": 0.4507,
+      "document_region": "Photo / ID Portrait / Stamp Area",
+      "distortion_type": "Photo / Seal / Region Splicing"
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "reports/forensics/casia1_eval\\Sp_S_NNN_A_cha0091_cha0091_0027_combine_annotated.jpg",
+    "audit_panel": "reports/forensics/casia1_eval\\Sp_S_NNN_A_cha0091_cha0091_0027_combine_audit_panel.jpg",
+    "crops": [
+      "reports/forensics/casia1_eval\\Sp_S_NNN_A_cha0091_cha0091_0027_combine_part_1.jpg",
+      "reports/forensics/casia1_eval\\Sp_S_NNN_A_cha0091_cha0091_0027_combine_part_2.jpg"
+    ]
+  }
+}

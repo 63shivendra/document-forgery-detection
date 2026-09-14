@@ -1,0 +1,47 @@
+{
+  "document_name": "Sp_S_NNN_A_cha0085_cha0085_0026_combine.png",
+  "dimensions": [
+    1152,
+    256
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.8445,
+  "confidence": 0.8445,
+  "risk_level": "CRITICAL",
+  "total_tampered_regions": 1,
+  "tampered_area_percentage": 100.0,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        0,
+        0,
+        1152,
+        256
+      ],
+      "normalized_bbox": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "width": 1152,
+      "height": 256,
+      "aspect_ratio": 4.5,
+      "area_pixels": 294912,
+      "area_percentage": 100.0,
+      "peak_confidence": 0.9283,
+      "mean_confidence": 0.6252,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Copy-Move / Region Splicing"
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "reports/forensics/casia1_eval\\Sp_S_NNN_A_cha0085_cha0085_0026_combine_annotated.jpg",
+    "audit_panel": "reports/forensics/casia1_eval\\Sp_S_NNN_A_cha0085_cha0085_0026_combine_audit_panel.jpg",
+    "crops": [
+      "reports/forensics/casia1_eval\\Sp_S_NNN_A_cha0085_cha0085_0026_combine_part_1.jpg"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "test_dataset": "casia",
+  "checkpoint": "best_model_splicing_combined_efficientnet-b2_20260908_1523.pth",
+  "num_samples_evaluated": 1025,
+  "threshold": 0.35,
+  "pixel_accuracy_percent": 50.8365,
+  "pixel_balanced_accuracy_percent": 63.9768,
+  "pixel_specificity_percent": 48.9801,
+  "pixel_recall_sensitivity_percent": 78.9735,
+  "pixel_precision_percent": 10.6954,
+  "pixel_f1_score_dice_percent": 15.2116,
+  "pixel_iou_jaccard_percent": 9.9313,
+  "pixel_mae": 0.332583,
+  "document_level_classification_accuracy_percent": 100.0,
+  "document_level_detection_precision_percent": 100.0,
+  "document_level_detection_recall_percent": 100.0,
+  "document_level_detection_f1_percent": 100.0
+}

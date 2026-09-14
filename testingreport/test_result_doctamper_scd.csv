@@ -1,0 +1,17 @@
+Metric Category,Metric Name,Value / Percentage
+Metadata,Test Dataset,doctamper_scd
+Metadata,Checkpoint,best_model_splicing_combined_efficientnet-b2_20260908_1523.pth
+Metadata,Samples Evaluated,18000
+Metadata,Detection Threshold,0.35
+Pixel-Level,Pixel Accuracy (%),98.2322
+Pixel-Level,Pixel Balanced Accuracy (%),71.0772
+Pixel-Level,Pixel Specificity / TNR (%),98.7504
+Pixel-Level,Pixel Recall / Sensitivity (%),43.404
+Pixel-Level,Pixel Precision (%),26.0266
+Pixel-Level,Pixel F1-Score / Dice (%),27.3931
+Pixel-Level,Pixel IoU / Jaccard (%),18.6126
+Pixel-Level,Mean Absolute Error (MAE),0.017502
+Document-Level,Document Classification Accuracy (%),99.2278
+Document-Level,Document Detection Precision (%),99.3161
+Document-Level,Document Detection Recall (%),99.9105
+Document-Level,Document Detection F1-Score (%),99.6124

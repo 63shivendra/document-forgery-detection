@@ -1,5 +1,7 @@
 import os
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 import argparse
+import glob
 import yaml
 import torch
 from torch.utils.data import DataLoader
@@ -25,6 +27,8 @@ def main():
                         help='Dataset to train on')
     parser.add_argument('--epochs', type=int, help='Override training epochs')
     parser.add_argument('--batch-size', type=int, help='Override batch size')
+    parser.add_argument('--resume', type=str, nargs='?', const='auto', default=None,
+                        help='Path to .pth checkpoint to resume training from (pass --resume to auto-pick latest in bigpower)')
     args = parser.parse_args()
 
     # Load configuration
@@ -89,10 +93,32 @@ def main():
     trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad) / 1e6
     print(f" Model params: {total_params:.1f}M total | {trainable_params:.1f}M trainable")
 
+    # Resume logic if requested
+    resume_checkpoint = None
+    if args.resume:
+        resume_path = args.resume
+        if resume_path == 'auto':
+            ckpt_pattern = os.path.join(config['paths']['saved_models_dir'], "best_model_*.pth")
+            found_ckpts = sorted(glob.glob(ckpt_pattern), key=os.path.getmtime, reverse=True)
+            if not found_ckpts:
+                ckpt_pattern = os.path.join(config['paths']['saved_models_dir'], "*.pth")
+                found_ckpts = sorted(glob.glob(ckpt_pattern), key=os.path.getmtime, reverse=True)
+            if found_ckpts:
+                resume_path = found_ckpts[0]
+            else:
+                raise FileNotFoundError(f"No checkpoint found in {config['paths']['saved_models_dir']} to resume from.")
+
+        print(f" Loading checkpoint to resume from: {resume_path}")
+        resume_checkpoint = torch.load(resume_path, map_location=device)
+        print(f" Checkpoint loaded: Epoch {resume_checkpoint.get('epoch', '?')} (Val IoU: {resume_checkpoint.get('val_iou', 0)*100:.2f}%)")
+
     # Train Engine
     from datetime import datetime
-    run_name = f"{args.dataset}_{config['model']['encoder']}_{datetime.now().strftime('%Y%m%d_%H%M')}"
-    trainer = Trainer(model, train_loader, val_loader, config, device=device)
+    if resume_checkpoint and 'run_name' in resume_checkpoint:
+        run_name = resume_checkpoint['run_name']
+    else:
+        run_name = f"{args.dataset}_{config['model']['encoder']}_{datetime.now().strftime('%Y%m%d_%H%M')}"
+    trainer = Trainer(model, train_loader, val_loader, config, device=device, resume_checkpoint=resume_checkpoint)
     trainer.fit(dataset_name=args.dataset, run_name=run_name)
 
 
