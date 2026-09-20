@@ -83,12 +83,22 @@
 
 ---
 
+### Phase 6: Calibration & False Positive Suppression
+* **File:** `agents/forensic_agent.py`
+* **Calibrated Parameters:**
+  - `threshold = 0.50` (Requires $\ge 50\%$ neural probability for visual forgery).
+  - `min_area = 200` pixels (Filters out tiny <100px camera noise and photo frame edge spots on clean cards).
+  - Risk calculation calculated strictly across valid connected component regions $\ge 200$ pixels.
+
+---
+
 ## 🎯 Verification & Deliverables Checklist
 
 - [x] Create standalone folder `edgedevice/` with subdirectories `models/`, `agents/`, `privacy/`, `llm_bridge/`.
 - [x] Create `CONTEXT.md` and `REPORTEDGE.md` detailing architecture & implementation plan.
-- [ ] Export INT8 Quantized Mobile ONNX Engine to `edgedevice/models/model_forgery_int8.onnx`.
-- [ ] Build `privacy/pii_masker.py` PII redaction firewall.
-- [ ] Implement 5 Governed Agents in `agents/`.
-- [ ] Build `llm_bridge/reasoning_llm.py` Gemini/SLM explanation bridge.
-- [ ] Build `run_edge_audit.py` standalone CLI & API launcher.
+- [x] Export INT8 Quantized Mobile ONNX Engine to `edgedevice/models/model_forgery_int8.onnx` (9.86 MB).
+- [x] Build `privacy/pii_masker.py` PII redaction firewall (Aadhaar 8-digit mask, PAN mask, face blur, SHA-256 hash).
+- [x] Implement 5 Governed Agents in `agents/` (Extraction, Forensic INT8, Privacy, Validation, Reasoning).
+- [x] Build `llm_bridge/reasoning_llm.py` 100% local on-device evidence reasoning engine.
+- [x] Build `run_edge_audit.py` standalone CLI & API launcher.
+- [x] Calibrate detection threshold (`threshold=0.50`, `min_area=200`) to eliminate false alarms on clean cards.

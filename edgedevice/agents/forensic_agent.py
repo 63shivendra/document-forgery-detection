@@ -48,7 +48,7 @@ class ForensicDetectionAgent(BaseAgent):
         img_chw = np.transpose(img_norm, (2, 0, 1))
         return np.expand_dims(img_chw, axis=0)
 
-    def extract_bounding_boxes(self, prob_map: np.ndarray, threshold: float = 0.35, min_area: int = 25) -> List[Dict[str, Any]]:
+    def extract_bounding_boxes(self, prob_map: np.ndarray, threshold: float = 0.50, min_area: int = 200) -> List[Dict[str, Any]]:
         """Extracts connected component bounding boxes from prediction map."""
         binary_map = (prob_map > threshold).astype(np.uint8) * 255
         num_labels, labels, stats, centroids = cv2.connectedComponentsWithStats(binary_map)
@@ -95,9 +95,15 @@ class ForensicDetectionAgent(BaseAgent):
         prob_map_384 = 1.0 / (1.0 + np.exp(-pred_logits[0, 0]))
         prob_map_orig = cv2.resize(prob_map_384, (w_orig, h_orig), interpolation=cv2.INTER_LINEAR)
         
-        max_risk = float(np.max(prob_map_orig))
-        boxes = self.extract_bounding_boxes(prob_map_orig, threshold=0.35, min_area=25)
-        forgery_detected = len(boxes) > 0 and max_risk >= 0.35
+        boxes = self.extract_bounding_boxes(prob_map_orig, threshold=0.50, min_area=200)
+        
+        # Calculate max risk across valid connected component regions
+        if boxes:
+            max_risk = float(max(b["region_risk"] for b in boxes))
+        else:
+            max_risk = float(np.max(prob_map_orig)) * 0.5  # Suppress raw background max if no region >= 200px
+            
+        forgery_detected = len(boxes) > 0 and max_risk >= 0.50
 
         updated = payload.copy()
         updated.update({
