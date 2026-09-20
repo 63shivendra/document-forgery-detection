@@ -1,0 +1,100 @@
+{
+  "document_name": "WhatsApp Image 2026-08-23 at 4.25.56 PM.jpeg",
+  "dimensions": [
+    1280,
+    960
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.624,
+  "confidence": 0.624,
+  "risk_level": "HIGH",
+  "total_tampered_regions": 3,
+  "tampered_area_percentage": 2.068,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        923,
+        142,
+        1050,
+        272
+      ],
+      "normalized_bbox": [
+        0.7211,
+        0.1479,
+        0.8203,
+        0.2833
+      ],
+      "width": 127,
+      "height": 130,
+      "aspect_ratio": 0.977,
+      "area_pixels": 16510,
+      "area_percentage": 1.344,
+      "peak_confidence": 0.7817,
+      "mean_confidence": 0.4962,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Photo / Seal / Region Splicing",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        83,
+        438,
+        163,
+        505
+      ],
+      "normalized_bbox": [
+        0.0648,
+        0.4562,
+        0.1273,
+        0.526
+      ],
+      "width": 80,
+      "height": 67,
+      "aspect_ratio": 1.194,
+      "area_pixels": 5360,
+      "area_percentage": 0.436,
+      "peak_confidence": 0.6749,
+      "mean_confidence": 0.4909,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Inpainting / Content Erasure / White-Out",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 3,
+      "bbox": [
+        57,
+        760,
+        150,
+        798
+      ],
+      "normalized_bbox": [
+        0.0445,
+        0.7917,
+        0.1172,
+        0.8313
+      ],
+      "width": 93,
+      "height": 38,
+      "aspect_ratio": 2.447,
+      "area_pixels": 3534,
+      "area_percentage": 0.288,
+      "peak_confidence": 0.6262,
+      "mean_confidence": 0.4903,
+      "document_region": "Footer / Terms / Authority Seal",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.56 PM_annotated.jpg",
+    "audit_panel": "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.56 PM_audit_panel.jpg",
+    "crops": [
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.56 PM_part_1.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.56 PM_part_2.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.56 PM_part_3.jpg"
+    ]
+  }
+}

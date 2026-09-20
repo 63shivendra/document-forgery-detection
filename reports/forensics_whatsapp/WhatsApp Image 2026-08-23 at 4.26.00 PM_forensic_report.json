@@ -1,0 +1,152 @@
+{
+  "document_name": "WhatsApp Image 2026-08-23 at 4.26.00 PM.jpeg",
+  "dimensions": [
+    1280,
+    960
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.5416,
+  "confidence": 0.5416,
+  "risk_level": "MEDIUM",
+  "total_tampered_regions": 5,
+  "tampered_area_percentage": 1.791,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        630,
+        162,
+        713,
+        195
+      ],
+      "normalized_bbox": [
+        0.4922,
+        0.1688,
+        0.557,
+        0.2031
+      ],
+      "width": 83,
+      "height": 33,
+      "aspect_ratio": 2.515,
+      "area_pixels": 2739,
+      "area_percentage": 0.223,
+      "peak_confidence": 0.6463,
+      "mean_confidence": 0.4921,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        550,
+        868,
+        607,
+        898
+      ],
+      "normalized_bbox": [
+        0.4297,
+        0.9042,
+        0.4742,
+        0.9354
+      ],
+      "width": 57,
+      "height": 30,
+      "aspect_ratio": 1.9,
+      "area_pixels": 1710,
+      "area_percentage": 0.139,
+      "peak_confidence": 0.6125,
+      "mean_confidence": 0.4692,
+      "document_region": "Footer / Terms / Authority Seal",
+      "distortion_type": "Inpainting / Content Erasure / White-Out",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 3,
+      "bbox": [
+        97,
+        422,
+        213,
+        530
+      ],
+      "normalized_bbox": [
+        0.0758,
+        0.4396,
+        0.1664,
+        0.5521
+      ],
+      "width": 116,
+      "height": 108,
+      "aspect_ratio": 1.074,
+      "area_pixels": 12528,
+      "area_percentage": 1.02,
+      "peak_confidence": 0.6003,
+      "mean_confidence": 0.4552,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Inpainting / Content Erasure / White-Out",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 4,
+      "bbox": [
+        83,
+        555,
+        163,
+        598
+      ],
+      "normalized_bbox": [
+        0.0648,
+        0.5781,
+        0.1273,
+        0.6229
+      ],
+      "width": 80,
+      "height": 43,
+      "aspect_ratio": 1.86,
+      "area_pixels": 3440,
+      "area_percentage": 0.28,
+      "peak_confidence": 0.5724,
+      "mean_confidence": 0.4585,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Inpainting / Content Erasure / White-Out",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 5,
+      "bbox": [
+        737,
+        138,
+        803,
+        162
+      ],
+      "normalized_bbox": [
+        0.5758,
+        0.1437,
+        0.6273,
+        0.1688
+      ],
+      "width": 66,
+      "height": 24,
+      "aspect_ratio": 2.75,
+      "area_pixels": 1584,
+      "area_percentage": 0.129,
+      "peak_confidence": 0.4381,
+      "mean_confidence": 0.3928,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.26.00 PM_annotated.jpg",
+    "audit_panel": "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.26.00 PM_audit_panel.jpg",
+    "crops": [
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.26.00 PM_part_1.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.26.00 PM_part_2.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.26.00 PM_part_3.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.26.00 PM_part_4.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.26.00 PM_part_5.jpg"
+    ]
+  }
+}

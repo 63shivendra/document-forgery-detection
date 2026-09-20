@@ -1,0 +1,178 @@
+{
+  "document_name": "WhatsApp Image 2026-08-23 at 4.25.58 PM.jpeg",
+  "dimensions": [
+    1280,
+    960
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.8095,
+  "confidence": 0.8095,
+  "risk_level": "CRITICAL",
+  "total_tampered_regions": 6,
+  "tampered_area_percentage": 11.447,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        637,
+        598,
+        1053,
+        722
+      ],
+      "normalized_bbox": [
+        0.4977,
+        0.6229,
+        0.8227,
+        0.7521
+      ],
+      "width": 416,
+      "height": 124,
+      "aspect_ratio": 3.355,
+      "area_pixels": 51584,
+      "area_percentage": 4.198,
+      "peak_confidence": 0.9766,
+      "mean_confidence": 0.6458,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Copy-Move / Region Splicing",
+      "extracted_text": "with olner Systets Iphased Implementation roadmap plan conduenng eeu Id Kae ,ou f0 spend tns neat few Qays and"
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        933,
+        145,
+        1113,
+        258
+      ],
+      "normalized_bbox": [
+        0.7289,
+        0.151,
+        0.8695,
+        0.2687
+      ],
+      "width": 180,
+      "height": 113,
+      "aspect_ratio": 1.593,
+      "area_pixels": 20340,
+      "area_percentage": 1.655,
+      "peak_confidence": 0.862,
+      "mean_confidence": 0.5158,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Copy-Move / Region Splicing",
+      "extracted_text": "overned AI"
+    },
+    {
+      "region_id": 3,
+      "bbox": [
+        710,
+        452,
+        1020,
+        610
+      ],
+      "normalized_bbox": [
+        0.5547,
+        0.4708,
+        0.7969,
+        0.6354
+      ],
+      "width": 310,
+      "height": 158,
+      "aspect_ratio": 1.962,
+      "area_pixels": 48980,
+      "area_percentage": 3.986,
+      "peak_confidence": 0.8201,
+      "mean_confidence": 0.5119,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": "document verincation systems"
+    },
+    {
+      "region_id": 4,
+      "bbox": [
+        100,
+        742,
+        217,
+        775
+      ],
+      "normalized_bbox": [
+        0.0781,
+        0.7729,
+        0.1695,
+        0.8073
+      ],
+      "width": 117,
+      "height": 33,
+      "aspect_ratio": 3.545,
+      "area_pixels": 3861,
+      "area_percentage": 0.314,
+      "peak_confidence": 0.7126,
+      "mean_confidence": 0.5208,
+      "document_region": "Footer / Terms / Authority Seal",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 5,
+      "bbox": [
+        50,
+        40,
+        107,
+        52
+      ],
+      "normalized_bbox": [
+        0.0391,
+        0.0417,
+        0.0836,
+        0.0542
+      ],
+      "width": 57,
+      "height": 12,
+      "aspect_ratio": 4.75,
+      "area_pixels": 684,
+      "area_percentage": 0.056,
+      "peak_confidence": 0.6745,
+      "mean_confidence": 0.5133,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": "projectme"
+    },
+    {
+      "region_id": 6,
+      "bbox": [
+        77,
+        388,
+        207,
+        505
+      ],
+      "normalized_bbox": [
+        0.0602,
+        0.4042,
+        0.1617,
+        0.526
+      ],
+      "width": 130,
+      "height": 117,
+      "aspect_ratio": 1.111,
+      "area_pixels": 15210,
+      "area_percentage": 1.238,
+      "peak_confidence": 0.5675,
+      "mean_confidence": 0.4202,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Inpainting / Content Erasure / White-Out",
+      "extracted_text": ""
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.58 PM_annotated.jpg",
+    "audit_panel": "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.58 PM_audit_panel.jpg",
+    "crops": [
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.58 PM_part_1.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.58 PM_part_2.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.58 PM_part_3.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.58 PM_part_4.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.58 PM_part_5.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.58 PM_part_6.jpg"
+    ]
+  }
+}

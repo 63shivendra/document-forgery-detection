@@ -19,13 +19,8 @@ test_datasets/
 *.mdb
 *.lmdb
 
-# Model Outputs & Large Checkpoints — DO NOT PUSH (>100MB files rejected by GitHub)
-savedmodels/
-edgeai/
-bigpower/*.pth
-bigpower/*.pkl
-bigpower/*.onnx
-bigpower/*.pt
+# Model Outputs & Large Checkpoints (Tracked via Git LFS)
+# bigpower models tracked via Git LFS
 
 # Training Outputs
 logs/

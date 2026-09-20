@@ -1,0 +1,960 @@
+[
+  {
+    "index": 1,
+    "filename": "WhatsApp Image 2026-08-23 at 4.25.55 PM (1).jpeg",
+    "document_type": "UNKNOWN_DOCUMENT",
+    "classification_confidence": 0.0,
+    "verdict": "TAMPERED / FAKE",
+    "fraud_score": 0.7403,
+    "risk_level": "HIGH",
+    "num_regions": 5,
+    "top_regions": [
+      {
+        "id": 1,
+        "box": [
+          123,
+          62,
+          193,
+          98
+        ],
+        "zone": "Header / Issuer / Document Title",
+        "distortion": "Inpainting / Content Erasure / White-Out",
+        "confidence": 0.9041,
+        "area_percentage": 0.205,
+        "ocr_text": ""
+      },
+      {
+        "id": 2,
+        "box": [
+          540,
+          680,
+          563,
+          702
+        ],
+        "zone": "Document Body (Text / Number / Value Field)",
+        "distortion": "Localized Pixel Manipulation",
+        "confidence": 0.8222,
+        "area_percentage": 0.041,
+        "ocr_text": ""
+      },
+      {
+        "id": 3,
+        "box": [
+          280,
+          72,
+          433,
+          118
+        ],
+        "zone": "Header / Issuer / Document Title",
+        "distortion": "Localized Pixel Manipulation",
+        "confidence": 0.8108,
+        "area_percentage": 0.573,
+        "ocr_text": "ownloadsproiectner Dr"
+      },
+      {
+        "id": 4,
+        "box": [
+          50,
+          485,
+          157,
+          608
+        ],
+        "zone": "Document Body (Left Field / Label Column)",
+        "distortion": "Inpainting / Content Erasure / White-Out",
+        "confidence": 0.592,
+        "area_percentage": 1.071,
+        "ocr_text": ""
+      },
+      {
+        "id": 5,
+        "box": [
+          503,
+          108,
+          563,
+          138
+        ],
+        "zone": "Header / Issuer / Document Title",
+        "distortion": "Text / Number Field Alteration",
+        "confidence": 0.5096,
+        "area_percentage": 0.146,
+        "ocr_text": ""
+      }
+    ],
+    "audit_panel": "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM (1)_audit_panel.jpg"
+  },
+  {
+    "index": 2,
+    "filename": "WhatsApp Image 2026-08-23 at 4.25.55 PM.jpeg",
+    "document_type": "UNKNOWN_DOCUMENT",
+    "classification_confidence": 0.0,
+    "verdict": "TAMPERED / FAKE",
+    "fraud_score": 0.8494,
+    "risk_level": "CRITICAL",
+    "num_regions": 23,
+    "top_regions": [
+      {
+        "id": 1,
+        "box": [
+          665,
+          197,
+          818,
+          327
+        ],
+        "zone": "Header / Issuer / Document Title",
+        "distortion": "Photo / Seal / Region Splicing",
+        "confidence": 0.9945,
+        "area_percentage": 1.619,
+        "ocr_text": ""
+      },
+      {
+        "id": 2,
+        "box": [
+          170,
+          257,
+          295,
+          357
+        ],
+        "zone": "Document Body (Left Field / Label Column)",
+        "distortion": "Photo / Seal / Region Splicing",
+        "confidence": 0.7178,
+        "area_percentage": 1.017,
+        "ocr_text": "Outlook Govemed Merchent Fmom Ganesh Jambhrun"
+      },
+      {
+        "id": 3,
+        "box": [
+          555,
+          653,
+          812,
+          867
+        ],
+        "zone": "Document Body (Text / Number / Value Field)",
+        "distortion": "Photo / Seal / Region Splicing",
+        "confidence": 0.6738,
+        "area_percentage": 4.476,
+        "ocr_text": "dharPAN etc) KYB documents } during merchant onboarding The intent reusable govemed document- support explainable decisioning e evldence-backed findings; not only a main edgo-irst / device-hrst; with tne 5. risk signals reason codes and"
+      },
+      {
+        "id": 4,
+        "box": [
+          912,
+          1263,
+          948,
+          1280
+        ],
+        "zone": "Footer / Authorized Signature Field",
+        "distortion": "Text / Number Field Alteration",
+        "confidence": 0.6508,
+        "area_percentage": 0.05,
+        "ocr_text": ""
+      },
+      {
+        "id": 5,
+        "box": [
+          342,
+          1267,
+          442,
+          1280
+        ],
+        "zone": "Footer / Terms / Authority Seal",
+        "distortion": "Text / Number Field Alteration",
+        "confidence": 0.6476,
+        "area_percentage": 0.106,
+        "ocr_text": ""
+      },
+      {
+        "id": 6,
+        "box": [
+          162,
+          793,
+          322,
+          1097
+        ],
+        "zone": "Document Body (Left Field / Label Column)",
+        "distortion": "Localized Pixel Manipulation",
+        "confidence": 0.6076,
+        "area_percentage": 3.958,
+        "ocr_text": "AKey principle of the proje risk score; Wherever feasie priginal document retainec governance evidence share High-Level Scope; Study merchant onboa Pesearch currentacde document forensics OCR and Iayaui extt Visual mnanipulation multimnodal reaconin eplainable duckion"
+      },
+      {
+        "id": 7,
+        "box": [
+          785,
+          530,
+          805,
+          627
+        ],
+        "zone": "Photo / ID Portrait / Stamp Area",
+        "distortion": "Text / Number Field Alteration",
+        "confidence": 0.5599,
+        "area_percentage": 0.158,
+        "ocr_text": "e AI"
+      },
+      {
+        "id": 8,
+        "box": [
+          342,
+          337,
+          408,
+          413
+        ],
+        "zone": "Document Body (Text / Number / Value Field)",
+        "distortion": "Photo / Seal / Region Splicing",
+        "confidence": 0.5277,
+        "area_percentage": 0.408,
+        "ocr_text": "ancsh Jambhr s_ind@npdong ram@npdomg"
+      },
+      {
+        "id": 9,
+        "box": [
+          165,
+          530,
+          200,
+          547
+        ],
+        "zone": "Document Body (Left Field / Label Column)",
+        "distortion": "Text / Number Field Alteration",
+        "confidence": 0.5277,
+        "area_percentage": 0.048,
+        "ocr_text": "Verific"
+      },
+      {
+        "id": 10,
+        "box": [
+          220,
+          80,
+          238,
+          93
+        ],
+        "zone": "Header / Issuer / Document Title",
+        "distortion": "Localized Pixel Manipulation",
+        "confidence": 0.4781,
+        "area_percentage": 0.019,
+        "ocr_text": ""
+      },
+      {
+        "id": 11,
+        "box": [
+          305,
+          703,
+          405,
+          767
+        ],
+        "zone": "Document Body (Text / Number / Value Field)",
+        "distortion": "Localized Pixel Manipulation",
+        "confidence": 0.4778,
+        "area_percentage": 0.521,
+        "ocr_text": "Jother supporting Jocument-tamperi rk that can genera"
+      },
+      {
+        "id": 12,
+        "box": [
+          162,
+          703,
+          220,
+          770
+        ],
+        "zone": "Document Body (Left Field / Label Column)",
+        "distortion": "Photo / Seal / Region Splicing",
+        "confidence": 0.4755,
+        "area_percentage": 0.316,
+        "ocr_text": "{registrane IsnotID intelligeng"
+      },
+      {
+        "id": 13,
+        "box": [
+          528,
+          613,
+          572,
+          627
+        ],
+        "zone": "Document Body (Text / Number / Value Field)",
+        "distortion": "Text / Number Field Alteration",
+        "confidence": 0.4735,
+        "area_percentage": 0.05,
+        "ocr_text": "and dete"
+      },
+      {
+        "id": 14,
+        "box": [
+          170,
+          253,
+          188,
+          273
+        ],
+        "zone": "Header / Issuer / Document Title",
+        "distortion": "Localized Pixel Manipulation",
+        "confidence": 0.4726,
+        "area_percentage": 0.029,
+        "ocr_text": ""
+      },
+      {
+        "id": 15,
+        "box": [
+          698,
+          613,
+          745,
+          643
+        ],
+        "zone": "Photo / ID Portrait / Stamp Area",
+        "distortion": "Localized Pixel Manipulation",
+        "confidence": 0.4682,
+        "area_percentage": 0.115,
+        "ocr_text": "rgery; tam"
+      },
+      {
+        "id": 16,
+        "box": [
+          215,
+          563,
+          310,
+          627
+        ],
+        "zone": "Document Body (Left Field / Label Column)",
+        "distortion": "Localized Pixel Manipulation",
+        "confidence": 0.4673,
+        "area_percentage": 0.495,
+        "ocr_text": "{Overview: imany objecave of vork for verifying"
+      },
+      {
+        "id": 17,
+        "box": [
+          168,
+          587,
+          178,
+          623
+        ],
+        "zone": "Document Body (Left Field / Label Column)",
+        "distortion": "Text / Number Field Alteration",
+        "confidence": 0.4561,
+        "area_percentage": 0.029,
+        "ocr_text": ""
+      },
+      {
+        "id": 18,
+        "box": [
+          558,
+          703,
+          620,
+          717
+        ],
+        "zone": "Document Body (Text / Number / Value Field)",
+        "distortion": "Text / Number Field Alteration",
+        "confidence": 0.4559,
+        "area_percentage": 0.071,
+        "ocr_text": "during Merc"
+      },
+      {
+        "id": 19,
+        "box": [
+          515,
+          200,
+          552,
+          217
+        ],
+        "zone": "Header / Issuer / Document Title",
+        "distortion": "Text / Number Field Alteration",
+        "confidence": 0.4248,
+        "area_percentage": 0.051,
+        "ocr_text": ""
+      },
+      {
+        "id": 20,
+        "box": [
+          348,
+          873,
+          368,
+          887
+        ],
+        "zone": "Document Body (Text / Number / Value Field)",
+        "distortion": "Localized Pixel Manipulation",
+        "confidence": 0.4218,
+        "area_percentage": 0.023,
+        "ocr_text": "Lupst"
+      },
+      {
+        "id": 21,
+        "box": [
+          28,
+          150,
+          45,
+          167
+        ],
+        "zone": "Header / Issuer / Document Title",
+        "distortion": "Localized Pixel Manipulation",
+        "confidence": 0.4191,
+        "area_percentage": 0.024,
+        "ocr_text": "o"
+      },
+      {
+        "id": 22,
+        "box": [
+          835,
+          1163,
+          850,
+          1180
+        ],
+        "zone": "Footer / Authorized Signature Field",
+        "distortion": "Localized Pixel Manipulation",
+        "confidence": 0.3996,
+        "area_percentage": 0.021,
+        "ocr_text": ""
+      },
+      {
+        "id": 23,
+        "box": [
+          212,
+          470,
+          230,
+          483
+        ],
+        "zone": "Document Body (Left Field / Label Column)",
+        "distortion": "Localized Pixel Manipulation",
+        "confidence": 0.3916,
+        "area_percentage": 0.019,
+        "ocr_text": "eShn"
+      }
+    ],
+    "audit_panel": "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_audit_panel.jpg"
+  },
+  {
+    "index": 3,
+    "filename": "WhatsApp Image 2026-08-23 at 4.25.56 PM.jpeg",
+    "document_type": "UNKNOWN_DOCUMENT",
+    "classification_confidence": 0.0,
+    "verdict": "TAMPERED / FAKE",
+    "fraud_score": 0.624,
+    "risk_level": "HIGH",
+    "num_regions": 3,
+    "top_regions": [
+      {
+        "id": 1,
+        "box": [
+          923,
+          142,
+          1050,
+          272
+        ],
+        "zone": "Header / Issuer / Document Title",
+        "distortion": "Photo / Seal / Region Splicing",
+        "confidence": 0.7817,
+        "area_percentage": 1.344,
+        "ocr_text": ""
+      },
+      {
+        "id": 2,
+        "box": [
+          83,
+          438,
+          163,
+          505
+        ],
+        "zone": "Document Body (Left Field / Label Column)",
+        "distortion": "Inpainting / Content Erasure / White-Out",
+        "confidence": 0.6749,
+        "area_percentage": 0.436,
+        "ocr_text": ""
+      },
+      {
+        "id": 3,
+        "box": [
+          57,
+          760,
+          150,
+          798
+        ],
+        "zone": "Footer / Terms / Authority Seal",
+        "distortion": "Text / Number Field Alteration",
+        "confidence": 0.6262,
+        "area_percentage": 0.288,
+        "ocr_text": ""
+      }
+    ],
+    "audit_panel": "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.56 PM_audit_panel.jpg"
+  },
+  {
+    "index": 4,
+    "filename": "WhatsApp Image 2026-08-23 at 4.25.57 PM.jpeg",
+    "document_type": "UNKNOWN_DOCUMENT",
+    "classification_confidence": 0.0,
+    "verdict": "TAMPERED / FAKE",
+    "fraud_score": 0.8341,
+    "risk_level": "CRITICAL",
+    "num_regions": 9,
+    "top_regions": [
+      {
+        "id": 1,
+        "box": [
+          680,
+          575,
+          1033,
+          678
+        ],
+        "zone": "Document Body (Text / Number / Value Field)",
+        "distortion": "Copy-Move / Region Splicing",
+        "confidence": 0.996,
+        "area_percentage": 2.959,
+        "ocr_text": "stems through standardized interfaces for downstrea"
+      },
+      {
+        "id": 2,
+        "box": [
+          97,
+          718,
+          230,
+          812
+        ],
+        "zone": "Footer / Terms / Authority Seal",
+        "distortion": "Copy-Move / Region Splicing",
+        "confidence": 0.9824,
+        "area_percentage": 1.017,
+        "ocr_text": "inderstomm warni , llect"
+      },
+      {
+        "id": 3,
+        "box": [
+          90,
+          342,
+          233,
+          528
+        ],
+        "zone": "Document Body (Left Field / Label Column)",
+        "distortion": "Inpainting / Content Erasure / White-Out",
+        "confidence": 0.6786,
+        "area_percentage": 2.165,
+        "ocr_text": ""
+      },
+      {
+        "id": 4,
+        "box": [
+          967,
+          102,
+          1113,
+          140
+        ],
+        "zone": "Header / Issuer / Document Title",
+        "distortion": "Text / Number Field Alteration",
+        "confidence": 0.6586,
+        "area_percentage": 0.451,
+        "ocr_text": ""
+      },
+      {
+        "id": 5,
+        "box": [
+          210,
+          860,
+          283,
+          925
+        ],
+        "zone": "Footer / Terms / Authority Seal",
+        "distortion": "Inpainting / Content Erasure / White-Out",
+        "confidence": 0.6401,
+        "area_percentage": 0.386,
+        "ocr_text": ""
+      },
+      {
+        "id": 6,
+        "box": [
+          103,
+          898,
+          150,
+          918
+        ],
+        "zone": "Footer / Terms / Authority Seal",
+        "distortion": "Text / Number Field Alteration",
+        "confidence": 0.5128,
+        "area_percentage": 0.076,
+        "ocr_text": ""
+      },
+      {
+        "id": 7,
+        "box": [
+          987,
+          805,
+          1030,
+          830
+        ],
+        "zone": "Footer / Authorized Signature Field",
+        "distortion": "Inpainting / Content Erasure / White-Out",
+        "confidence": 0.4975,
+        "area_percentage": 0.087,
+        "ocr_text": ""
+      },
+      {
+        "id": 8,
+        "box": [
+          1063,
+          765,
+          1090,
+          778
+        ],
+        "zone": "Footer / Authorized Signature Field",
+        "distortion": "Text / Number Field Alteration",
+        "confidence": 0.4369,
+        "area_percentage": 0.029,
+        "ocr_text": ""
+      },
+      {
+        "id": 9,
+        "box": [
+          590,
+          82,
+          617,
+          98
+        ],
+        "zone": "Header / Issuer / Document Title",
+        "distortion": "Localized Pixel Manipulation",
+        "confidence": 0.3932,
+        "area_percentage": 0.035,
+        "ocr_text": ""
+      }
+    ],
+    "audit_panel": "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.57 PM_audit_panel.jpg"
+  },
+  {
+    "index": 5,
+    "filename": "WhatsApp Image 2026-08-23 at 4.25.58 PM (1).jpeg",
+    "document_type": "UNKNOWN_DOCUMENT",
+    "classification_confidence": 0.0,
+    "verdict": "TAMPERED / FAKE",
+    "fraud_score": 0.8372,
+    "risk_level": "CRITICAL",
+    "num_regions": 6,
+    "top_regions": [
+      {
+        "id": 1,
+        "box": [
+          173,
+          732,
+          380,
+          832
+        ],
+        "zone": "Footer / Terms / Authority Seal",
+        "distortion": "Copy-Move / Region Splicing",
+        "confidence": 0.9961,
+        "area_percentage": 1.685,
+        "ocr_text": "Thunderstorm wami In elfect"
+      },
+      {
+        "id": 2,
+        "box": [
+          170,
+          345,
+          300,
+          515
+        ],
+        "zone": "Document Body (Left Field / Label Column)",
+        "distortion": "Inpainting / Content Erasure / White-Out",
+        "confidence": 0.8308,
+        "area_percentage": 1.799,
+        "ocr_text": ""
+      },
+      {
+        "id": 3,
+        "box": [
+          997,
+          208,
+          1143,
+          268
+        ],
+        "zone": "Photo / ID Portrait / Stamp Area",
+        "distortion": "Inpainting / Content Erasure / White-Out",
+        "confidence": 0.7446,
+        "area_percentage": 0.713,
+        "ocr_text": ""
+      },
+      {
+        "id": 4,
+        "box": [
+          223,
+          858,
+          337,
+          900
+        ],
+        "zone": "Footer / Terms / Authority Seal",
+        "distortion": "Text / Number Field Alteration",
+        "confidence": 0.7275,
+        "area_percentage": 0.39,
+        "ocr_text": ""
+      },
+      {
+        "id": 5,
+        "box": [
+          1013,
+          258,
+          1040,
+          278
+        ],
+        "zone": "Photo / ID Portrait / Stamp Area",
+        "distortion": "Localized Pixel Manipulation",
+        "confidence": 0.4838,
+        "area_percentage": 0.044,
+        "ocr_text": ""
+      },
+      {
+        "id": 6,
+        "box": [
+          310,
+          432,
+          327,
+          458
+        ],
+        "zone": "Document Body (Left Field / Label Column)",
+        "distortion": "Localized Pixel Manipulation",
+        "confidence": 0.4808,
+        "area_percentage": 0.036,
+        "ocr_text": ""
+      }
+    ],
+    "audit_panel": "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.58 PM (1)_audit_panel.jpg"
+  },
+  {
+    "index": 6,
+    "filename": "WhatsApp Image 2026-08-23 at 4.25.58 PM.jpeg",
+    "document_type": "UNKNOWN_DOCUMENT",
+    "classification_confidence": 0.0,
+    "verdict": "TAMPERED / FAKE",
+    "fraud_score": 0.8095,
+    "risk_level": "CRITICAL",
+    "num_regions": 6,
+    "top_regions": [
+      {
+        "id": 1,
+        "box": [
+          637,
+          598,
+          1053,
+          722
+        ],
+        "zone": "Document Body (Text / Number / Value Field)",
+        "distortion": "Copy-Move / Region Splicing",
+        "confidence": 0.9766,
+        "area_percentage": 4.198,
+        "ocr_text": "with olner Systets Iphased Implementation roadmap plan conduenng eeu Id Kae ,ou f0 spend tns neat few Qays and"
+      },
+      {
+        "id": 2,
+        "box": [
+          933,
+          145,
+          1113,
+          258
+        ],
+        "zone": "Header / Issuer / Document Title",
+        "distortion": "Copy-Move / Region Splicing",
+        "confidence": 0.862,
+        "area_percentage": 1.655,
+        "ocr_text": "overned AI"
+      },
+      {
+        "id": 3,
+        "box": [
+          710,
+          452,
+          1020,
+          610
+        ],
+        "zone": "Document Body (Text / Number / Value Field)",
+        "distortion": "Localized Pixel Manipulation",
+        "confidence": 0.8201,
+        "area_percentage": 3.986,
+        "ocr_text": "document verincation systems"
+      },
+      {
+        "id": 4,
+        "box": [
+          100,
+          742,
+          217,
+          775
+        ],
+        "zone": "Footer / Terms / Authority Seal",
+        "distortion": "Text / Number Field Alteration",
+        "confidence": 0.7126,
+        "area_percentage": 0.314,
+        "ocr_text": ""
+      },
+      {
+        "id": 5,
+        "box": [
+          50,
+          40,
+          107,
+          52
+        ],
+        "zone": "Header / Issuer / Document Title",
+        "distortion": "Text / Number Field Alteration",
+        "confidence": 0.6745,
+        "area_percentage": 0.056,
+        "ocr_text": "projectme"
+      },
+      {
+        "id": 6,
+        "box": [
+          77,
+          388,
+          207,
+          505
+        ],
+        "zone": "Document Body (Left Field / Label Column)",
+        "distortion": "Inpainting / Content Erasure / White-Out",
+        "confidence": 0.5675,
+        "area_percentage": 1.238,
+        "ocr_text": ""
+      }
+    ],
+    "audit_panel": "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.58 PM_audit_panel.jpg"
+  },
+  {
+    "index": 7,
+    "filename": "WhatsApp Image 2026-08-23 at 4.25.59 PM.jpeg",
+    "document_type": "UNKNOWN_DOCUMENT",
+    "classification_confidence": 0.0,
+    "verdict": "TAMPERED / FAKE",
+    "fraud_score": 0.8261,
+    "risk_level": "CRITICAL",
+    "num_regions": 4,
+    "top_regions": [
+      {
+        "id": 1,
+        "box": [
+          170,
+          730,
+          380,
+          832
+        ],
+        "zone": "Footer / Terms / Authority Seal",
+        "distortion": "Copy-Move / Region Splicing",
+        "confidence": 0.994,
+        "area_percentage": 1.743,
+        "ocr_text": "Thunderstolm warni _ In cffect"
+      },
+      {
+        "id": 2,
+        "box": [
+          980,
+          170,
+          1157,
+          288
+        ],
+        "zone": "Photo / ID Portrait / Stamp Area",
+        "distortion": "Copy-Move / Region Splicing",
+        "confidence": 0.9239,
+        "area_percentage": 1.7,
+        "ocr_text": ""
+      },
+      {
+        "id": 3,
+        "box": [
+          197,
+          852,
+          357,
+          908
+        ],
+        "zone": "Footer / Terms / Authority Seal",
+        "distortion": "Inpainting / Content Erasure / White-Out",
+        "confidence": 0.8698,
+        "area_percentage": 0.729,
+        "ocr_text": ""
+      },
+      {
+        "id": 4,
+        "box": [
+          170,
+          352,
+          327,
+          558
+        ],
+        "zone": "Document Body (Left Field / Label Column)",
+        "distortion": "Inpainting / Content Erasure / White-Out",
+        "confidence": 0.806,
+        "area_percentage": 2.632,
+        "ocr_text": ""
+      }
+    ],
+    "audit_panel": "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.59 PM_audit_panel.jpg"
+  },
+  {
+    "index": 8,
+    "filename": "WhatsApp Image 2026-08-23 at 4.26.00 PM.jpeg",
+    "document_type": "UNKNOWN_DOCUMENT",
+    "classification_confidence": 0.0,
+    "verdict": "TAMPERED / FAKE",
+    "fraud_score": 0.5416,
+    "risk_level": "MEDIUM",
+    "num_regions": 5,
+    "top_regions": [
+      {
+        "id": 1,
+        "box": [
+          630,
+          162,
+          713,
+          195
+        ],
+        "zone": "Header / Issuer / Document Title",
+        "distortion": "Text / Number Field Alteration",
+        "confidence": 0.6463,
+        "area_percentage": 0.223,
+        "ocr_text": ""
+      },
+      {
+        "id": 2,
+        "box": [
+          550,
+          868,
+          607,
+          898
+        ],
+        "zone": "Footer / Terms / Authority Seal",
+        "distortion": "Inpainting / Content Erasure / White-Out",
+        "confidence": 0.6125,
+        "area_percentage": 0.139,
+        "ocr_text": ""
+      },
+      {
+        "id": 3,
+        "box": [
+          97,
+          422,
+          213,
+          530
+        ],
+        "zone": "Document Body (Left Field / Label Column)",
+        "distortion": "Inpainting / Content Erasure / White-Out",
+        "confidence": 0.6003,
+        "area_percentage": 1.02,
+        "ocr_text": ""
+      },
+      {
+        "id": 4,
+        "box": [
+          83,
+          555,
+          163,
+          598
+        ],
+        "zone": "Document Body (Left Field / Label Column)",
+        "distortion": "Inpainting / Content Erasure / White-Out",
+        "confidence": 0.5724,
+        "area_percentage": 0.28,
+        "ocr_text": ""
+      },
+      {
+        "id": 5,
+        "box": [
+          737,
+          138,
+          803,
+          162
+        ],
+        "zone": "Header / Issuer / Document Title",
+        "distortion": "Text / Number Field Alteration",
+        "confidence": 0.4381,
+        "area_percentage": 0.129,
+        "ocr_text": ""
+      }
+    ],
+    "audit_panel": "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.26.00 PM_audit_panel.jpg"
+  }
+]

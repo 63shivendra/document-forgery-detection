@@ -1,0 +1,256 @@
+{
+  "document_name": "WhatsApp Image 2026-08-23 at 4.25.57 PM.jpeg",
+  "dimensions": [
+    1280,
+    960
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.8341,
+  "confidence": 0.8341,
+  "risk_level": "CRITICAL",
+  "total_tampered_regions": 9,
+  "tampered_area_percentage": 7.205,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        680,
+        575,
+        1033,
+        678
+      ],
+      "normalized_bbox": [
+        0.5312,
+        0.599,
+        0.807,
+        0.7063
+      ],
+      "width": 353,
+      "height": 103,
+      "aspect_ratio": 3.427,
+      "area_pixels": 36359,
+      "area_percentage": 2.959,
+      "peak_confidence": 0.996,
+      "mean_confidence": 0.7184,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Copy-Move / Region Splicing",
+      "extracted_text": "stems through standardized interfaces for downstrea"
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        97,
+        718,
+        230,
+        812
+      ],
+      "normalized_bbox": [
+        0.0758,
+        0.7479,
+        0.1797,
+        0.8458
+      ],
+      "width": 133,
+      "height": 94,
+      "aspect_ratio": 1.415,
+      "area_pixels": 12502,
+      "area_percentage": 1.017,
+      "peak_confidence": 0.9824,
+      "mean_confidence": 0.5995,
+      "document_region": "Footer / Terms / Authority Seal",
+      "distortion_type": "Copy-Move / Region Splicing",
+      "extracted_text": "inderstomm warni , llect"
+    },
+    {
+      "region_id": 3,
+      "bbox": [
+        90,
+        342,
+        233,
+        528
+      ],
+      "normalized_bbox": [
+        0.0703,
+        0.3563,
+        0.182,
+        0.55
+      ],
+      "width": 143,
+      "height": 186,
+      "aspect_ratio": 0.769,
+      "area_pixels": 26598,
+      "area_percentage": 2.165,
+      "peak_confidence": 0.6786,
+      "mean_confidence": 0.4557,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Inpainting / Content Erasure / White-Out",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 4,
+      "bbox": [
+        967,
+        102,
+        1113,
+        140
+      ],
+      "normalized_bbox": [
+        0.7555,
+        0.1062,
+        0.8695,
+        0.1458
+      ],
+      "width": 146,
+      "height": 38,
+      "aspect_ratio": 3.842,
+      "area_pixels": 5548,
+      "area_percentage": 0.451,
+      "peak_confidence": 0.6586,
+      "mean_confidence": 0.4425,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 5,
+      "bbox": [
+        210,
+        860,
+        283,
+        925
+      ],
+      "normalized_bbox": [
+        0.1641,
+        0.8958,
+        0.2211,
+        0.9635
+      ],
+      "width": 73,
+      "height": 65,
+      "aspect_ratio": 1.123,
+      "area_pixels": 4745,
+      "area_percentage": 0.386,
+      "peak_confidence": 0.6401,
+      "mean_confidence": 0.445,
+      "document_region": "Footer / Terms / Authority Seal",
+      "distortion_type": "Inpainting / Content Erasure / White-Out",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 6,
+      "bbox": [
+        103,
+        898,
+        150,
+        918
+      ],
+      "normalized_bbox": [
+        0.0805,
+        0.9354,
+        0.1172,
+        0.9563
+      ],
+      "width": 47,
+      "height": 20,
+      "aspect_ratio": 2.35,
+      "area_pixels": 940,
+      "area_percentage": 0.076,
+      "peak_confidence": 0.5128,
+      "mean_confidence": 0.4318,
+      "document_region": "Footer / Terms / Authority Seal",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 7,
+      "bbox": [
+        987,
+        805,
+        1030,
+        830
+      ],
+      "normalized_bbox": [
+        0.7711,
+        0.8385,
+        0.8047,
+        0.8646
+      ],
+      "width": 43,
+      "height": 25,
+      "aspect_ratio": 1.72,
+      "area_pixels": 1075,
+      "area_percentage": 0.087,
+      "peak_confidence": 0.4975,
+      "mean_confidence": 0.4296,
+      "document_region": "Footer / Authorized Signature Field",
+      "distortion_type": "Inpainting / Content Erasure / White-Out",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 8,
+      "bbox": [
+        1063,
+        765,
+        1090,
+        778
+      ],
+      "normalized_bbox": [
+        0.8305,
+        0.7969,
+        0.8516,
+        0.8104
+      ],
+      "width": 27,
+      "height": 13,
+      "aspect_ratio": 2.077,
+      "area_pixels": 351,
+      "area_percentage": 0.029,
+      "peak_confidence": 0.4369,
+      "mean_confidence": 0.3919,
+      "document_region": "Footer / Authorized Signature Field",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 9,
+      "bbox": [
+        590,
+        82,
+        617,
+        98
+      ],
+      "normalized_bbox": [
+        0.4609,
+        0.0854,
+        0.482,
+        0.1021
+      ],
+      "width": 27,
+      "height": 16,
+      "aspect_ratio": 1.688,
+      "area_pixels": 432,
+      "area_percentage": 0.035,
+      "peak_confidence": 0.3932,
+      "mean_confidence": 0.3757,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": ""
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.57 PM_annotated.jpg",
+    "audit_panel": "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.57 PM_audit_panel.jpg",
+    "crops": [
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.57 PM_part_1.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.57 PM_part_2.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.57 PM_part_3.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.57 PM_part_4.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.57 PM_part_5.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.57 PM_part_6.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.57 PM_part_7.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.57 PM_part_8.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.57 PM_part_9.jpg"
+    ]
+  }
+}

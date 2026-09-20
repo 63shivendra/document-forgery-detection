@@ -1,0 +1,620 @@
+{
+  "document_name": "WhatsApp Image 2026-08-23 at 4.25.55 PM.jpeg",
+  "dimensions": [
+    960,
+    1280
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.8494,
+  "confidence": 0.8494,
+  "risk_level": "CRITICAL",
+  "total_tampered_regions": 23,
+  "tampered_area_percentage": 13.623,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        665,
+        197,
+        818,
+        327
+      ],
+      "normalized_bbox": [
+        0.6927,
+        0.1539,
+        0.8521,
+        0.2555
+      ],
+      "width": 153,
+      "height": 130,
+      "aspect_ratio": 1.177,
+      "area_pixels": 19890,
+      "area_percentage": 1.619,
+      "peak_confidence": 0.9945,
+      "mean_confidence": 0.7366,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Photo / Seal / Region Splicing",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        170,
+        257,
+        295,
+        357
+      ],
+      "normalized_bbox": [
+        0.1771,
+        0.2008,
+        0.3073,
+        0.2789
+      ],
+      "width": 125,
+      "height": 100,
+      "aspect_ratio": 1.25,
+      "area_pixels": 12500,
+      "area_percentage": 1.017,
+      "peak_confidence": 0.7178,
+      "mean_confidence": 0.4165,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Photo / Seal / Region Splicing",
+      "extracted_text": "Outlook Govemed Merchent Fmom Ganesh Jambhrun"
+    },
+    {
+      "region_id": 3,
+      "bbox": [
+        555,
+        653,
+        812,
+        867
+      ],
+      "normalized_bbox": [
+        0.5781,
+        0.5102,
+        0.8458,
+        0.6773
+      ],
+      "width": 257,
+      "height": 214,
+      "aspect_ratio": 1.201,
+      "area_pixels": 54998,
+      "area_percentage": 4.476,
+      "peak_confidence": 0.6738,
+      "mean_confidence": 0.4056,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Photo / Seal / Region Splicing",
+      "extracted_text": "dharPAN etc) KYB documents } during merchant onboarding The intent reusable govemed document- support explainable decisioning e evldence-backed findings; not only a main edgo-irst / device-hrst; with tne 5. risk signals reason codes and"
+    },
+    {
+      "region_id": 4,
+      "bbox": [
+        912,
+        1263,
+        948,
+        1280
+      ],
+      "normalized_bbox": [
+        0.95,
+        0.9867,
+        0.9875,
+        1.0
+      ],
+      "width": 36,
+      "height": 17,
+      "aspect_ratio": 2.118,
+      "area_pixels": 612,
+      "area_percentage": 0.05,
+      "peak_confidence": 0.6508,
+      "mean_confidence": 0.547,
+      "document_region": "Footer / Authorized Signature Field",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 5,
+      "bbox": [
+        342,
+        1267,
+        442,
+        1280
+      ],
+      "normalized_bbox": [
+        0.3563,
+        0.9898,
+        0.4604,
+        1.0
+      ],
+      "width": 100,
+      "height": 13,
+      "aspect_ratio": 7.692,
+      "area_pixels": 1300,
+      "area_percentage": 0.106,
+      "peak_confidence": 0.6476,
+      "mean_confidence": 0.4991,
+      "document_region": "Footer / Terms / Authority Seal",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 6,
+      "bbox": [
+        162,
+        793,
+        322,
+        1097
+      ],
+      "normalized_bbox": [
+        0.1688,
+        0.6195,
+        0.3354,
+        0.857
+      ],
+      "width": 160,
+      "height": 304,
+      "aspect_ratio": 0.526,
+      "area_pixels": 48640,
+      "area_percentage": 3.958,
+      "peak_confidence": 0.6076,
+      "mean_confidence": 0.3913,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": "AKey principle of the proje risk score; Wherever feasie priginal document retainec governance evidence share High-Level Scope; Study merchant onboa Pesearch currentacde document forensics OCR and Iayaui extt Visual mnanipulation multimnodal reaconin eplainable duckion"
+    },
+    {
+      "region_id": 7,
+      "bbox": [
+        785,
+        530,
+        805,
+        627
+      ],
+      "normalized_bbox": [
+        0.8177,
+        0.4141,
+        0.8385,
+        0.4898
+      ],
+      "width": 20,
+      "height": 97,
+      "aspect_ratio": 0.206,
+      "area_pixels": 1940,
+      "area_percentage": 0.158,
+      "peak_confidence": 0.5599,
+      "mean_confidence": 0.4075,
+      "document_region": "Photo / ID Portrait / Stamp Area",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": "e AI"
+    },
+    {
+      "region_id": 8,
+      "bbox": [
+        342,
+        337,
+        408,
+        413
+      ],
+      "normalized_bbox": [
+        0.3563,
+        0.2633,
+        0.425,
+        0.3227
+      ],
+      "width": 66,
+      "height": 76,
+      "aspect_ratio": 0.868,
+      "area_pixels": 5016,
+      "area_percentage": 0.408,
+      "peak_confidence": 0.5277,
+      "mean_confidence": 0.4075,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Photo / Seal / Region Splicing",
+      "extracted_text": "ancsh Jambhr s_ind@npdong ram@npdomg"
+    },
+    {
+      "region_id": 9,
+      "bbox": [
+        165,
+        530,
+        200,
+        547
+      ],
+      "normalized_bbox": [
+        0.1719,
+        0.4141,
+        0.2083,
+        0.4273
+      ],
+      "width": 35,
+      "height": 17,
+      "aspect_ratio": 2.059,
+      "area_pixels": 595,
+      "area_percentage": 0.048,
+      "peak_confidence": 0.5277,
+      "mean_confidence": 0.4159,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": "Verific"
+    },
+    {
+      "region_id": 10,
+      "bbox": [
+        220,
+        80,
+        238,
+        93
+      ],
+      "normalized_bbox": [
+        0.2292,
+        0.0625,
+        0.2479,
+        0.0727
+      ],
+      "width": 18,
+      "height": 13,
+      "aspect_ratio": 1.385,
+      "area_pixels": 234,
+      "area_percentage": 0.019,
+      "peak_confidence": 0.4781,
+      "mean_confidence": 0.4313,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 11,
+      "bbox": [
+        305,
+        703,
+        405,
+        767
+      ],
+      "normalized_bbox": [
+        0.3177,
+        0.5492,
+        0.4219,
+        0.5992
+      ],
+      "width": 100,
+      "height": 64,
+      "aspect_ratio": 1.562,
+      "area_pixels": 6400,
+      "area_percentage": 0.521,
+      "peak_confidence": 0.4778,
+      "mean_confidence": 0.3669,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": "Jother supporting Jocument-tamperi rk that can genera"
+    },
+    {
+      "region_id": 12,
+      "bbox": [
+        162,
+        703,
+        220,
+        770
+      ],
+      "normalized_bbox": [
+        0.1688,
+        0.5492,
+        0.2292,
+        0.6016
+      ],
+      "width": 58,
+      "height": 67,
+      "aspect_ratio": 0.866,
+      "area_pixels": 3886,
+      "area_percentage": 0.316,
+      "peak_confidence": 0.4755,
+      "mean_confidence": 0.3576,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Photo / Seal / Region Splicing",
+      "extracted_text": "{registrane IsnotID intelligeng"
+    },
+    {
+      "region_id": 13,
+      "bbox": [
+        528,
+        613,
+        572,
+        627
+      ],
+      "normalized_bbox": [
+        0.55,
+        0.4789,
+        0.5958,
+        0.4898
+      ],
+      "width": 44,
+      "height": 14,
+      "aspect_ratio": 3.143,
+      "area_pixels": 616,
+      "area_percentage": 0.05,
+      "peak_confidence": 0.4735,
+      "mean_confidence": 0.3879,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": "and dete"
+    },
+    {
+      "region_id": 14,
+      "bbox": [
+        170,
+        253,
+        188,
+        273
+      ],
+      "normalized_bbox": [
+        0.1771,
+        0.1977,
+        0.1958,
+        0.2133
+      ],
+      "width": 18,
+      "height": 20,
+      "aspect_ratio": 0.9,
+      "area_pixels": 360,
+      "area_percentage": 0.029,
+      "peak_confidence": 0.4726,
+      "mean_confidence": 0.41,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 15,
+      "bbox": [
+        698,
+        613,
+        745,
+        643
+      ],
+      "normalized_bbox": [
+        0.7271,
+        0.4789,
+        0.776,
+        0.5023
+      ],
+      "width": 47,
+      "height": 30,
+      "aspect_ratio": 1.567,
+      "area_pixels": 1410,
+      "area_percentage": 0.115,
+      "peak_confidence": 0.4682,
+      "mean_confidence": 0.3921,
+      "document_region": "Photo / ID Portrait / Stamp Area",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": "rgery; tam"
+    },
+    {
+      "region_id": 16,
+      "bbox": [
+        215,
+        563,
+        310,
+        627
+      ],
+      "normalized_bbox": [
+        0.224,
+        0.4398,
+        0.3229,
+        0.4898
+      ],
+      "width": 95,
+      "height": 64,
+      "aspect_ratio": 1.484,
+      "area_pixels": 6080,
+      "area_percentage": 0.495,
+      "peak_confidence": 0.4673,
+      "mean_confidence": 0.3701,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": "{Overview: imany objecave of vork for verifying"
+    },
+    {
+      "region_id": 17,
+      "bbox": [
+        168,
+        587,
+        178,
+        623
+      ],
+      "normalized_bbox": [
+        0.175,
+        0.4586,
+        0.1854,
+        0.4867
+      ],
+      "width": 10,
+      "height": 36,
+      "aspect_ratio": 0.278,
+      "area_pixels": 360,
+      "area_percentage": 0.029,
+      "peak_confidence": 0.4561,
+      "mean_confidence": 0.3534,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 18,
+      "bbox": [
+        558,
+        703,
+        620,
+        717
+      ],
+      "normalized_bbox": [
+        0.5813,
+        0.5492,
+        0.6458,
+        0.5602
+      ],
+      "width": 62,
+      "height": 14,
+      "aspect_ratio": 4.429,
+      "area_pixels": 868,
+      "area_percentage": 0.071,
+      "peak_confidence": 0.4559,
+      "mean_confidence": 0.3618,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": "during Merc"
+    },
+    {
+      "region_id": 19,
+      "bbox": [
+        515,
+        200,
+        552,
+        217
+      ],
+      "normalized_bbox": [
+        0.5365,
+        0.1562,
+        0.575,
+        0.1695
+      ],
+      "width": 37,
+      "height": 17,
+      "aspect_ratio": 2.176,
+      "area_pixels": 629,
+      "area_percentage": 0.051,
+      "peak_confidence": 0.4248,
+      "mean_confidence": 0.378,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Text / Number Field Alteration",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 20,
+      "bbox": [
+        348,
+        873,
+        368,
+        887
+      ],
+      "normalized_bbox": [
+        0.3625,
+        0.682,
+        0.3833,
+        0.693
+      ],
+      "width": 20,
+      "height": 14,
+      "aspect_ratio": 1.429,
+      "area_pixels": 280,
+      "area_percentage": 0.023,
+      "peak_confidence": 0.4218,
+      "mean_confidence": 0.3882,
+      "document_region": "Document Body (Text / Number / Value Field)",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": "Lupst"
+    },
+    {
+      "region_id": 21,
+      "bbox": [
+        28,
+        150,
+        45,
+        167
+      ],
+      "normalized_bbox": [
+        0.0292,
+        0.1172,
+        0.0469,
+        0.1305
+      ],
+      "width": 17,
+      "height": 17,
+      "aspect_ratio": 1.0,
+      "area_pixels": 289,
+      "area_percentage": 0.024,
+      "peak_confidence": 0.4191,
+      "mean_confidence": 0.3812,
+      "document_region": "Header / Issuer / Document Title",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": "o"
+    },
+    {
+      "region_id": 22,
+      "bbox": [
+        835,
+        1163,
+        850,
+        1180
+      ],
+      "normalized_bbox": [
+        0.8698,
+        0.9086,
+        0.8854,
+        0.9219
+      ],
+      "width": 15,
+      "height": 17,
+      "aspect_ratio": 0.882,
+      "area_pixels": 255,
+      "area_percentage": 0.021,
+      "peak_confidence": 0.3996,
+      "mean_confidence": 0.3816,
+      "document_region": "Footer / Authorized Signature Field",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 23,
+      "bbox": [
+        212,
+        470,
+        230,
+        483
+      ],
+      "normalized_bbox": [
+        0.2208,
+        0.3672,
+        0.2396,
+        0.3773
+      ],
+      "width": 18,
+      "height": 13,
+      "aspect_ratio": 1.385,
+      "area_pixels": 234,
+      "area_percentage": 0.019,
+      "peak_confidence": 0.3916,
+      "mean_confidence": 0.3682,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Localized Pixel Manipulation",
+      "extracted_text": "eShn"
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_annotated.jpg",
+    "audit_panel": "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_audit_panel.jpg",
+    "crops": [
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_1.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_2.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_3.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_4.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_5.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_6.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_7.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_8.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_9.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_10.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_11.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_12.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_13.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_14.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_15.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_16.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_17.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_18.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_19.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_20.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_21.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_22.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.55 PM_part_23.jpg"
+    ]
+  }
+}

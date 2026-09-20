@@ -1,0 +1,126 @@
+{
+  "document_name": "WhatsApp Image 2026-08-23 at 4.25.59 PM.jpeg",
+  "dimensions": [
+    1280,
+    960
+  ],
+  "verdict": "TAMPERED / FAKE",
+  "is_fake": true,
+  "fraud_score": 0.8261,
+  "confidence": 0.8261,
+  "risk_level": "CRITICAL",
+  "total_tampered_regions": 4,
+  "tampered_area_percentage": 6.804,
+  "tampered_regions": [
+    {
+      "region_id": 1,
+      "bbox": [
+        170,
+        730,
+        380,
+        832
+      ],
+      "normalized_bbox": [
+        0.1328,
+        0.7604,
+        0.2969,
+        0.8667
+      ],
+      "width": 210,
+      "height": 102,
+      "aspect_ratio": 2.059,
+      "area_pixels": 21420,
+      "area_percentage": 1.743,
+      "peak_confidence": 0.994,
+      "mean_confidence": 0.702,
+      "document_region": "Footer / Terms / Authority Seal",
+      "distortion_type": "Copy-Move / Region Splicing",
+      "extracted_text": "Thunderstolm warni _ In cffect"
+    },
+    {
+      "region_id": 2,
+      "bbox": [
+        980,
+        170,
+        1157,
+        288
+      ],
+      "normalized_bbox": [
+        0.7656,
+        0.1771,
+        0.9039,
+        0.3
+      ],
+      "width": 177,
+      "height": 118,
+      "aspect_ratio": 1.5,
+      "area_pixels": 20886,
+      "area_percentage": 1.7,
+      "peak_confidence": 0.9239,
+      "mean_confidence": 0.5776,
+      "document_region": "Photo / ID Portrait / Stamp Area",
+      "distortion_type": "Copy-Move / Region Splicing",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 3,
+      "bbox": [
+        197,
+        852,
+        357,
+        908
+      ],
+      "normalized_bbox": [
+        0.1539,
+        0.8875,
+        0.2789,
+        0.9458
+      ],
+      "width": 160,
+      "height": 56,
+      "aspect_ratio": 2.857,
+      "area_pixels": 8960,
+      "area_percentage": 0.729,
+      "peak_confidence": 0.8698,
+      "mean_confidence": 0.5802,
+      "document_region": "Footer / Terms / Authority Seal",
+      "distortion_type": "Inpainting / Content Erasure / White-Out",
+      "extracted_text": ""
+    },
+    {
+      "region_id": 4,
+      "bbox": [
+        170,
+        352,
+        327,
+        558
+      ],
+      "normalized_bbox": [
+        0.1328,
+        0.3667,
+        0.2555,
+        0.5813
+      ],
+      "width": 157,
+      "height": 206,
+      "aspect_ratio": 0.762,
+      "area_pixels": 32342,
+      "area_percentage": 2.632,
+      "peak_confidence": 0.806,
+      "mean_confidence": 0.4806,
+      "document_region": "Document Body (Left Field / Label Column)",
+      "distortion_type": "Inpainting / Content Erasure / White-Out",
+      "extracted_text": ""
+    }
+  ],
+  "exported_files": {
+    "annotated_image": "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.59 PM_annotated.jpg",
+    "audit_panel": "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.59 PM_audit_panel.jpg",
+    "crops": [
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.59 PM_part_1.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.59 PM_part_2.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.59 PM_part_3.jpg",
+      "d:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\reports\\forensics_whatsapp\\WhatsApp Image 2026-08-23 at 4.25.59 PM_part_4.jpg"
+    ]
+  }
+}

@@ -1,0 +1,835 @@
+{
+  "dataset_dir": "D:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\testing_live",
+  "model_used": "D:\\shivendra pratap singh\\onwardsmrechant\\project final\\merchant_fina\\bigpower\\best_model_indian_kyc_enhanced_20260917_1601.pth",
+  "total_samples": 80,
+  "metrics": {
+    "accuracy_pct": 75.0,
+    "precision_pct": 75.0,
+    "recall_pct": 100.0,
+    "f1_score_pct": 85.71,
+    "tp": 60,
+    "fp": 20,
+    "tn": 0,
+    "fn": 0
+  },
+  "breakdown": {
+    "AUTHENTIC": {
+      "total": 20,
+      "correct": 0
+    },
+    "SPLICING": {
+      "total": 24,
+      "correct": 24
+    },
+    "COPY_MOVE": {
+      "total": 19,
+      "correct": 19
+    },
+    "INPAINTING_ERASURE": {
+      "total": 17,
+      "correct": 17
+    }
+  },
+  "sample_details": [
+    {
+      "sample_id": 1,
+      "filename": "live_sample_0001_authentic.jpg",
+      "forgery_type": "AUTHENTIC",
+      "ground_truth_tampered": false,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.838,
+      "risk_level": "CRITICAL",
+      "status": "FALSE_POSITIVE (False Alarm)"
+    },
+    {
+      "sample_id": 2,
+      "filename": "live_sample_0002_authentic.jpg",
+      "forgery_type": "AUTHENTIC",
+      "ground_truth_tampered": false,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.7109,
+      "risk_level": "HIGH",
+      "status": "FALSE_POSITIVE (False Alarm)"
+    },
+    {
+      "sample_id": 3,
+      "filename": "live_sample_0003_authentic.jpg",
+      "forgery_type": "AUTHENTIC",
+      "ground_truth_tampered": false,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8089,
+      "risk_level": "CRITICAL",
+      "status": "FALSE_POSITIVE (False Alarm)"
+    },
+    {
+      "sample_id": 4,
+      "filename": "live_sample_0004_authentic.jpg",
+      "forgery_type": "AUTHENTIC",
+      "ground_truth_tampered": false,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.863,
+      "risk_level": "CRITICAL",
+      "status": "FALSE_POSITIVE (False Alarm)"
+    },
+    {
+      "sample_id": 5,
+      "filename": "live_sample_0005_authentic.jpg",
+      "forgery_type": "AUTHENTIC",
+      "ground_truth_tampered": false,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.5161,
+      "risk_level": "MEDIUM",
+      "status": "FALSE_POSITIVE (False Alarm)"
+    },
+    {
+      "sample_id": 6,
+      "filename": "live_sample_0006_authentic.jpg",
+      "forgery_type": "AUTHENTIC",
+      "ground_truth_tampered": false,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8488,
+      "risk_level": "CRITICAL",
+      "status": "FALSE_POSITIVE (False Alarm)"
+    },
+    {
+      "sample_id": 7,
+      "filename": "live_sample_0007_authentic.jpg",
+      "forgery_type": "AUTHENTIC",
+      "ground_truth_tampered": false,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8301,
+      "risk_level": "CRITICAL",
+      "status": "FALSE_POSITIVE (False Alarm)"
+    },
+    {
+      "sample_id": 8,
+      "filename": "live_sample_0008_authentic.jpg",
+      "forgery_type": "AUTHENTIC",
+      "ground_truth_tampered": false,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.7594,
+      "risk_level": "HIGH",
+      "status": "FALSE_POSITIVE (False Alarm)"
+    },
+    {
+      "sample_id": 9,
+      "filename": "live_sample_0009_authentic.jpg",
+      "forgery_type": "AUTHENTIC",
+      "ground_truth_tampered": false,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.88,
+      "risk_level": "CRITICAL",
+      "status": "FALSE_POSITIVE (False Alarm)"
+    },
+    {
+      "sample_id": 10,
+      "filename": "live_sample_0010_authentic.jpg",
+      "forgery_type": "AUTHENTIC",
+      "ground_truth_tampered": false,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8281,
+      "risk_level": "CRITICAL",
+      "status": "FALSE_POSITIVE (False Alarm)"
+    },
+    {
+      "sample_id": 11,
+      "filename": "live_sample_0011_authentic.jpg",
+      "forgery_type": "AUTHENTIC",
+      "ground_truth_tampered": false,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8776,
+      "risk_level": "CRITICAL",
+      "status": "FALSE_POSITIVE (False Alarm)"
+    },
+    {
+      "sample_id": 12,
+      "filename": "live_sample_0012_authentic.jpg",
+      "forgery_type": "AUTHENTIC",
+      "ground_truth_tampered": false,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8313,
+      "risk_level": "CRITICAL",
+      "status": "FALSE_POSITIVE (False Alarm)"
+    },
+    {
+      "sample_id": 13,
+      "filename": "live_sample_0013_authentic.jpg",
+      "forgery_type": "AUTHENTIC",
+      "ground_truth_tampered": false,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.7717,
+      "risk_level": "HIGH",
+      "status": "FALSE_POSITIVE (False Alarm)"
+    },
+    {
+      "sample_id": 14,
+      "filename": "live_sample_0014_authentic.jpg",
+      "forgery_type": "AUTHENTIC",
+      "ground_truth_tampered": false,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.897,
+      "risk_level": "CRITICAL",
+      "status": "FALSE_POSITIVE (False Alarm)"
+    },
+    {
+      "sample_id": 15,
+      "filename": "live_sample_0015_authentic.jpg",
+      "forgery_type": "AUTHENTIC",
+      "ground_truth_tampered": false,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8206,
+      "risk_level": "CRITICAL",
+      "status": "FALSE_POSITIVE (False Alarm)"
+    },
+    {
+      "sample_id": 16,
+      "filename": "live_sample_0016_authentic.jpg",
+      "forgery_type": "AUTHENTIC",
+      "ground_truth_tampered": false,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8143,
+      "risk_level": "CRITICAL",
+      "status": "FALSE_POSITIVE (False Alarm)"
+    },
+    {
+      "sample_id": 17,
+      "filename": "live_sample_0017_authentic.jpg",
+      "forgery_type": "AUTHENTIC",
+      "ground_truth_tampered": false,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.7644,
+      "risk_level": "HIGH",
+      "status": "FALSE_POSITIVE (False Alarm)"
+    },
+    {
+      "sample_id": 18,
+      "filename": "live_sample_0018_authentic.jpg",
+      "forgery_type": "AUTHENTIC",
+      "ground_truth_tampered": false,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.7097,
+      "risk_level": "HIGH",
+      "status": "FALSE_POSITIVE (False Alarm)"
+    },
+    {
+      "sample_id": 19,
+      "filename": "live_sample_0019_authentic.jpg",
+      "forgery_type": "AUTHENTIC",
+      "ground_truth_tampered": false,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8632,
+      "risk_level": "CRITICAL",
+      "status": "FALSE_POSITIVE (False Alarm)"
+    },
+    {
+      "sample_id": 20,
+      "filename": "live_sample_0020_authentic.jpg",
+      "forgery_type": "AUTHENTIC",
+      "ground_truth_tampered": false,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.7963,
+      "risk_level": "HIGH",
+      "status": "FALSE_POSITIVE (False Alarm)"
+    },
+    {
+      "sample_id": 21,
+      "filename": "live_sample_0021_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8953,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 22,
+      "filename": "live_sample_0022_tampered_copy_move.jpg",
+      "forgery_type": "COPY_MOVE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.5409,
+      "risk_level": "MEDIUM",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 23,
+      "filename": "live_sample_0023_tampered_inpainting_erasure.jpg",
+      "forgery_type": "INPAINTING_ERASURE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.9033,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 24,
+      "filename": "live_sample_0024_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8423,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 25,
+      "filename": "live_sample_0025_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8242,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 26,
+      "filename": "live_sample_0026_tampered_copy_move.jpg",
+      "forgery_type": "COPY_MOVE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8535,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 27,
+      "filename": "live_sample_0027_tampered_inpainting_erasure.jpg",
+      "forgery_type": "INPAINTING_ERASURE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8837,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 28,
+      "filename": "live_sample_0028_tampered_inpainting_erasure.jpg",
+      "forgery_type": "INPAINTING_ERASURE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.7579,
+      "risk_level": "HIGH",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 29,
+      "filename": "live_sample_0029_tampered_copy_move.jpg",
+      "forgery_type": "COPY_MOVE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8907,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 30,
+      "filename": "live_sample_0030_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8884,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 31,
+      "filename": "live_sample_0031_tampered_copy_move.jpg",
+      "forgery_type": "COPY_MOVE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8918,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 32,
+      "filename": "live_sample_0032_tampered_copy_move.jpg",
+      "forgery_type": "COPY_MOVE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8431,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 33,
+      "filename": "live_sample_0033_tampered_inpainting_erasure.jpg",
+      "forgery_type": "INPAINTING_ERASURE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8105,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 34,
+      "filename": "live_sample_0034_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.7632,
+      "risk_level": "HIGH",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 35,
+      "filename": "live_sample_0035_tampered_inpainting_erasure.jpg",
+      "forgery_type": "INPAINTING_ERASURE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8971,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 36,
+      "filename": "live_sample_0036_tampered_copy_move.jpg",
+      "forgery_type": "COPY_MOVE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8521,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 37,
+      "filename": "live_sample_0037_tampered_inpainting_erasure.jpg",
+      "forgery_type": "INPAINTING_ERASURE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.7558,
+      "risk_level": "HIGH",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 38,
+      "filename": "live_sample_0038_tampered_copy_move.jpg",
+      "forgery_type": "COPY_MOVE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8363,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 39,
+      "filename": "live_sample_0039_tampered_copy_move.jpg",
+      "forgery_type": "COPY_MOVE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8928,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 40,
+      "filename": "live_sample_0040_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8673,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 41,
+      "filename": "live_sample_0041_tampered_copy_move.jpg",
+      "forgery_type": "COPY_MOVE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8539,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 42,
+      "filename": "live_sample_0042_tampered_inpainting_erasure.jpg",
+      "forgery_type": "INPAINTING_ERASURE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.7405,
+      "risk_level": "HIGH",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 43,
+      "filename": "live_sample_0043_tampered_inpainting_erasure.jpg",
+      "forgery_type": "INPAINTING_ERASURE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8777,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 44,
+      "filename": "live_sample_0044_tampered_inpainting_erasure.jpg",
+      "forgery_type": "INPAINTING_ERASURE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8326,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 45,
+      "filename": "live_sample_0045_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8743,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 46,
+      "filename": "live_sample_0046_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.899,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 47,
+      "filename": "live_sample_0047_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.9065,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 48,
+      "filename": "live_sample_0048_tampered_copy_move.jpg",
+      "forgery_type": "COPY_MOVE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8762,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 49,
+      "filename": "live_sample_0049_tampered_copy_move.jpg",
+      "forgery_type": "COPY_MOVE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.7942,
+      "risk_level": "HIGH",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 50,
+      "filename": "live_sample_0050_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8369,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 51,
+      "filename": "live_sample_0051_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8497,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 52,
+      "filename": "live_sample_0052_tampered_inpainting_erasure.jpg",
+      "forgery_type": "INPAINTING_ERASURE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8728,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 53,
+      "filename": "live_sample_0053_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8792,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 54,
+      "filename": "live_sample_0054_tampered_copy_move.jpg",
+      "forgery_type": "COPY_MOVE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8004,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 55,
+      "filename": "live_sample_0055_tampered_copy_move.jpg",
+      "forgery_type": "COPY_MOVE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8375,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 56,
+      "filename": "live_sample_0056_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8521,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 57,
+      "filename": "live_sample_0057_tampered_inpainting_erasure.jpg",
+      "forgery_type": "INPAINTING_ERASURE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8548,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 58,
+      "filename": "live_sample_0058_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8917,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 59,
+      "filename": "live_sample_0059_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8655,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 60,
+      "filename": "live_sample_0060_tampered_inpainting_erasure.jpg",
+      "forgery_type": "INPAINTING_ERASURE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.9242,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 61,
+      "filename": "live_sample_0061_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8767,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 62,
+      "filename": "live_sample_0062_tampered_inpainting_erasure.jpg",
+      "forgery_type": "INPAINTING_ERASURE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8694,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 63,
+      "filename": "live_sample_0063_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8936,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 64,
+      "filename": "live_sample_0064_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.872,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 65,
+      "filename": "live_sample_0065_tampered_copy_move.jpg",
+      "forgery_type": "COPY_MOVE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8776,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 66,
+      "filename": "live_sample_0066_tampered_copy_move.jpg",
+      "forgery_type": "COPY_MOVE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.7186,
+      "risk_level": "HIGH",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 67,
+      "filename": "live_sample_0067_tampered_copy_move.jpg",
+      "forgery_type": "COPY_MOVE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8356,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 68,
+      "filename": "live_sample_0068_tampered_copy_move.jpg",
+      "forgery_type": "COPY_MOVE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.7719,
+      "risk_level": "HIGH",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 69,
+      "filename": "live_sample_0069_tampered_inpainting_erasure.jpg",
+      "forgery_type": "INPAINTING_ERASURE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8808,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 70,
+      "filename": "live_sample_0070_tampered_copy_move.jpg",
+      "forgery_type": "COPY_MOVE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.9344,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 71,
+      "filename": "live_sample_0071_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8632,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 72,
+      "filename": "live_sample_0072_tampered_inpainting_erasure.jpg",
+      "forgery_type": "INPAINTING_ERASURE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8378,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 73,
+      "filename": "live_sample_0073_tampered_inpainting_erasure.jpg",
+      "forgery_type": "INPAINTING_ERASURE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8904,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 74,
+      "filename": "live_sample_0074_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.838,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 75,
+      "filename": "live_sample_0075_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8572,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 76,
+      "filename": "live_sample_0076_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8784,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 77,
+      "filename": "live_sample_0077_tampered_inpainting_erasure.jpg",
+      "forgery_type": "INPAINTING_ERASURE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.9514,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 78,
+      "filename": "live_sample_0078_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.9052,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 79,
+      "filename": "live_sample_0079_tampered_copy_move.jpg",
+      "forgery_type": "COPY_MOVE",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8363,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    },
+    {
+      "sample_id": 80,
+      "filename": "live_sample_0080_tampered_splicing.jpg",
+      "forgery_type": "SPLICING",
+      "ground_truth_tampered": true,
+      "predicted_verdict": "TAMPERED / FAKE",
+      "predicted_fraud_score": 0.8664,
+      "risk_level": "CRITICAL",
+      "status": "TRUE_POSITIVE (Detected Forgery)"
+    }
+  ]
+}

@@ -1,0 +1,647 @@
+{
+  "total_samples": 80,
+  "authentic_samples": 20,
+  "tampered_samples": 60,
+  "dataset_manifest": [
+    {
+      "sample_id": 1,
+      "image_filename": "live_sample_0001_authentic.jpg",
+      "mask_filename": "live_sample_0001_authentic_mask.png",
+      "is_tampered": false,
+      "forgery_type": "AUTHENTIC",
+      "original_source": "aa_0032.jpg"
+    },
+    {
+      "sample_id": 2,
+      "image_filename": "live_sample_0002_authentic.jpg",
+      "mask_filename": "live_sample_0002_authentic_mask.png",
+      "is_tampered": false,
+      "forgery_type": "AUTHENTIC",
+      "original_source": "Screenshot 2026-09-04 140336.png"
+    },
+    {
+      "sample_id": 3,
+      "image_filename": "live_sample_0003_authentic.jpg",
+      "mask_filename": "live_sample_0003_authentic_mask.png",
+      "is_tampered": false,
+      "forgery_type": "AUTHENTIC",
+      "original_source": "Screenshot 2026-09-01 212437.png"
+    },
+    {
+      "sample_id": 4,
+      "image_filename": "live_sample_0004_authentic.jpg",
+      "mask_filename": "live_sample_0004_authentic_mask.png",
+      "is_tampered": false,
+      "forgery_type": "AUTHENTIC",
+      "original_source": "aa_0038.jpg"
+    },
+    {
+      "sample_id": 5,
+      "image_filename": "live_sample_0005_authentic.jpg",
+      "mask_filename": "live_sample_0005_authentic_mask.png",
+      "is_tampered": false,
+      "forgery_type": "AUTHENTIC",
+      "original_source": "cc_0008.webp"
+    },
+    {
+      "sample_id": 6,
+      "image_filename": "live_sample_0006_authentic.jpg",
+      "mask_filename": "live_sample_0006_authentic_mask.png",
+      "is_tampered": false,
+      "forgery_type": "AUTHENTIC",
+      "original_source": "bb_0057.webp"
+    },
+    {
+      "sample_id": 7,
+      "image_filename": "live_sample_0007_authentic.jpg",
+      "mask_filename": "live_sample_0007_authentic_mask.png",
+      "is_tampered": false,
+      "forgery_type": "AUTHENTIC",
+      "original_source": "aa_0006.webp"
+    },
+    {
+      "sample_id": 8,
+      "image_filename": "live_sample_0008_authentic.jpg",
+      "mask_filename": "live_sample_0008_authentic_mask.png",
+      "is_tampered": false,
+      "forgery_type": "AUTHENTIC",
+      "original_source": "cc_0066.webp"
+    },
+    {
+      "sample_id": 9,
+      "image_filename": "live_sample_0009_authentic.jpg",
+      "mask_filename": "live_sample_0009_authentic_mask.png",
+      "is_tampered": false,
+      "forgery_type": "AUTHENTIC",
+      "original_source": "aa_0002.webp"
+    },
+    {
+      "sample_id": 10,
+      "image_filename": "live_sample_0010_authentic.jpg",
+      "mask_filename": "live_sample_0010_authentic_mask.png",
+      "is_tampered": false,
+      "forgery_type": "AUTHENTIC",
+      "original_source": "cc_0060.jpg"
+    },
+    {
+      "sample_id": 11,
+      "image_filename": "live_sample_0011_authentic.jpg",
+      "mask_filename": "live_sample_0011_authentic_mask.png",
+      "is_tampered": false,
+      "forgery_type": "AUTHENTIC",
+      "original_source": "cc_0050.png"
+    },
+    {
+      "sample_id": 12,
+      "image_filename": "live_sample_0012_authentic.jpg",
+      "mask_filename": "live_sample_0012_authentic_mask.png",
+      "is_tampered": false,
+      "forgery_type": "AUTHENTIC",
+      "original_source": "cc_0080.jpg"
+    },
+    {
+      "sample_id": 13,
+      "image_filename": "live_sample_0013_authentic.jpg",
+      "mask_filename": "live_sample_0013_authentic_mask.png",
+      "is_tampered": false,
+      "forgery_type": "AUTHENTIC",
+      "original_source": "cc_0047.webp"
+    },
+    {
+      "sample_id": 14,
+      "image_filename": "live_sample_0014_authentic.jpg",
+      "mask_filename": "live_sample_0014_authentic_mask.png",
+      "is_tampered": false,
+      "forgery_type": "AUTHENTIC",
+      "original_source": "bb_0007.png"
+    },
+    {
+      "sample_id": 15,
+      "image_filename": "live_sample_0015_authentic.jpg",
+      "mask_filename": "live_sample_0015_authentic_mask.png",
+      "is_tampered": false,
+      "forgery_type": "AUTHENTIC",
+      "original_source": "cc_0075.webp"
+    },
+    {
+      "sample_id": 16,
+      "image_filename": "live_sample_0016_authentic.jpg",
+      "mask_filename": "live_sample_0016_authentic_mask.png",
+      "is_tampered": false,
+      "forgery_type": "AUTHENTIC",
+      "original_source": "cc_0004.webp"
+    },
+    {
+      "sample_id": 17,
+      "image_filename": "live_sample_0017_authentic.jpg",
+      "mask_filename": "live_sample_0017_authentic_mask.png",
+      "is_tampered": false,
+      "forgery_type": "AUTHENTIC",
+      "original_source": "cc_0039.webp"
+    },
+    {
+      "sample_id": 18,
+      "image_filename": "live_sample_0018_authentic.jpg",
+      "mask_filename": "live_sample_0018_authentic_mask.png",
+      "is_tampered": false,
+      "forgery_type": "AUTHENTIC",
+      "original_source": "cc_0012.webp"
+    },
+    {
+      "sample_id": 19,
+      "image_filename": "live_sample_0019_authentic.jpg",
+      "mask_filename": "live_sample_0019_authentic_mask.png",
+      "is_tampered": false,
+      "forgery_type": "AUTHENTIC",
+      "original_source": "cc_0021.webp"
+    },
+    {
+      "sample_id": 20,
+      "image_filename": "live_sample_0020_authentic.jpg",
+      "mask_filename": "live_sample_0020_authentic_mask.png",
+      "is_tampered": false,
+      "forgery_type": "AUTHENTIC",
+      "original_source": "aa_0021.jpg"
+    },
+    {
+      "sample_id": 21,
+      "image_filename": "live_sample_0021_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0021_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "cc_0034.webp"
+    },
+    {
+      "sample_id": 22,
+      "image_filename": "live_sample_0022_tampered_copy_move.jpg",
+      "mask_filename": "live_sample_0022_tampered_copy_move_mask.png",
+      "is_tampered": true,
+      "forgery_type": "COPY_MOVE",
+      "original_source": "aa_0024.jpg"
+    },
+    {
+      "sample_id": 23,
+      "image_filename": "live_sample_0023_tampered_inpainting_erasure.jpg",
+      "mask_filename": "live_sample_0023_tampered_inpainting_erasure_mask.png",
+      "is_tampered": true,
+      "forgery_type": "INPAINTING_ERASURE",
+      "original_source": "Screenshot 2026-09-04 140336.png"
+    },
+    {
+      "sample_id": 24,
+      "image_filename": "live_sample_0024_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0024_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "aa_0032.jpg"
+    },
+    {
+      "sample_id": 25,
+      "image_filename": "live_sample_0025_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0025_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "cc_0030.webp"
+    },
+    {
+      "sample_id": 26,
+      "image_filename": "live_sample_0026_tampered_copy_move.jpg",
+      "mask_filename": "live_sample_0026_tampered_copy_move_mask.png",
+      "is_tampered": true,
+      "forgery_type": "COPY_MOVE",
+      "original_source": "bb_0057.webp"
+    },
+    {
+      "sample_id": 27,
+      "image_filename": "live_sample_0027_tampered_inpainting_erasure.jpg",
+      "mask_filename": "live_sample_0027_tampered_inpainting_erasure_mask.png",
+      "is_tampered": true,
+      "forgery_type": "INPAINTING_ERASURE",
+      "original_source": "Screenshot 2026-07-03 134800.png"
+    },
+    {
+      "sample_id": 28,
+      "image_filename": "live_sample_0028_tampered_inpainting_erasure.jpg",
+      "mask_filename": "live_sample_0028_tampered_inpainting_erasure_mask.png",
+      "is_tampered": true,
+      "forgery_type": "INPAINTING_ERASURE",
+      "original_source": "aa_0021.jpg"
+    },
+    {
+      "sample_id": 29,
+      "image_filename": "live_sample_0029_tampered_copy_move.jpg",
+      "mask_filename": "live_sample_0029_tampered_copy_move_mask.png",
+      "is_tampered": true,
+      "forgery_type": "COPY_MOVE",
+      "original_source": "bb_0016.jpg"
+    },
+    {
+      "sample_id": 30,
+      "image_filename": "live_sample_0030_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0030_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "cc_0002.webp"
+    },
+    {
+      "sample_id": 31,
+      "image_filename": "live_sample_0031_tampered_copy_move.jpg",
+      "mask_filename": "live_sample_0031_tampered_copy_move_mask.png",
+      "is_tampered": true,
+      "forgery_type": "COPY_MOVE",
+      "original_source": "aa_0002.webp"
+    },
+    {
+      "sample_id": 32,
+      "image_filename": "live_sample_0032_tampered_copy_move.jpg",
+      "mask_filename": "live_sample_0032_tampered_copy_move_mask.png",
+      "is_tampered": true,
+      "forgery_type": "COPY_MOVE",
+      "original_source": "bb_0037.png"
+    },
+    {
+      "sample_id": 33,
+      "image_filename": "live_sample_0033_tampered_inpainting_erasure.jpg",
+      "mask_filename": "live_sample_0033_tampered_inpainting_erasure_mask.png",
+      "is_tampered": true,
+      "forgery_type": "INPAINTING_ERASURE",
+      "original_source": "bb_0049.webp"
+    },
+    {
+      "sample_id": 34,
+      "image_filename": "live_sample_0034_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0034_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "Screenshot 2026-08-04 003429.png"
+    },
+    {
+      "sample_id": 35,
+      "image_filename": "live_sample_0035_tampered_inpainting_erasure.jpg",
+      "mask_filename": "live_sample_0035_tampered_inpainting_erasure_mask.png",
+      "is_tampered": true,
+      "forgery_type": "INPAINTING_ERASURE",
+      "original_source": "aa_0045.jpg"
+    },
+    {
+      "sample_id": 36,
+      "image_filename": "live_sample_0036_tampered_copy_move.jpg",
+      "mask_filename": "live_sample_0036_tampered_copy_move_mask.png",
+      "is_tampered": true,
+      "forgery_type": "COPY_MOVE",
+      "original_source": "cc_0040.png"
+    },
+    {
+      "sample_id": 37,
+      "image_filename": "live_sample_0037_tampered_inpainting_erasure.jpg",
+      "mask_filename": "live_sample_0037_tampered_inpainting_erasure_mask.png",
+      "is_tampered": true,
+      "forgery_type": "INPAINTING_ERASURE",
+      "original_source": "cc_0016.webp"
+    },
+    {
+      "sample_id": 38,
+      "image_filename": "live_sample_0038_tampered_copy_move.jpg",
+      "mask_filename": "live_sample_0038_tampered_copy_move_mask.png",
+      "is_tampered": true,
+      "forgery_type": "COPY_MOVE",
+      "original_source": "aa_0011.jpg"
+    },
+    {
+      "sample_id": 39,
+      "image_filename": "live_sample_0039_tampered_copy_move.jpg",
+      "mask_filename": "live_sample_0039_tampered_copy_move_mask.png",
+      "is_tampered": true,
+      "forgery_type": "COPY_MOVE",
+      "original_source": "Screenshot 2026-08-04 003429.png"
+    },
+    {
+      "sample_id": 40,
+      "image_filename": "live_sample_0040_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0040_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "cc_0078.jpg"
+    },
+    {
+      "sample_id": 41,
+      "image_filename": "live_sample_0041_tampered_copy_move.jpg",
+      "mask_filename": "live_sample_0041_tampered_copy_move_mask.png",
+      "is_tampered": true,
+      "forgery_type": "COPY_MOVE",
+      "original_source": "bb_0008.png"
+    },
+    {
+      "sample_id": 42,
+      "image_filename": "live_sample_0042_tampered_inpainting_erasure.jpg",
+      "mask_filename": "live_sample_0042_tampered_inpainting_erasure_mask.png",
+      "is_tampered": true,
+      "forgery_type": "INPAINTING_ERASURE",
+      "original_source": "bb_0036.jpg"
+    },
+    {
+      "sample_id": 43,
+      "image_filename": "live_sample_0043_tampered_inpainting_erasure.jpg",
+      "mask_filename": "live_sample_0043_tampered_inpainting_erasure_mask.png",
+      "is_tampered": true,
+      "forgery_type": "INPAINTING_ERASURE",
+      "original_source": "cc_0071.jpg"
+    },
+    {
+      "sample_id": 44,
+      "image_filename": "live_sample_0044_tampered_inpainting_erasure.jpg",
+      "mask_filename": "live_sample_0044_tampered_inpainting_erasure_mask.png",
+      "is_tampered": true,
+      "forgery_type": "INPAINTING_ERASURE",
+      "original_source": "Screenshot 2026-09-04 141155.png"
+    },
+    {
+      "sample_id": 45,
+      "image_filename": "live_sample_0045_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0045_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "cc_0036.webp"
+    },
+    {
+      "sample_id": 46,
+      "image_filename": "live_sample_0046_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0046_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "aa_0004.webp"
+    },
+    {
+      "sample_id": 47,
+      "image_filename": "live_sample_0047_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0047_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "aa_0031.jpg"
+    },
+    {
+      "sample_id": 48,
+      "image_filename": "live_sample_0048_tampered_copy_move.jpg",
+      "mask_filename": "live_sample_0048_tampered_copy_move_mask.png",
+      "is_tampered": true,
+      "forgery_type": "COPY_MOVE",
+      "original_source": "aa_0034.jpg"
+    },
+    {
+      "sample_id": 49,
+      "image_filename": "live_sample_0049_tampered_copy_move.jpg",
+      "mask_filename": "live_sample_0049_tampered_copy_move_mask.png",
+      "is_tampered": true,
+      "forgery_type": "COPY_MOVE",
+      "original_source": "cc_0028.webp"
+    },
+    {
+      "sample_id": 50,
+      "image_filename": "live_sample_0050_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0050_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "cc_0047.webp"
+    },
+    {
+      "sample_id": 51,
+      "image_filename": "live_sample_0051_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0051_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "bb_0057.webp"
+    },
+    {
+      "sample_id": 52,
+      "image_filename": "live_sample_0052_tampered_inpainting_erasure.jpg",
+      "mask_filename": "live_sample_0052_tampered_inpainting_erasure_mask.png",
+      "is_tampered": true,
+      "forgery_type": "INPAINTING_ERASURE",
+      "original_source": "Screenshot 2026-09-13 143712.png"
+    },
+    {
+      "sample_id": 53,
+      "image_filename": "live_sample_0053_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0053_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "aa_0018.jpg"
+    },
+    {
+      "sample_id": 54,
+      "image_filename": "live_sample_0054_tampered_copy_move.jpg",
+      "mask_filename": "live_sample_0054_tampered_copy_move_mask.png",
+      "is_tampered": true,
+      "forgery_type": "COPY_MOVE",
+      "original_source": "cc_0038.webp"
+    },
+    {
+      "sample_id": 55,
+      "image_filename": "live_sample_0055_tampered_copy_move.jpg",
+      "mask_filename": "live_sample_0055_tampered_copy_move_mask.png",
+      "is_tampered": true,
+      "forgery_type": "COPY_MOVE",
+      "original_source": "aa_0018.jpg"
+    },
+    {
+      "sample_id": 56,
+      "image_filename": "live_sample_0056_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0056_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "bb_0003.jpg"
+    },
+    {
+      "sample_id": 57,
+      "image_filename": "live_sample_0057_tampered_inpainting_erasure.jpg",
+      "mask_filename": "live_sample_0057_tampered_inpainting_erasure_mask.png",
+      "is_tampered": true,
+      "forgery_type": "INPAINTING_ERASURE",
+      "original_source": "aa_0030.jpg"
+    },
+    {
+      "sample_id": 58,
+      "image_filename": "live_sample_0058_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0058_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "bb_0043.webp"
+    },
+    {
+      "sample_id": 59,
+      "image_filename": "live_sample_0059_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0059_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "Screenshot 2026-09-01 075513.png"
+    },
+    {
+      "sample_id": 60,
+      "image_filename": "live_sample_0060_tampered_inpainting_erasure.jpg",
+      "mask_filename": "live_sample_0060_tampered_inpainting_erasure_mask.png",
+      "is_tampered": true,
+      "forgery_type": "INPAINTING_ERASURE",
+      "original_source": "bb_0021.webp"
+    },
+    {
+      "sample_id": 61,
+      "image_filename": "live_sample_0061_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0061_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "cc_0050.png"
+    },
+    {
+      "sample_id": 62,
+      "image_filename": "live_sample_0062_tampered_inpainting_erasure.jpg",
+      "mask_filename": "live_sample_0062_tampered_inpainting_erasure_mask.png",
+      "is_tampered": true,
+      "forgery_type": "INPAINTING_ERASURE",
+      "original_source": "bb_0019.webp"
+    },
+    {
+      "sample_id": 63,
+      "image_filename": "live_sample_0063_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0063_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "Screenshot 2026-09-06 171521.png"
+    },
+    {
+      "sample_id": 64,
+      "image_filename": "live_sample_0064_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0064_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "Screenshot 2026-07-29 214332.png"
+    },
+    {
+      "sample_id": 65,
+      "image_filename": "live_sample_0065_tampered_copy_move.jpg",
+      "mask_filename": "live_sample_0065_tampered_copy_move_mask.png",
+      "is_tampered": true,
+      "forgery_type": "COPY_MOVE",
+      "original_source": "bb_0054.png"
+    },
+    {
+      "sample_id": 66,
+      "image_filename": "live_sample_0066_tampered_copy_move.jpg",
+      "mask_filename": "live_sample_0066_tampered_copy_move_mask.png",
+      "is_tampered": true,
+      "forgery_type": "COPY_MOVE",
+      "original_source": "cc_0043.webp"
+    },
+    {
+      "sample_id": 67,
+      "image_filename": "live_sample_0067_tampered_copy_move.jpg",
+      "mask_filename": "live_sample_0067_tampered_copy_move_mask.png",
+      "is_tampered": true,
+      "forgery_type": "COPY_MOVE",
+      "original_source": "cc_0029.webp"
+    },
+    {
+      "sample_id": 68,
+      "image_filename": "live_sample_0068_tampered_copy_move.jpg",
+      "mask_filename": "live_sample_0068_tampered_copy_move_mask.png",
+      "is_tampered": true,
+      "forgery_type": "COPY_MOVE",
+      "original_source": "bb_0038.jpg"
+    },
+    {
+      "sample_id": 69,
+      "image_filename": "live_sample_0069_tampered_inpainting_erasure.jpg",
+      "mask_filename": "live_sample_0069_tampered_inpainting_erasure_mask.png",
+      "is_tampered": true,
+      "forgery_type": "INPAINTING_ERASURE",
+      "original_source": "bb_0035.jpg"
+    },
+    {
+      "sample_id": 70,
+      "image_filename": "live_sample_0070_tampered_copy_move.jpg",
+      "mask_filename": "live_sample_0070_tampered_copy_move_mask.png",
+      "is_tampered": true,
+      "forgery_type": "COPY_MOVE",
+      "original_source": "Screenshot 2026-09-13 014244.png"
+    },
+    {
+      "sample_id": 71,
+      "image_filename": "live_sample_0071_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0071_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "aa_0030.jpg"
+    },
+    {
+      "sample_id": 72,
+      "image_filename": "live_sample_0072_tampered_inpainting_erasure.jpg",
+      "mask_filename": "live_sample_0072_tampered_inpainting_erasure_mask.png",
+      "is_tampered": true,
+      "forgery_type": "INPAINTING_ERASURE",
+      "original_source": "cc_0058.jpg"
+    },
+    {
+      "sample_id": 73,
+      "image_filename": "live_sample_0073_tampered_inpainting_erasure.jpg",
+      "mask_filename": "live_sample_0073_tampered_inpainting_erasure_mask.png",
+      "is_tampered": true,
+      "forgery_type": "INPAINTING_ERASURE",
+      "original_source": "bb_0040.jpg"
+    },
+    {
+      "sample_id": 74,
+      "image_filename": "live_sample_0074_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0074_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "bb_0057.webp"
+    },
+    {
+      "sample_id": 75,
+      "image_filename": "live_sample_0075_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0075_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "cc_0010.jpg"
+    },
+    {
+      "sample_id": 76,
+      "image_filename": "live_sample_0076_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0076_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "aa_0008.webp"
+    },
+    {
+      "sample_id": 77,
+      "image_filename": "live_sample_0077_tampered_inpainting_erasure.jpg",
+      "mask_filename": "live_sample_0077_tampered_inpainting_erasure_mask.png",
+      "is_tampered": true,
+      "forgery_type": "INPAINTING_ERASURE",
+      "original_source": "aa_0046.jpg"
+    },
+    {
+      "sample_id": 78,
+      "image_filename": "live_sample_0078_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0078_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "cc_0077.jpg"
+    },
+    {
+      "sample_id": 79,
+      "image_filename": "live_sample_0079_tampered_copy_move.jpg",
+      "mask_filename": "live_sample_0079_tampered_copy_move_mask.png",
+      "is_tampered": true,
+      "forgery_type": "COPY_MOVE",
+      "original_source": "aa_0008.webp"
+    },
+    {
+      "sample_id": 80,
+      "image_filename": "live_sample_0080_tampered_splicing.jpg",
+      "mask_filename": "live_sample_0080_tampered_splicing_mask.png",
+      "is_tampered": true,
+      "forgery_type": "SPLICING",
+      "original_source": "Screenshot 2026-08-12 195315.png"
+    }
+  ]
+}

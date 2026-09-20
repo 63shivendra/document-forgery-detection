@@ -87,7 +87,11 @@ class DocumentVerifier:
                 self.ocr_reader = None
 
     def _auto_resolve_checkpoint(self):
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        merchant_fina_dir = os.path.dirname(os.path.dirname(script_dir))
         candidate_dirs = [
+            os.path.join(merchant_fina_dir, "bigpower"),
+            os.path.join(merchant_fina_dir, "savedmodels"),
             self.config.get("paths", {}).get("saved_models_dir", "./bigpower"),
             "./bigpower",
             "./savedmodels"
