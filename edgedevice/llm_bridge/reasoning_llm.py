@@ -1,21 +1,19 @@
 """
-Governed LLM / SLM Reasoning Bridge
+Governed Local Evidence Reasoning Engine
 Translates technical forensic signals, bounding box callouts, and rule checks into
 natural, human-readable executive explanations.
+100% Pure Local On-Device Execution. Zero External API Dependencies.
 """
 
-import os
 from typing import Dict, Any, List
 
 
 class GovernedLLMBridge:
     """
-    Bridge connecting Edge Verification Signals to LLM/SLM Reasoning Engines.
-    Uses Gemini API if API key available, or local SLM deterministic template offline.
+    100% Local On-Device Evidence Reasoning Engine.
+    Translates structured forensic signals into clear, human-readable executive audit summaries.
+    Operates completely offline with zero API keys or cloud dependencies.
     """
-
-    def __init__(self):
-        self.api_key = os.environ.get("GEMINI_API_KEY", None)
 
     def explain_decision(
         self,
@@ -25,11 +23,11 @@ class GovernedLLMBridge:
         reason_codes: List[str],
         boxes: List[Dict[str, Any]]
     ) -> str:
-        """Generates executive natural language explanation."""
+        """Generates executive natural language explanation 100% locally."""
         if decision == "APPROVED":
             return (
                 f"Document verified as AUTHENTIC ({doc_type}). "
-                f"Zero visual tampering detected (Risk Score: {risk_score:.2%}). "
+                f"Zero visual tampering detected (Risk Score: {risk_score:.1%}). "
                 f"All structural keypoints, QR decoding, and government checksum rules passed."
             )
             
